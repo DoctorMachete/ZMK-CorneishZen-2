@@ -22,5 +22,4 @@ compatible = "zmk,combos";
           ╰────────────╯ ╰────────────╯
 */
 
-// internal name, send key, key positions, layers
 COMBO(right_bracket, &kp W, 13 8, 0)
