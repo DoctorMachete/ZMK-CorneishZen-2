@@ -11,7 +11,7 @@
 
 
 
-#include <keycodes.h>
+#include "keycodes.h"
 
 / {
   chosen {
