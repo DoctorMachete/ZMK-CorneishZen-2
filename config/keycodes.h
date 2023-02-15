@@ -82,7 +82,7 @@
 #define ___GRV___ &kp RA(GRAVE)   //  `
 #define __ACUTE__ &kp LS(LEFT_BRACKET)   //  ^
 #define _ORDINAL_ &kp GRAVE   //  º
-#d
+
 
 // LAYER taps
 #define _NAVREP__ &lt NAV &key_repeat
