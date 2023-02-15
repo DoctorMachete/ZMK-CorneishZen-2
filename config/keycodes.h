@@ -40,16 +40,16 @@
 #define ____9____ &kp NUMBER_9
 #define ____0____ &kp NUMBER_0
 
-#define _PERCENT_ &kp LS(5)
-#define __FSLASH_ &kp LS(7)      //  /
-#define __BSLASH_ &kp RA(GRAVE)  //  
+#define _PERCENT_ &kp LS(NUMBER_5)
+#define __FSLASH_ &kp LS(NUMBER_7)      //  /
+#define __BSLASH_ &kp RA(GRAVE)  //  \
 #define _ASTRSK__ &kp LS(PLUS)
 //#define _MULTDIV_ &kp 
-#define _EXCLAM__ &kp LS(1) // !
+#define _EXCLAM__ &kp LS(NUMBER_1) // !
 #define ___PLUS__ &kp RIGHT_BRACKET
 #define __MINUS__ &kp SLASH
-#define __EQUAL__ &kp LS(0)
-#define ___EUR___ &kp RC(5)
+#define __EQUAL__ &kp LS(NUMBER_0)
+#define ___EUR___ &kp RC(NUMBER_5)
 //#define _APPROX__ &kp   // ~ ±
 #define __UNDSC__ &kp LS(SLASH)
 //#define _LSSEQUL_ &kp 
@@ -71,15 +71,15 @@
 #define __RWIN___ &kp RIGHT_WIN
 #define __MENU___ &kp K_CONTEXT_MENU
 #define ___ESC___ &kp ESC
-#define __COMMA__ &kp KP_COMMA
-#define ___DOT___ &kp KP_DOT
+#define __COMMA__ &kp COMMA
+#define ___DOT___ &kp DOT
 #define __MINUS__ &kp FSLH   //   -
 #define ___SPC___ &kp SPACE
 
+//#define __QUEST__ &kp MINUS   //  ?''''''''^????K???K???????
 #define __QUOT___ &kp MINUS   //  '
-#define __DQUOT__ &kp LS(2)   //  "
-#define ___GRV___ &kp RA(GRAVE)   //  `
-#define __ACUTE__ &kp LS(LEFT_BRACKET)   //  ^
+#define __DQUOT__ &kp LS(NUMBER_2)   //  "
+#define __ACUTE__ &kp LS(LEFT_BRACKET)   //  ^ → SPC   macro is needed
 #define _ORDINAL_ &kp GRAVE   //  º
 
 
