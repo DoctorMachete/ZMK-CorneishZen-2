@@ -42,7 +42,7 @@
 
 #define _PERCENT_ &kp LS(5)
 #define __FSLASH_ &kp LS(7)      //  /
-#define __BSLASH_ &kp RA(GRAVE)  //  \
+#define __BSLASH_ &kp RA(GRAVE)  //  
 #define _ASTRSK__ &kp LS(PLUS)
 //#define _MULTDIV_ &kp 
 #define _EXCLAM__ &kp LS(1) // !
@@ -77,7 +77,7 @@
 #define ___SPC___ &kp SPACE
 #define ___SPC___ &kp SPACE
 
-//#define __QUOT___ &kp MINUS   //  '
+#define __QUOT___ &kp MINUS   //  '
 //#define __DQUOT__ &kp LS(2)   //  "
 //#define ___GRV___ &kp RA(GRAVE)   //  `
 //#define __ACUTE__ &kp LS(LEFT_BRACKET)   //  ^
