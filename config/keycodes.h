@@ -83,24 +83,25 @@
 
 
 #define __ALTAB__ &mt LALT TAB
-//#define __REDO___ &kp LC(Y)
-//#define __UNDO___ &kp LC(Z)
-//#define ___CUT___ &kp LC(X)
-//#define __COPY___ &kp LC(C)
-//#define __PASTE__ &kp LC(V)
 
 
 
 
-//#define __LEFT___ &kp LEFT_ARROW
-//#define __DOWN___ &kp DOWN_ARROW
-//#define ___UP____ &kp UP_ARROW
-//#define __RIGHT__ &kp RIGHT_ARROW
-//#define __INSRT__ &kp INSERT
-//#define ___INI___ &kp HOME
-//#define ___END___ &kp END
-//#define __PGUP___ &kp PAGE_UP
-//#define __PGDN___ &kp PAGE_DOWN
+#define __REDO___ &kp LC(Y)
+#define __UNDO___ &kp LC(Z)
+#define ___CUT___ &kp LC(X)
+#define __COPY___ &kp LC(C)
+#define __PASTE__ &kp LC(V)
+
+#define __LEFT___ &kp LEFT_ARROW
+#define __DOWN___ &kp DOWN_ARROW
+#define ___UP____ &kp UP_ARROW
+#define __RIGHT__ &kp RIGHT_ARROW
+#define __INSRT__ &kp INSERT
+#define ___INI___ &kp HOME
+#define ___END___ &kp END
+#define __PGUP___ &kp PAGE_UP
+#define __PGDN___ &kp PAGE_DOWN
 
 
 
