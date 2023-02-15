@@ -1,6 +1,6 @@
 
-#define ___XXX___ &none
-#define _________ &trans
+#define _________ &none
+#define X_______X &trans
 #define ___TEMP__ &none
 
 #define ____A____ &kp A
@@ -29,7 +29,32 @@
 #define ____X____ &kp X
 #define ____Y____ &kp W
 #define ____Z____ &kp Z
-#define ___SPC___ &kp SPACE
+#define ____1____ &kp NUMBER_1
+#define ____2____ &kp NUMBER_2
+#define ____3____ &kp NUMBER_4
+#define ____4____ &kp NUMBER_4
+#define ____5____ &kp NUMBER_5
+#define ____6____ &kp NUMBER_6
+#define ____7____ &kp NUMBER_7
+#define ____8____ &kp NUMBER_8
+#define ____9____ &kp NUMBER_9
+#define ____0____ &kp NUMBER_0
+
+#define _PERCENT_ &kp LS(5)
+#define __FSLASH_ &kp LS(7)
+#define _ASTRSK__ &kp LS(PLUS)
+//#define _MULTDIV_ &kp 
+#define _EXCLAM__ &kp LS(1) // !
+#define ___PLUS__ &kp RIGHT_BRACKET
+#define __MINUS__ &kp SLASH
+#define __EQUAL__ &kp LS(0)
+#define ___EUR___ &kp RC(5)
+//#define _APPROX__ &kp   // ~ ±
+#define __UNDSC__ &kp LS(SLASH)
+//#define _LSSEQUL_ &kp 
+
+
+
 
 #define ___TAB___ &kp TAB
 #define __LSHFT__ &kp LSHIFT
@@ -50,11 +75,37 @@
 #define ___DOT___ &kp KP_DOT
 #define ___FSLH__ &kp FSLH   //   /
 #define __MINUS__ &kp FSLH   //   -
-
+#define ___SPC___ &kp SPACE
 
 // LAYER taps
 #define _NAVREP__ &lt NAV &key_repeat
 #define _NUMSPC__ &lt NUM SPACE
+
+
+#define __ALTAB__ &mt LALT o_TABR_
+#define __REDO___ &kp LC(Y)
+#define __UNDO___ &kp LC(Z)
+#define ___CUT___ &kp LC(X)
+#define __COPY___ &kp LC(C)
+#define __PASTE__ &kp LC(V)
+
+
+
+
+#define __LEFT___ &kp LEFT_ARROW
+#define __DOWN___ &kp DOWN_ARROW
+#define ___UP____ &kp UP_ARROW
+#define __RIGHT__ &kp RIGHT_ARROW
+#define __INSRT__ &kp INSERT
+#define ___INI___ &kp HOME
+#define ___END___ &kp END
+#define __PGUP___ &kp PAGE_UP
+#define __PGDN___ &kp PAGE_DOWN
+
+
+
+
+
 
 
 #define o_TABL_ &kp LS(LG(LEFT_BRACKET))
