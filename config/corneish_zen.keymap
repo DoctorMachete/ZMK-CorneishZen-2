@@ -80,12 +80,13 @@
 //     _________ _________ _________ _________ _________ ___TEMP__                         _________ _________ _________ _________ _________ _________
 //                                             X_______X X_______X X_______X     ___TEMP__ __BKSPC__ __ENTER__
 //                        >;};
-                nav_layer { label = "NAV"; bindings = <
-     ___TEMP__ ___TEMP__ ___TEMP__ ___TEMP__ ___TEMP__ ___TEMP__                         ___TEMP__ ___TEMP__ ___TEMP__ ___TEMP__ ___TEMP__ ___TEMP__
-     ___TEMP__ ___TEMP__ ___TEMP__ ___TEMP__ ___TEMP__ ___TEMP__                         ___TEMP__ ___TEMP__ ___TEMP__ ___TEMP__ ___TEMP__ ___TEMP__
-     ___TEMP__ ___TEMP__ ___TEMP__ ___TEMP__ ___TEMP__ ___TEMP__                         _________ _________ ___TEMP__ ___TEMP__ ___TEMP__ _________
-                                             ___TEMP__ ___TEMP__ ___TEMP__     X_______X X_______X X_______X
+                navigation_layer { label = "NAV"; bindings = <
+     ___TAB___ _________ ___CUT___ __COPY___ __PASTE__ __BKSPC__                         __INSRT__ ___INI___ __PGUP___ __PGDN___ ___END___ _________
+     __REDO___ __UNDO___ ___LALT__ __LSHFT__ __LCTRL__ ___TEMP__                         _________ __LEFT___ __DOWN___ ___UP____ __RIGHT__ _________
+     _________ _________ _________ _________ _________ ___TEMP__                         _________ _________ _________ _________ _________ _________
+                                             X_______X X_______X X_______X     ___TEMP__ __BKSPC__ __ENTER__
                         >;};
+
 
 
 
