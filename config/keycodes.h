@@ -82,7 +82,7 @@
 #define _NUMSPC__ &lt NUM SPACE
 
 
-//#define __ALTAB__ &mt LALT TAB
+#define __ALTAB__ &mt LALT TAB
 //#define __REDO___ &kp LC(Y)
 //#define __UNDO___ &kp LC(Z)
 //#define ___CUT___ &kp LC(X)
