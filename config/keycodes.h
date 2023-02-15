@@ -41,7 +41,8 @@
 #define ____0____ &kp NUMBER_0
 
 #define _PERCENT_ &kp LS(5)
-#define __FSLASH_ &kp LS(7)
+#define __FSLASH_ &kp LS(7)      //  /
+#define __BSLASH_ &kp RA(GRAVE)  //  \
 #define _ASTRSK__ &kp LS(PLUS)
 //#define _MULTDIV_ &kp 
 #define _EXCLAM__ &kp LS(1) // !
@@ -72,9 +73,16 @@
 #define ___ESC___ &kp ESC
 #define __COMMA__ &kp KP_COMMA
 #define ___DOT___ &kp KP_DOT
-#define ___FSLH__ &kp FSLH   //   /
 #define __MINUS__ &kp FSLH   //   -
 #define ___SPC___ &kp SPACE
+#define ___SPC___ &kp SPACE
+
+#define __QUOT___ &kp MINUS   //  '
+#define __DQUOT__ &kp LS(2)   //  "
+#define ___GRV___ &kp RA(GRAVE)   //  `
+#define __ACUTE__ &kp LS(LEFT_BRACKET)   //  ^
+#define _ORDINAL_ &kp GRAVE   //  º
+#d
 
 // LAYER taps
 #define _NAVREP__ &lt NAV &key_repeat
@@ -82,6 +90,7 @@
 
 
 #define __ALTAB__ &mt LALT TAB
+
 
 
 
