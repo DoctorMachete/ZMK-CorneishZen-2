@@ -75,13 +75,12 @@
 #define ___DOT___ &kp KP_DOT
 #define __MINUS__ &kp FSLH   //   -
 #define ___SPC___ &kp SPACE
-#define ___SPC___ &kp SPACE
 
 #define __QUOT___ &kp MINUS   //  '
-//#define __DQUOT__ &kp LS(2)   //  "
-//#define ___GRV___ &kp RA(GRAVE)   //  `
-//#define __ACUTE__ &kp LS(LEFT_BRACKET)   //  ^
-//#define _ORDINAL_ &kp GRAVE   //  º
+#define __DQUOT__ &kp LS(2)   //  "
+#define ___GRV___ &kp RA(GRAVE)   //  `
+#define __ACUTE__ &kp LS(LEFT_BRACKET)   //  ^
+#define _ORDINAL_ &kp GRAVE   //  º
 
 
 // LAYER TAPS
