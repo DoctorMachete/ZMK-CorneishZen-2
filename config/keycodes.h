@@ -44,13 +44,17 @@
 #define __LWIN___ &kp LEFT_WIN
 #define __RWIN___ &kp RIGHT_WIN
 #define __MENU___ &kp K_CONTEXT_MENU
-#define __REPEAT_ &kp key_repeat
+//#define __REPEAT_ &key_repeat
 #define ___ESC___ &kp ESC
 #define __COMMA__ &kp KP_COMMA
 #define ___DOT___ &kp KP_DOT
 #define ___FSLH__ &kp FSLH   //   /
 #define __MINUS__ &kp FSLH   //   -
 
+
+// LAYER taps
+#define _NAVREP__ &lt NAV &key_repeat
+#define _NUMSPC__ &lt NUM SPACE
 
 
 #define o_TABL_ &kp LS(LG(LEFT_BRACKET))
