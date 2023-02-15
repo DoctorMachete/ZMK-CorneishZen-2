@@ -47,7 +47,7 @@
 //#define _MULTDIV_ &kp 
 #define _EXCLAM__ &kp LS(NUMBER_1) // !
 #define ___PLUS__ &kp RIGHT_BRACKET
-#define __MINUS__ &kp SLASH
+#define __MINUS__ &kp SLASH   //   -
 #define __EQUAL__ &kp LS(NUMBER_0)
 #define ___EUR___ &kp RC(NUMBER_5)
 //#define _APPROX__ &kp   // ~ ±
@@ -73,7 +73,6 @@
 #define ___ESC___ &kp ESC
 #define __COMMA__ &kp COMMA
 #define ___DOT___ &kp DOT
-#define __MINUS__ &kp FSLH   //   -
 #define ___SPC___ &kp SPACE
 
 //#define __QUEST__ &kp MINUS   //  ?''''''''^????K???K???????
