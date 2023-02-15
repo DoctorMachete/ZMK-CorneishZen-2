@@ -78,8 +78,8 @@
 #define ___SPC___ &kp SPACE
 
 // LAYER taps
-//#define _NAVREP__ &lt NAV &key_repeat
-//#define _NUMSPC__ &lt NUM SPACE
+#define _NAVREP__ &lt NAV &key_repeat
+#define _NUMSPC__ &lt NUM SPACE
 
 
 //#define __ALTAB__ &mt LALT TAB
