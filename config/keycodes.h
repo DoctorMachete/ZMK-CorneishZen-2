@@ -41,7 +41,7 @@
 #define ____0____ &kp NUMBER_0
 
 #define _PERCENT_ &kp LS(NUMBER_5)
-#define __FSLASH_ &kp LS(NUMBER_7)      //  /
+#define __SLASH__ &kp LS(NUMBER_7)      //  /
 #define __BSLASH_ &kp RA(GRAVE)  //  \
 #define _ASTRSK__ &kp LS(PLUS)
 //#define _MULTDIV_ &kp 
