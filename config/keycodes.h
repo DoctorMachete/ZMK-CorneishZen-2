@@ -106,3 +106,4 @@
 
 
 
+#define __BOOTL__ &bootloader
