@@ -79,7 +79,6 @@
 
 
 #define __QUEST__ &kp LS(MINUS)         //  ?
-//#define _OQUEST__ &kp LS(EQUAL)         //  ¿
 #define _OQUEST__ &kp LS(PLUS)         //  ¿
 #define __QUOT___ &kp MINUS             //  '
 #define __DQUOT__ &kp LS(NUMBER_2)      //  "
@@ -93,8 +92,8 @@
 
 
 #define __ALTAB__ &mt LALT TAB
-#define __TEST1__ &td0
-#define __TEST2__ &td0
+#define __TEST1__ &accent
+#define __TEST2__ &mm_question
 
 
 

@@ -42,7 +42,16 @@
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
+              };              
+              mm_question: mod_morph_close_open_question {
+                compatible = "zmk,behavior-mod-morph";
+                label = "MOD_MORPH_CLOSE_OPEN_QUESTION";
+                #binding-cells = <0>;
+                bindings = <&LS(PLUS)>, <&LS(MINUS)>;
+                mods = <(MOD_LSFT|MOD_RSFT)>;
+                masked_mods = <(MOD_LSFT|MOD_RSFT)>;
               };
+
           };
           macros {
             #include "macros.dtsi"
