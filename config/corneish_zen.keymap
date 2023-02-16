@@ -31,14 +31,14 @@
 
           };
           behaviors {
-            mm_quote_accent: mm_quote_accent {
+            mm_quote_accent: mm_quote_accent {        // ' `
               compatible = "zmk,behavior-mod-morph";
               label = "MM_QUOTE_ACCENT";
               #binding-cells = <0>;
               bindings = <&kp KC_QUOT>, <&macro_accent>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
-            mm_dquote_acute: mm_dquote_acute {
+            mm_dquote_acute: mm_dquote_acute {        // " ^
               compatible = "zmk,behavior-mod-morph";
               label = "MM_DQUOTE_ACUTE";
               #binding-cells = <0>;
@@ -46,20 +46,11 @@
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
 
-            ht_quotes_accent_NUEVO: ht_quotes_accent_NUEVO {
-            compatible = "zmk,behavior-hold-tap";
-              label = "HT_QUOTES_ACCENT_NUEVO";
-              #binding-cells = <2>;
-             tapping-term-ms = <500>;
-              quick-tap-ms = <0>;
-              flavor = "tap-preferred";
-              bindings = <&kp>, <&kp>;
-            };
-            ht_quotes_accent: ht_quotes_accent {
+            ht_quotes_accent: ht_quotes_accent {      //  ' ` ' ^/ 
             compatible = "zmk,behavior-hold-tap";
               label = "HT_QUOTES_ACCENT";
               #binding-cells = <2>;
-             tapping-term-ms = <500>;
+             tapping-term-ms = <300>;
               quick-tap-ms = <0>;
               flavor = "tap-preferred";
               bindings = <&mm_dquote_acute>, <&mm_quote_accent>;
@@ -80,8 +71,8 @@
 //  ║  TAB    │    Q    │    W    │    F    │    P    │    B    ║                       ║    J    │    L    │    U    │    Y    │    ¿    │         ║
 //  ║         │         │         │         │         │         ║                       ║         │         │         │         │    ?    │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢                       ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
-//  ║  */ /*  │    A    │    R    │    S    │    T    │    G    ║                       ║    M    │    N    │    E    │    I    │    O    │   " ^   ║
-//  ║   / \   │         │         │         │         │         ║                       ║         │         │         │         │         │   ' `   ║
+//  ║  */ /*  │    A    │    R    │    S    │    T    │    G    ║                       ║    M    │    N    │    E    │    I    │    O    │   ` ^   ║
+//  ║   / \   │         │         │         │         │         ║                       ║         │         │         │         │         │   ' "   ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
 //  ║  CTRL   │    Z    │    X    │    C    │    D    │    V    ║                       ║    K    │    H    │   , ;   │   . :   │  - _    │  CTRL   ║
 //  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │         ║
