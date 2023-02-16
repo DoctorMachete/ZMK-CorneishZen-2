@@ -28,7 +28,15 @@
           };
           macros {
                 #include "macros.dtsi"
+
+                #define __TEST1__ &mm_quote_accent
+                #define __TEST2__ &mm_dquote_acute
+                #define __TEST3__ &ht_quotes_accent
           };
+
+
+
+
           behaviors {
             mm_quote_accent: mm_quote_accent {
               compatible = "zmk,behavior-mod-morph";
@@ -52,14 +60,14 @@
               tapping-term-ms = <500>;
               quick-tap-ms = <0>;
               flavor = "tap-preferred";
-              bindings = <&mm_quote_accent>, <&mm_dquote_acute>;
+              bindings = <&mm_quote_accent>, <&mm_abrackets>;
             };
 
           };
 
          
         keymap {
-                compatible = "zmk,keymap";  h
+                compatible = "zmk,keymap";
 
 
 
