@@ -9,10 +9,18 @@ repeat_macro: repeat_macro {
         ;
 };
 macro_accent: macro_accent {                    //  ` → ^ (with shift)
-    label = "accent_macro";
+    label = "macro_accent";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
         = <&macro_tap &kp LEFT_BRACKET &kp SPACE>
+        ;
+};
+macro_acute: macro_acute {                    //  ^ (with shift)
+    label = "macro_acute";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&macro_tap &kp LS(LEFT_BRACKET) &kp SPACE>
         ;
 };

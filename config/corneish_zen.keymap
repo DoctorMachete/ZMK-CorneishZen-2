@@ -37,7 +37,13 @@
               bindings = <&kp KC_QUOT>, <&macro_accent>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
-
+            mm_dquote_acute: mm_quote_accent {
+              compatible = "zmk,behavior-mod-morph";
+              label = "MM_DQUOTE_ACUTE";
+              #binding-cells = <0>;
+              bindings = <&kp KC_DQUOT>, <&macro_acute>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
           };
 
          
@@ -56,7 +62,7 @@
 //  ║  */ /*  │    A    │    R    │    S    │    T    │    G    ║                       ║    M    │    N    │    E    │    I    │    O    │   " ^   ║
 //  ║   / \   │         │         │         │         │         ║                       ║         │         │         │         │         │   ' `   ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
-//  ║  CTRL   │    Z    │    V    │    C    │  TEST1  │  TEST2  ║                       ║    K    │    H    │   , ;   │   . :   │  - _    │  CTRL   ║
+//  ║  CTRL   │    Z    │  TEST1  │  TEST2  │  TEST3  │    V    ║                       ║    K    │    H    │   , ;   │   . :   │  - _    │  CTRL   ║
 //  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │         ║
 //  ╚═════════╧═════════╧═══════════════════╬─────────┼─────────╬═════════╗   ╔═════════╬─────────┼─────────╬═══════════════════╧═════════╧═════════╝
 //                                          ║   RPT   │  SHIFT  │   NAV   ║   ║   NUM   │ BCKSPC  │  ENTER  ║
@@ -65,7 +71,7 @@
                 default_layer { label = "COLEMAK"; bindings = <
      ___TAB___ ____Q____ ____W____ ____F____ ____P____ ____B____                         ____Y____ ____L____ ____U____ ____Y____ __QUEST__ _________
      __SLASH__ ____A____ ____R____ ____S____ ____T____ ____G____                         ____M____ ____N____ ____E____ ____I____ ____O____ __QUOT___
-     __LCTRL__ ____Z____ ____X____ ____C____ __TEST1__ __TEST2__                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ __RCTRL__
+     __LCTRL__ ____Z____ __TEST1__ __TEST2__ __TEST3__ ____V____                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ __RCTRL__
                                              _________ __LSHFT__ _NAVREP__     _NUMSPC__ __BKSPC__ __ENTER__
                         >;};
 
