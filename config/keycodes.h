@@ -93,8 +93,8 @@
 
 
 #define __ALTAB__ &mt LALT TAB
-#define ___TEST__ &td0
-
+#define __TEST1__ &td0
+#define __TEST2__ &repeat_macro
 
 
 
