@@ -88,7 +88,7 @@
 
 
 // LAYER TAPS
-#define _NAVREP__ &lt NAV &test
+#define _NAVREP__ &lt NAV &key_repeat
 #define _NUMSPC__ &lt NUM SPACE
 
 

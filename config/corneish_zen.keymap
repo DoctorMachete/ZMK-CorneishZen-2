@@ -26,20 +26,9 @@
          combos {
                 #include "combos.dtsi"
          };
-        macros {
-            test: test_key_repeat {
-                label = "ZM_zed_em_kay";
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings
-                    = <&macro_press &key_repeat>
-                    ;
-            };
         keymap {
                 compatible = "zmk,keymap";
 
-
-    };
 
 
 //  Base Layer: COLEMAK
