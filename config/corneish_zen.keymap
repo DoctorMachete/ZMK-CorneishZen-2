@@ -46,15 +46,15 @@
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
 
-  //          ht_quotes_accent: ht_quotes_accent {
-  //            compatible = "zmk,behavior-hold-tap";
-  //            label = "HT_QUOTES_ACCENT";
-  //            #binding-cells = <2>;
- //            tapping-term-ms = <500>;
- //             quick-tap-ms = <0>;
- //             flavor = "tap-preferred";
-//              bindings = <&mm_quote_accent>, <&mm_abrackets>;
-//            };
+            ht_quotes_accent: ht_quotes_accent {
+            compatible = "zmk,behavior-hold-tap";
+              label = "HT_QUOTES_ACCENT";
+              #binding-cells = <2>;
+             tapping-term-ms = <500>;
+              quick-tap-ms = <0>;
+              flavor = "tap-preferred";
+              bindings = <&mm_quote_accent>, <&mm_abrackets>;
+            };
 
           };
 
@@ -74,7 +74,7 @@
 //  ║  */ /*  │    A    │    R    │    S    │    T    │    G    ║                       ║    M    │    N    │    E    │    I    │    O    │   " ^   ║
 //  ║   / \   │         │         │         │         │         ║                       ║         │         │         │         │         │   ' `   ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
-//  ║  CTRL   │    Z    │  TEST1  │  TEST2  │  TEST3  │    V    ║                       ║    K    │    H    │   , ;   │   . :   │  - _    │  CTRL   ║
+//  ║  CTRL   │    Z    │    X    │    C    │    D    │    V    ║                       ║    K    │    H    │   , ;   │   . :   │  - _    │  CTRL   ║
 //  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │         ║
 //  ╚═════════╧═════════╧═══════════════════╬─────────┼─────────╬═════════╗   ╔═════════╬─────────┼─────────╬═══════════════════╧═════════╧═════════╝
 //                                          ║   RPT   │  SHIFT  │   NAV   ║   ║   NUM   │ BCKSPC  │  ENTER  ║
@@ -83,7 +83,7 @@
                 default_layer { label = "COLEMAK"; bindings = <
      ___TAB___ ____Q____ ____W____ ____F____ ____P____ ____B____                         ____Y____ ____L____ ____U____ ____Y____ __QUEST__ _________
      __SLASH__ ____A____ ____R____ ____S____ ____T____ ____G____                         ____M____ ____N____ ____E____ ____I____ ____O____ __QUOT___
-     __LCTRL__ __TEST1__ ____X____ __TEST2__ ____D____ ____V____                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ __RCTRL__
+     __LCTRL__ __TEST1__ ____X____ __TEST2__ ____D____ __TEST3__                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ __RCTRL__
                                              _________ __LSHFT__ _NAVREP__     _NUMSPC__ __BKSPC__ __ENTER__
                         >;};
 
