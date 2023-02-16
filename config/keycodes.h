@@ -27,7 +27,7 @@
 #define ____V____ &kp V
 #define ____W____ &kp W
 #define ____X____ &kp X
-#define ____Y____ &kp W
+#define ____Y____ &kp Y
 #define ____Z____ &kp Z
 #define ____1____ &kp NUMBER_1
 #define ____2____ &kp NUMBER_2
@@ -43,7 +43,7 @@
 #define _PERCENT_ &kp LS(NUMBER_5)
 #define __SLASH__ &kp LS(NUMBER_7)      //  /
 #define __BSLASH_ &kp RA(GRAVE)         //  
-#define _ASTRSK__ &kp LS(PLUS)          // *
+#define _ASTRSK__ &kp LS(RIGHT_BRACKET) // *
 //#define _MULTDIV_ &kp 
 #define _EXCLAM__ &kp LS(NUMBER_1)      // !
 #define _OEXCLAM_ &kp EQUAL             // ¡
@@ -77,7 +77,8 @@
 #define ___SPC___ &kp SPACE
 
 #define __QUEST__ &kp LS(MINUS)         //  ?
-#define _OQUEST__ &kp LS(EQUAL)         //  ¿
+//#define _OQUEST__ &kp LS(EQUAL)         //  ¿
+#define _OQUEST__ &kp LS(PLUS)         //  ¿
 #define __QUOT___ &kp MINUS             //  '
 #define __DQUOT__ &kp LS(NUMBER_2)      //  "
 #define __ACUTE__ &kp LS(LEFT_BRACKET)  //  ^ → SPC   macro is needed
