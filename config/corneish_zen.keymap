@@ -26,20 +26,22 @@
          combos {
                 #include "combos.dtsi"
          };
+
+          macros {
+              repeat_macro: repeat_macro {
+                  label = "repeat_macro";
+                  compatible = "zmk,behavior-macro";
+                  #binding-cells = <0>;
+                  bindings
+                      = <&macro_tap &key_repeat>
+                      ;
+              };
+          };
+         
         keymap {
                 compatible = "zmk,keymap";
 
-    macros {
-        repeat_macro: repeat_macro {
-            label = "repeat_macro";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&key_repeat>
-                
-                ;
-        };
-    };
+
 
 
 //  Base Layer: COLEMAK
