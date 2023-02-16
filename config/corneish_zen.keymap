@@ -29,11 +29,8 @@
           macros {
                 #include "macros.dtsi"
           };
-          behaviors {
-
-
-
-          };
+         // behaviors {
+        //  };
 
          
         keymap {
