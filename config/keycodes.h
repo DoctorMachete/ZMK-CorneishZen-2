@@ -93,7 +93,7 @@
 
 
 #define __ALTAB__ &mt LALT TAB
-#define ___TEST__ &mt LALT TAB
+#define ___TEST__ &td0
 
 
 
