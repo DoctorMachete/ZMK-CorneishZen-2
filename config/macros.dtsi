@@ -21,7 +21,7 @@ macro_acute: macro_acute {                    //  ^ (with shift)
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
-        = <&macro_tap &kp LS(LEFT_BRACKET) &kp SPACE>
+        = <&macro_tap &kp KC_ACUTE &kp SPACE>
         ;
 };
 
@@ -30,7 +30,7 @@ macro_ini_comment: macro_ini_comment {                    //  ^ (with shift)
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
-        = <&macro_tap &kp LS(LEFT_BRACKET) &kp SPACE>
+        = <&macro_tap &kp KC_SLASH &kp KC_ASTRSK>
         ;
 };
 macro_end_comment: macro_end_comment {                    //  ^ (with shift)
@@ -38,6 +38,6 @@ macro_end_comment: macro_end_comment {                    //  ^ (with shift)
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
-        = <&macro_tap &kp LS(LEFT_BRACKET) &kp SPACE>
+        = <&macro_tap &kp KC_ASTRSK &kp KC_SLASH>
         ;
 };

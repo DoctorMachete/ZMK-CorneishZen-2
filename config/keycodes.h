@@ -93,7 +93,7 @@
 #define KC_OQUEST LS(PLUS)              //  ¿
 #define _OQUEST__ &kp KC_OQUEST         //  ¿
 #define KC_QUOT   MINUS                 //  '
-#define __QUOT___&&ht_quotes_accent 0 0 //  ' `' `
+#define __QUOT__  &ht_quotes_accent 0 0 //  ' `' `
 #define KC_DQUOT  LS(NUMBER_2)      //  "
 #define __DQUOT__ &kp KC_DQUOT      //  "
 #define KC_ACUTE  LS(LEFT_BRACKET)  //  ^ → SPC   macro is needed
@@ -129,7 +129,7 @@
 
 #define __TEST1__ &ht_quotes_accent 0 0
 #define __TEST2__ &mm_dquote_acute
-#define __TEST3__ &ht_quotes_accent 0 0
+#define __TEST3__ &ht_slash_comments 0 0
 
 
 #define __BOOTL__ &bootloader
