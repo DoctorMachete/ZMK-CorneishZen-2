@@ -116,7 +116,7 @@
 #define __PGDN___ &kp PAGE_DOWN
 
 
-#define __TEST1__ &ht_quotes_accent_NUEVO 
+#define __TEST1__ &ht_quotes_accent 0 0
 #define __TEST2__ &mm_dquote_acute
 #define __TEST3__ &ht_quotes_accent 0 0
 
