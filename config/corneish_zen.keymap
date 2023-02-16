@@ -35,7 +35,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap  &key_repeat>
+                = <&key_repeat>
                 
                 ;
         };
