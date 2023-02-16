@@ -97,7 +97,7 @@
 
 #define __ALTAB__ &mt LALT TAB
 #define __TEST1__ &macro_accent
-#define __TEST2__ &macro_accent
+#define __TEST2__ &mm_quote_accent
 
 
 
