@@ -52,7 +52,7 @@
               tapping-term-ms = <500>;
               quick-tap-ms = <0>;
               flavor = "tap-preferred";
-              bindings = <&mm_quote_accent>, <&mm_dquote_acute>;
+              bindings = <&mm_dquote_acute>, <&mm_quote_accent>;
             };
 
           };
