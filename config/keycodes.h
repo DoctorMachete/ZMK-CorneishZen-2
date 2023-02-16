@@ -77,14 +77,18 @@
 #define ___SPC___ &kp SPACE
 #define ___RPT___ &key_repeat
 
-
-#define __QUEST__ &kp LS(MINUS)         //  ?
-#define _OQUEST__ &kp LS(PLUS)         //  ¿
-#define __QUOT___ &kp MINUS             //  '
-#define __DQUOT__ &kp LS(NUMBER_2)      //  "
-#define __ACUTE__ &kp LS(LEFT_BRACKET)  //  ^ → SPC   macro is needed
-#define _ORDINAL_ &kp GRAVE             //  º
-
+#define KC_QUEST LS(MINUS)              //  ?
+#define __QUEST__ &kp KC_QUEST          //  ?
+#define KC_OQUEST LS(PLUS)              //  ¿
+#define _OQUEST__ &kp KC_OQUEST         //  ¿
+#define KC_QUOT   MINUS                 //  '
+#define __QUOT___ &kp KC_QUOT           //  '
+#define KC_DQUOT  LS(NUMBER_2)      //  "
+#define __DQUOT__ &kp KC_DQUOT      //  "
+#define KC_ACUTE  LS(LEFT_BRACKET)  //  ^ → SPC   macro is needed
+#define __ACUTE__ &kp KC_ACUTE  //  ^ → SPC   macro is needed
+#define KC_ORDINAL GRAVE             //  º
+#define _ORDINAL_ &kp KC_ORDINAL             //  º
 
 // LAYER TAPS
 #define _NAVREP__ &lt NAV &repeat_macro
@@ -92,8 +96,8 @@
 
 
 #define __ALTAB__ &mt LALT TAB
-#define __TEST1__ &accent_macro
-//#define __TEST2__ &mm_question
+#define __TEST1__ &macro_accent
+#define __TEST2__ &macro_accent
 
 
 

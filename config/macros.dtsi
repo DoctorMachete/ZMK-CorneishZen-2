@@ -8,7 +8,7 @@ repeat_macro: repeat_macro {
         = <&macro_tap  &key_repeat>
         ;
 };
-accent_macro: accent_macro {
+macro_accent: macro_accent {                    //  ` → ^ (with shift)
     label = "accent_macro";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
