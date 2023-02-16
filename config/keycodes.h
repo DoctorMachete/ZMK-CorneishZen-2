@@ -50,7 +50,7 @@
 #define ___PLUS__ &kp RIGHT_BRACKET     // +
 #define __MINUS__ &kp SLASH             // -
 #define __EQUAL__ &kp LS(NUMBER_0)
-#define ___EUR___ &kp RC(NUMBER_5)
+#define ___EUR___ &kp RA(NUMBER_5)
 //#define _APPROX__ &kp                 // ~ ±
 #define __UNDSC__ &kp LS(SLASH)
 //#define _LSSEQUL_ &kp 
@@ -75,6 +75,8 @@
 #define __COMMA__ &kp COMMA
 #define ___DOT___ &kp DOT
 #define ___SPC___ &kp SPACE
+#define ___RPT___ &kp &key_repeat
+
 
 #define __QUEST__ &kp LS(MINUS)         //  ?
 //#define _OQUEST__ &kp LS(EQUAL)         //  ¿
