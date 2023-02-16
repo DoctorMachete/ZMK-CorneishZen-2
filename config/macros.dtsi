@@ -8,11 +8,11 @@ repeat_macro: repeat_macro {
         = <&macro_tap  &key_repeat>
         ;
 };
-accent: repeat_macro {
+accent_macro: accent_macro {
     label = "accent_macro";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
-        = <&LEFT_BRACKET  &SPACE>
+        = <&macro_tap &kp LEFT_BRACKET &kp SPACE>
         ;
 };
