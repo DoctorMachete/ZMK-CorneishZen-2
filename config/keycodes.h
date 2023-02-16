@@ -117,7 +117,7 @@
 
 
 #define __TEST1__ &mm_quote_accent
-//#define __TEST2__ &mm_dquote_acute
+#define __TEST2__ &mm_dquote_acute
 //#define __TEST3__ &ht_quotes_accent
 
 
