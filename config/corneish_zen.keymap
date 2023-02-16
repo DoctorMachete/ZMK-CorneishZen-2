@@ -29,14 +29,7 @@
           macros {
                 #include "macros.dtsi"
 
-                #define __TEST1__ &mm_quote_accent
-                #define __TEST2__ &mm_dquote_acute
-                #define __TEST3__ &ht_quotes_accent
           };
-
-
-
-
           behaviors {
             mm_quote_accent: mm_quote_accent {
               compatible = "zmk,behavior-mod-morph";
@@ -62,7 +55,9 @@
               flavor = "tap-preferred";
               bindings = <&mm_quote_accent>, <&mm_abrackets>;
             };
-
+            #define __TEST1__ &mm_quote_accent
+            #define __TEST2__ &mm_dquote_acute
+            #define __TEST3__ &ht_quotes_accent
           };
 
          
