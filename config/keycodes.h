@@ -31,7 +31,7 @@
 #define ____Z____ &kp Z
 #define ____1____ &kp NUMBER_1
 #define ____2____ &kp NUMBER_2
-#define ____3____ &kp NUMBER_4
+#define ____3____ &kp NUMBER_3
 #define ____4____ &kp NUMBER_4
 #define ____5____ &kp NUMBER_5
 #define ____6____ &kp NUMBER_6
@@ -75,7 +75,7 @@
 #define __COMMA__ &kp COMMA
 #define ___DOT___ &kp DOT
 #define ___SPC___ &kp SPACE
-#define ___RPT___ &kp &key_repeat
+#define ___RPT___ &key_repeat
 
 
 #define __QUEST__ &kp LS(MINUS)         //  ?
@@ -88,12 +88,12 @@
 
 
 // LAYER TAPS
-#define _NAVREP__ &lt NAV &key_repeat
+#define _NAVREP__ &lt NAV &test
 #define _NUMSPC__ &lt NUM SPACE
 
 
 #define __ALTAB__ &mt LALT TAB
-
+#define ___TEST__ &mt LALT TAB
 
 
 

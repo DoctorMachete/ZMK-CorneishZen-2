@@ -26,9 +26,20 @@
          combos {
                 #include "combos.dtsi"
          };
+        macros {
+            test: test_key_repeat {
+                label = "ZM_zed_em_kay";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &key_repeat>
+                    ;
+            };
         keymap {
                 compatible = "zmk,keymap";
 
+
+    };
 
 
 //  Base Layer: COLEMAK
@@ -43,7 +54,7 @@
 //  ║  CTRL   │    Z    │    V    │    C    │    D    │    V    ║                       ║    K    │    H    │   , ;   │   . :   │  - _    │  CTRL   ║
 //  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │         ║
 //  ╚═════════╧═════════╧═══════════════════╬─────────┼─────────╬═════════╗   ╔═════════╬─────────┼─────────╬═══════════════════╧═════════╧═════════╝
-//                                          ║   ALT   │  SHIFT  │   NAV   ║   ║   NUM   │ BCKSPC  │  ENTER  ║
+//                                          ║   RPT   │  SHIFT  │   NAV   ║   ║   NUM   │ BCKSPC  │  ENTER  ║
 //                                          ║         │         │   REP   ║   ║   SPC   │         │         ║
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
                 default_layer { label = "COLEMAK"; bindings = <
