@@ -37,13 +37,24 @@
               bindings = <&kp KC_QUOT>, <&macro_accent>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
-            mm_dquote_acute: mm_quote_accent {
+            mm_dquote_acute: mm_dquote_acute {
               compatible = "zmk,behavior-mod-morph";
               label = "MM_DQUOTE_ACUTE";
               #binding-cells = <0>;
               bindings = <&kp KC_DQUOT>, <&macro_acute>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
+
+            ht_quotes_accent: ht_quotes_accent {
+              compatible = "zmk,behavior-hold-tap";
+              label = "HT_QUOTES_ACCENT";
+              #binding-cells = <2>;
+              tapping-term-ms = <500>;
+              quick-tap-ms = <0>;
+              flavor = "tap-preferred";
+              bindings = <&mm_quote_accent>, <&mm_dquote_acute>;
+            };
+
           };
 
          
