@@ -42,15 +42,16 @@
 
 #define _PERCENT_ &kp LS(NUMBER_5)
 #define __SLASH__ &kp LS(NUMBER_7)      //  /
-#define __BSLASH_ &kp RA(GRAVE)  //  
-#define _ASTRSK__ &kp LS(PLUS)
+#define __BSLASH_ &kp RA(GRAVE)         //  
+#define _ASTRSK__ &kp LS(PLUS)          // *
 //#define _MULTDIV_ &kp 
-#define _EXCLAM__ &kp LS(NUMBER_1) // !
-#define ___PLUS__ &kp RIGHT_BRACKET
-#define __MINUS__ &kp SLASH   //   -
+#define _EXCLAM__ &kp LS(NUMBER_1)      // !
+#define _OEXCLAM_ &kp EQUAL             // ¡
+#define ___PLUS__ &kp RIGHT_BRACKET     // +
+#define __MINUS__ &kp SLASH             // -
 #define __EQUAL__ &kp LS(NUMBER_0)
 #define ___EUR___ &kp RC(NUMBER_5)
-//#define _APPROX__ &kp   // ~ ±
+//#define _APPROX__ &kp                 // ~ ±
 #define __UNDSC__ &kp LS(SLASH)
 //#define _LSSEQUL_ &kp 
 
@@ -75,11 +76,12 @@
 #define ___DOT___ &kp DOT
 #define ___SPC___ &kp SPACE
 
-//#define __QUEST__ &kp MINUS   //  ?''''''''^????K???K???????
-#define __QUOT___ &kp MINUS   //  '
-#define __DQUOT__ &kp LS(NUMBER_2)   //  "
-#define __ACUTE__ &kp LS(LEFT_BRACKET)   //  ^ → SPC   macro is needed
-#define _ORDINAL_ &kp GRAVE   //  º
+#define __QUEST__ &kp LS(MINUS)         //  ?
+#define _OQUEST__ &kp LS(EQUAL)         //  ¿
+#define __QUOT___ &kp MINUS             //  '
+#define __DQUOT__ &kp LS(NUMBER_2)      //  "
+#define __ACUTE__ &kp LS(LEFT_BRACKET)  //  ^ → SPC   macro is needed
+#define _ORDINAL_ &kp GRAVE             //  º
 
 
 // LAYER TAPS
