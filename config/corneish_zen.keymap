@@ -34,16 +34,18 @@
                   tapping-term-ms = <200>;
                   bindings = <&lt NAV &key_repeat>;
               };
+              lk: linger_keys {
+                compatible = "zmk,behavior-hold-tap";
+                label = "LINGER_KEYS";
+                #binding-cells = <2>;
+                tapping-term-ms = <500>;
+                quick-tap-ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+              };
           };
           macros {
-              repeat_macro: repeat_macro {
-                  label = "repeat_macro";
-                  compatible = "zmk,behavior-macro";
-                  #binding-cells = <0>;
-                  bindings
-                      = <&macro_tap  &key_repeat>
-                      ;
-              };
+            #include "macros.dtsi"
           };
          
         keymap {

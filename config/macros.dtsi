@@ -1,0 +1,10 @@
+#include "keycodes.h"
+
+repeat_macro: repeat_macro {
+    label = "repeat_macro";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&macro_tap  &key_repeat>
+        ;
+};
