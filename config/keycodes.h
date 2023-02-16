@@ -40,30 +40,19 @@
 #define ____9____ &kp NUMBER_9
 #define ____0____ &kp NUMBER_0
 
-#define KC_PERCENT LS(NUMBER_5)     //  %
-#define _PERCENT_ &kp KC_PERCENT    //  %
-#define KC_SLASH  LS(NUMBER_7)      //  /
-#define __SLASH__ &kp KC_SLASH      //  /
-#define KC_BSLASH RA(GRAVE)          
-#define __BSLASH_ &kp KC_BSLASH           
-#define KC_ASTRSK LS(RIGHT_BRACKET) // *
-#define _ASTRSK__ &kp KC_ASTRSK     // *
+#define _PERCENT_ &kp LS(NUMBER_5)
+#define __SLASH__ &kp LS(NUMBER_7)      //  /
+#define __BSLASH_ &kp RA(GRAVE)         //  
+#define _ASTRSK__ &kp LS(RIGHT_BRACKET) // *
 //#define _MULTDIV_ &kp 
-#define KC_EXCLAM LS(NUMBER_1)      // !
-#define _EXCLAM__ &kp KC_EXCLAM      // !
-#define KC_OEXCLAM EQUAL             // ¡
-#define _OEXCLAM_ &kp KC_OEXCLAM             // ¡
-#define KC_PLUS   RIGHT_BRACKET     // +
-#define ___PLUS__ &kp KC_PLUS     // +
-#define KC_MINUS  SLASH             // -
-#define __MINUS__ &kp KC_MINUS             // -
-#define KC_EQUAL  LS(NUMBER_0)
-#define __EQUAL__ &kp KC_EQUAL
-#define KC_EUR    RA(NUMBER_5)
-#define ___EUR___ &kp KC_EUR
+#define _EXCLAM__ &kp LS(NUMBER_1)      // !
+#define _OEXCLAM_ &kp EQUAL             // ¡
+#define ___PLUS__ &kp RIGHT_BRACKET     // +
+#define __MINUS__ &kp SLASH             // -
+#define __EQUAL__ &kp LS(NUMBER_0)
+#define ___EUR___ &kp RA(NUMBER_5)
 //#define _APPROX__ &kp                 // ~ ±
-#define KC_UNDSC  LS(SLASH)
-#define __UNDSC__ &kp KC_UNDSC 
+#define __UNDSC__ &kp LS(SLASH)
 //#define _LSSEQUL_ &kp 
 
 
@@ -93,7 +82,7 @@
 #define KC_OQUEST LS(PLUS)              //  ¿
 #define _OQUEST__ &kp KC_OQUEST         //  ¿
 #define KC_QUOT   MINUS                 //  '
-#define __QUOT__  &ht_quotes_accent 0 0 //  ' `' `
+#define __QUOT___ &kp KC_QUOT           //  '
 #define KC_DQUOT  LS(NUMBER_2)      //  "
 #define __DQUOT__ &kp KC_DQUOT      //  "
 #define KC_ACUTE  LS(LEFT_BRACKET)  //  ^ → SPC   macro is needed
@@ -127,9 +116,9 @@
 #define __PGDN___ &kp PAGE_DOWN
 
 
-#define __TEST1__ &ht_quotes_accent 0 0
-//#define __TEST2__ &mm_dquote_acute
-//#define __TEST3__ &ht_quotes_accent 0 0
+#define __TEST1__ &ht_quotes_accent_NUEVO 
+#define __TEST2__ &mm_dquote_acute
+#define __TEST3__ &ht_quotes_accent 0 0
 
 
 #define __BOOTL__ &bootloader
