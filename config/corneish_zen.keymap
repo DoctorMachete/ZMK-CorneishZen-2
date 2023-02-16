@@ -30,8 +30,15 @@
                 #include "macros.dtsi"
           };
           behaviors {
+            mm_quote_accent: mm_quote_accent {
+              compatible = "zmk,behavior-mod-morph";
+              label = "MM_QUOTE_ACCENT";
+              #binding-cells = <0>;
+              bindings = <&kp KC_QUOT>, <&macro_accent>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+              masked_mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
 
-            
           };
 
          
