@@ -27,20 +27,3 @@ macro_acute: macro_acute {                    //  ^ (with shift)
 
 
 
-
-macro_ini_comment: macro_ini_comment {                    //  ^ (with shift)
-    label = "macro_ini_comment";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings
-        = <&macro_tap &kp KC_SLASH &kp KC_ASTRSK>
-        ;
-};
-macro_end_comment: macro_end_comment {                    //  ^ (with shift)
-    label = "macro_end_comment";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings
-        = <&macro_tap &kp KC_ASTRSK &kp KC_SLASH>
-        ;
-};
