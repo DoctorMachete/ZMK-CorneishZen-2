@@ -46,7 +46,6 @@
 //                                          ║   ALT   │  SHIFT  │   NAV   ║   ║   NUM   │ BCKSPC  │  ENTER  ║
 //                                          ║         │         │   REP   ║   ║   SPC   │         │         ║
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
-
                 default_layer { label = "COLEMAK"; bindings = <
      ___TAB___ ____Q____ ____W____ ____F____ ____P____ ____B____                         ____Y____ ____L____ ____U____ ____Y____ __QUEST__ _________
      __BSLASH_ ____A____ ____R____ ____S____ ____T____ ____G____                         ____M____ ____N____ ____E____ ____I____ ____O____ __QUOT___
@@ -70,13 +69,6 @@
 //                                          ║  BOOTL  │         │XXXXXXXXX║   ║   SPC   │ BCKSPC  │  ENTER  ║
 //                                          ║         │         │XXXXXXXXX║   ║         │         │         ║
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
-
- //                navigation_layer { label = "NAV"; bindings = <
- //     ___TAB___ _________ ___CUT___ __COPY___ __PASTE__ __BKSPC__                         __INSRT__ ___INI___ __PGUP___ __PGDN___ ___END___ _________
-//      __REDO___ __UNDO___ ___LALT__ __LSHFT__ __LCTRL__ ___TEMP__                         _________ __LEFT___ __DOWN___ ___UP____ __RIGHT__ _________
-//      __BSLASH_ _________ _________ _________ _________ ___TEMP__                         __QUOT___ __DQUOT__ _________ __ACUTE__ _________ _________
- //                                             __BOOTL__ X_______X X_______X     ___SPC___ __BKSPC__ __ENTER__
- //                        >;};
                 navigation_layer { label = "NAV"; bindings = <
      ___TAB___ _________ ___CUT___ __COPY___ __PASTE__ __BKSPC__                         __INSRT__ ___INI___ __PGUP___ __PGDN___ ___END___ _________
      __REDO___ __UNDO___ ___LALT__ __LSHFT__ __LCTRL__ ___TEMP__                         _________ __LEFT___ __DOWN___ ___UP____ __RIGHT__ _________
@@ -102,13 +94,6 @@
 //                                          ║         │         │         ║   ║XXXXXXXXX│         │         ║
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
 //  
-//                num_layer { label = "NUM"; bindings = <
-//     __ALTAB__ _________ _PERCENT_ __SLASH__ _ASTRSK__ ___TEMP__                         _EXCLAM__ ___PLUS__ __MINUS__ __EQUAL__ ___EUR___ ___TEMP__
-//     __LSHFT__ ____1____ ____2____ ____3____ ____4____ ____5____                         ____6____ ____7____ ____8____ ____9____ ____0____ ___TEMP__
-//     __LCTRL__ _________ _________ _________ _________ ___TEMP__                         _________ _________ __COMMA__ ___DOT___ ___TEMP__ _________
-//                                             __ENTER__ __BKSPC__ ___SPC___     X_______X X_______X __BOOTL__
-//                        >;};
-
                 num_layer { label = "NUM"; bindings = <
      __ALTAB__ _________ _PERCENT_ __SLASH__ _ASTRSK__ ___TEMP__                         _EXCLAM__ ___PLUS__ __MINUS__ __EQUAL__ ___EUR___ ___TEMP__
      __LSHFT__ ____1____ ____2____ ____3____ ____4____ ____5____                         ____6____ ____7____ ____8____ ____9____ ____0____ ___TEMP__
