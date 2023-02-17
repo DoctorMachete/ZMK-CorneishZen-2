@@ -1,9 +1,5 @@
 #include "keycodes.h"
 
-repeat_macro: repeat_macro {
-    label = "repeat_macro"; compatible = "zmk,behavior-macro";
-    #binding-cells = <0>; bindings = <&macro_tap  &key_repeat>;
-};
 macro_accent: macro_accent {                    //  ` + SPACE → ^ (with shift)
     label = "macro_accent"; compatible = "zmk,behavior-macro";
     #binding-cells = <0>; bindings = <&macro_tap &kp KC_ACCENT &kp SPACE>;
@@ -19,7 +15,6 @@ macro_ini_comment: macro_ini_comment {                    //  ^ (with shift)
     #binding-cells = <0>; bindings = <&macro_tap &kp KC_SLASH &kp KC_ASTRSK>;
 };
 macro_end_comment: macro_end_comment {                    //  ^ (with shift)
-    label = "macro_end_comment";
-    compatible = "zmk,behavior-macro";
+    label = "macro_end_comment"; compatible = "zmk,behavior-macro";
     #binding-cells = <0>; bindings = <&macro_tap &kp KC_ASTRSK &kp KC_SLASH>;
 };
