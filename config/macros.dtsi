@@ -21,7 +21,7 @@ macro_acute: macro_acute {                    //  ^ (with shift)
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
-        = <&macro_tap &kp KC_ACUTE) &kp SPACE>
+        = <&macro_tap &kp KC_ACUTE &kp SPACE>
         ;
 };
 
