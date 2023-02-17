@@ -93,8 +93,7 @@
 #define KC_OQUEST LS(PLUS)              //  ¿
 #define _OQUEST__ &kp KC_OQUEST         //  ¿
 #define KC_QUOT   MINUS                 //  '
-
-#define __QUOT___ &ht_quotes_accent 0 0     //  ' ` " ^
+#define __QUOT___ KC_QUOT     //  ' `
 #define KC_DQUOT  LS(NUMBER_2)      //  "
 #define __DQUOT__ &kp KC_DQUOT      //  "
 #define KC_ACCENT LEFT_BRACKET  //  ^ → SPC   macro is needed
@@ -102,21 +101,6 @@
 #define __ACUTE__ &kp KC_ACUTE  //  ^ → SPC   macro is needed
 #define KC_ORDINAL GRAVE             //  º
 #define _ORDINAL_ &kp KC_ORDINAL             //  º
-
-// LAYER TAPS
-#define _NAVREP__ &lt NAV &repeat_macro
-#define _NUMSPC__ &lt NUM SPACE
-
-
-#define __ALTAB__ &mt LALT TAB
-
-
-
-#define __REDO___ &kp LC(Y)
-#define __UNDO___ &kp LC(Z)
-#define ___CUT___ &kp LC(X)
-#define __COPY___ &kp LC(C)
-#define __PASTE__ &kp LC(V)
 
 #define __LEFT___ &kp LEFT_ARROW
 #define __DOWN___ &kp DOWN_ARROW
@@ -127,6 +111,29 @@
 #define ___END___ &kp END
 #define __PGUP___ &kp PAGE_UP
 #define __PGDN___ &kp PAGE_DOWN
+#define __BOOTL__ &bootloader
+
+#define __REDO___ &kp LC(Y)
+#define __UNDO___ &kp LC(Z)
+#define ___CUT___ &kp LC(X)
+#define __COPY___ &kp LC(C)
+#define __PASTE__ &kp LC(V)
+
+
+// LAYER TAPS
+#define _NAVREP__ &lt NAV &repeat_macro
+#define _NUMSPC__ &lt NUM SPACE
+
+
+// MOD TAPS
+#define __ALTAB__ &mt LALT TAB
+
+
+
+// MORPH + HOLD-TAP
+#define _QUOTACC_ &ht_quotes_accent 0 0     //  ' ` " ^
+#define _SLSHCOM_ &ht_slash_comments 0 0    // SLASH + open/close comments macro
+
 
 
 #define __TEST1__ &ht_quotes_accent 0 0
@@ -134,4 +141,6 @@
 #define __TEST3__ &ht_slash_comments 0 0
 
 
-#define __BOOTL__ &bootloader
+
+
+
