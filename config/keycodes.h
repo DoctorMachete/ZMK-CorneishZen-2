@@ -118,7 +118,7 @@
 #define ___CUT___    &kp LC(X)
 #define __COPY___    &kp LC(C)
 #define __PASTE__    &kp LC(V)
-
+#define _SLCTALL_    &kp LC(A)
 
 // LAYER TAPS
 #define _NAVREP__ &lt NAV &key_repeat
@@ -130,15 +130,16 @@
 
 
 
-// MORPH + HOLD-TAP
+// HOLD TO TAP
 #define _QUOTACC_ &ht_quotes_accent 0 0     //  ' ` " ^
 #define _SLSHCOM_ &ht_slash_comments 0 0    // SLASH + open/close comments macro
 #define _QUSTCLM_ &ht_quest_exclam 0 0      //  ? ¿ ! ¡
+#define _CPYSLAL_ &ht_copy_selectall 0 0      //  ? ¿ ! ¡
 
 
 
 #define __TEST1__ &td_repeat_test
-#define __TEST2__ &td_repeat_test
+#define __TEST2__ _CPYSLAL_
 #define __TEST3__ &td_lt_lt_test
 
 
