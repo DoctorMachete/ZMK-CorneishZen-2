@@ -137,7 +137,7 @@
 
 
 #define __TEST1__ &ht_quotes_accent 0 0
-#define __TEST2__ &mm_dquote_acute
+#define __TEST2__ &td_repeat_test
 #define __TEST3__ &td_lt_lt_test
 
 
