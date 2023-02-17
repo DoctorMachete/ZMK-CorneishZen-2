@@ -13,7 +13,7 @@ macro_accent: macro_accent {                    //  ` → ^ (with shift)
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
-        = <&macro_tap &kp LEFT_BRACKET &kp SPACE>
+        = <&macro_tap &kp KC_ACCENT &kp SPACE>
         ;
 };
 macro_acute: macro_acute {                    //  ^ (with shift)
@@ -21,7 +21,7 @@ macro_acute: macro_acute {                    //  ^ (with shift)
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
-        = <&macro_tap &kp LS(LEFT_BRACKET) &kp SPACE>
+        = <&macro_tap &kp KC_ACUTE) &kp SPACE>
         ;
 };
 
