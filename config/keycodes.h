@@ -138,7 +138,9 @@
 //#define _CPYSLAL_ &ht_copy_selectall &kp LC(A) &kp LC(C)   //  ? ¿ ! ¡
 //#define _CPYSLAL_ &ht_copy_selectall &kp LC(A) &kp LC(C)   //  ? ¿ ! ¡
 //#define _CPYSLAL_ &ht_copy_selectall &LC(A) &LC(C)   //  ? ¿ ! ¡
-#define _CPYSLAL_ &ht_copy_selectall A B   //  ? ¿ ! ¡
+#define _CPYSLAL_ &ht_hold_to_tap LC(A) LC(C)   //  COPY → PASTE
+#define _PASTEF2_ &ht_hold_to_tap F2 LC(V)   //  COPY → PASTE
+
 
 
 #define __TEST1__ &td_repeat_test

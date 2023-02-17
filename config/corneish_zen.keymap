@@ -125,9 +125,9 @@
             };
 
 
-            ht_copy_selectall: ht_copy_selectall {             //  ? ¿ ! ¡
+            ht_hold_to_tap: ht_hold_to_tap {             //  ? ¿ ! ¡
             compatible = "zmk,behavior-hold-tap";
-              label = "HT_COPY_SELECTALL";
+              label = "HT_HOLD_TO_TAP";
               #binding-cells = <2>;
              tapping-term-ms = <300>;
               quick-tap-ms = <0>;
@@ -164,7 +164,7 @@
                 default_layer { label = "COLEMAK"; bindings = <
      ___TAB___ ____Q____ ____W____ ____F____ ____P____ ____B____                         ____Y____ ____L____ ____U____ ____Y____ _QUSTCLM_ _________
      _SLSHCOM_ ____A____ ____R____ ____S____ ____T____ ____G____                         ____M____ ____N____ ____E____ ____I____ ____O____ _QUOTACC_
-     __LCTRL__ __TEST1__ ____X____ _CPYSLAL_ ____D____ __TEST3__                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ __RCTRL__
+     __LCTRL__ __TEST1__ ____X____ __TEST2__ ____D____ __TEST3__                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ __RCTRL__
                                              _________ __LSHFT__ _NAVREP__     _NUMSPC__ __BKSPC__ __ENTER__
                         >;};
 
@@ -185,7 +185,7 @@
 //                                          ║         │         │XXXXXXXXX║   ║         │         │         ║
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
                 navigation_layer { label = "NAV"; bindings = <
-     ___TAB___ _________ ___CUT___ __COPY___ __PASTE__ __BKSPC__                         __INSRT__ ___INI___ __PGUP___ __PGDN___ ___END___ __INSRT__
+     ___TAB___ _________ ___CUT___ _CPYSLAL_ _PASTEF2_ __BKSPC__                         __INSRT__ ___INI___ __PGUP___ __PGDN___ ___END___ __INSRT__
      __REDO___ __UNDO___ ___LALT__ __LSHFT__ __LCTRL__ ___TEMP__                         _________ __LEFT___ __DOWN___ ___UP____ __RIGHT__ _________
      _________ _________ _________ _________ _________ ___TEMP__                         _________ _________ _________ _________ _________ _________
                                              __BOOTL__ X_______X X_______X     _________ _________ _________
