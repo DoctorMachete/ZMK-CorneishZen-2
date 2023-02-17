@@ -8,7 +8,7 @@ repeat_macro: repeat_macro {
         = <&macro_tap  &key_repeat>
         ;
 };
-macro_accent: macro_accent {                    //  ` → ^ (with shift)
+macro_accent: macro_accent {                    //  ` + SPACE → ^ (with shift)
     label = "macro_accent";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
@@ -16,7 +16,7 @@ macro_accent: macro_accent {                    //  ` → ^ (with shift)
         = <&macro_tap &kp KC_ACCENT &kp SPACE>
         ;
 };
-macro_acute: macro_acute {                    //  ^ (with shift)
+macro_acute: macro_acute {                    //  ^ (with shift) + SPACE
     label = "macro_acute";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
@@ -25,3 +25,24 @@ macro_acute: macro_acute {                    //  ^ (with shift)
         ;
 };
 
+
+
+
+
+
+macro_ini_comment: macro_ini_comment {                    //  ^ (with shift)
+    label = "macro_ini_comment";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&macro_tap &kp KC_SLASH &kp KC_ASTRSK>
+        ;
+};
+macro_end_comment: macro_end_comment {                    //  ^ (with shift)
+    label = "macro_end_comment";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&macro_tap &kp KC_ASTRSK &kp KC_SLASH>
+        ;
+};
