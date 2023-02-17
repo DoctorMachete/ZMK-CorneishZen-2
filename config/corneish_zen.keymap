@@ -88,7 +88,7 @@
                 label = "TD_LT_LT_TEST";
                 #binding-cells = <0>;
                 tapping-term-ms = <200>;
-                bindings = <&lt NAV N5>, <&lt NUM N6>;
+                bindings = <&lt NAV N5>, <&lt NUM N6>, <&kp N7>;
             };
 
 
