@@ -40,30 +40,30 @@
 #define ____9____ &kp NUMBER_9
 #define ____0____ &kp NUMBER_0
 
-#define KC_PERCENT   LS(NUMBER_5)      // %
-#define _PERCENT_    &kp KC_PERCENT      // %
-#define KC_SLASH     LS(NUMBER_7)      //  /
-#define __SLASH__    &kp KC_SLASH      //  /
-#define KC_BSLASH    RA(GRAVE)         //  
-#define __BSLASH_    &kp KC_BSLASH         //  
-#define KC_ASTRSK    LS(RIGHT_BRACKET) // *
-#define _ASTRSK__    &kp KC_ASTRSK // *
+#define KC_PERCENT   LS(NUMBER_5)            // %
+#define _PERCENT_    &kp KC_PERCENT          // %
+#define KC_SLASH     LS(NUMBER_7)            //  /
+#define __SLASH__    &kp KC_SLASH            //  /
+#define KC_BSLASH    RA(GRAVE)               //  
+#define __BSLASH_    &kp KC_BSLASH           //  
+#define KC_ASTRSK    LS(RIGHT_BRACKET)       // *
+#define _ASTRSK__    &kp KC_ASTRSK           // *
 //#define _MULTDIV_ &kp 
-#define KC_EXCLAM    LS(NUMBER_1)      // !
-#define _EXCLAM__    &kp KC_EXCLAM      // !
-#define KC_OEXCLAM   EQUAL             // ¡
-#define _OEXCLAM_    &kp KC_OEXCLAM             // ¡
-#define KC_PLUS      RIGHT_BRACKET     // +
-#define ___PLUS__    &kp KC_PLUS     // +
-#define KC_MINUS     SLASH             // -
-#define __MINUS__    &kp KC_MINUS             // -
-#define KC_EQUAL     LS(NUMBER_0)      // =
-#define __EQUAL__    &kp KC_EQUAL      // =
-#define KC_EUR       RA(NUMBER_5)      // €
-#define ___EUR___    &kp KC_EUR      // €
-//#define _APPROX__ &kp                 // ~ ±
-#define KC_UNDSC     &kp LS(SLASH)         // __
-#define __UNDSC__    &kp KC_UNDSC         // __
+#define KC_EXCLAM    LS(NUMBER_1)            // !
+#define _EXCLAM__    &kp KC_EXCLAM           // !
+#define KC_OEXCLAM   EQUAL                   // ¡
+#define _OEXCLAM_    &kp KC_OEXCLAM          // ¡
+#define KC_PLUS      RIGHT_BRACKET           // +
+#define ___PLUS__    &kp KC_PLUS             // +
+#define KC_MINUS     SLASH                   // -
+#define __MINUS__    &kp KC_MINUS            // -
+#define KC_EQUAL     LS(NUMBER_0)            // =
+#define __EQUAL__    &kp KC_EQUAL            // =
+#define KC_EUR       RA(NUMBER_5)            // €
+#define ___EUR___    &kp KC_EUR              // €
+//#define _APPROX__ &kp                      // ~ ±
+#define KC_UNDSC     &kp LS(SLASH)           // __
+#define __UNDSC__    &kp KC_UNDSC            // __
 //#define _LSSEQUL_ &kp 
 
 
@@ -88,19 +88,19 @@
 #define ___SPC___    &kp SPACE
 #define ___RPT___    &key_repeat
 
-#define KC_QUEST     LS(MINUS)              //  ?
+#define KC_QUEST     LS(MINUS)             //  ?
 #define __QUEST__    &kp KC_QUEST          //  ?
 #define KC_OQUEST    LS(PLUS)              //  ¿
 #define _OQUEST__    &kp KC_OQUEST         //  ¿
 #define KC_QUOT      MINUS                 //  '
-#define __QUOT___    KC_QUOT     //  ' `
-#define KC_DQUOT     LS(NUMBER_2)      //  "
-#define __DQUOT__    &kp KC_DQUOT      //  "
-#define KC_ACCENT    LEFT_BRACKET  //  ^ → SPC   macro is needed
-#define KC_ACUTE     LS(LEFT_BRACKET)  //  ^ → SPC   macro is needed
-#define __ACUTE__    &kp KC_ACUTE  //  ^ → SPC   macro is needed
-#define KC_ORDINAL    GRAVE             //  º
-#define _ORDINAL_    &kp KC_ORDINAL             //  º
+#define __QUOT___    KC_QUOT               //  ' `
+#define KC_DQUOT     LS(NUMBER_2)          //  "
+#define __DQUOT__    &kp KC_DQUOT          //  "
+#define KC_ACCENT    LEFT_BRACKET          //  ^ → SPC   macro is needed
+#define KC_ACUTE     LS(LEFT_BRACKET)      //  ^ → SPC   macro is needed
+#define __ACUTE__    &kp KC_ACUTE          //  ^ → SPC   macro is needed
+#define KC_ORDINAL    GRAVE                //  º
+#define _ORDINAL_    &kp KC_ORDINAL        //  º
 
 #define __LEFT___    &kp LEFT_ARROW
 #define __DOWN___    &kp DOWN_ARROW
@@ -133,11 +133,11 @@
 // MORPH + HOLD-TAP
 #define _QUOTACC_ &ht_quotes_accent 0 0     //  ' ` " ^
 #define _SLSHCOM_ &ht_slash_comments 0 0    // SLASH + open/close comments macro
-#define _QUSTCLM_ &ht_quest_exclam 0 0         //  ? ¿ ! ¡
+#define _QUSTCLM_ &ht_quest_exclam 0 0      //  ? ¿ ! ¡
 
 
 
-#define __TEST1__ &ht_quotes_accent 0 0
+#define __TEST1__ &combo_test_lt
 #define __TEST2__ &td_repeat_test
 #define __TEST3__ &td_lt_lt_test
 

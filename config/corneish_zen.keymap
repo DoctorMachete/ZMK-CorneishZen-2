@@ -100,7 +100,7 @@
 
 
 
-            mm_quest_oquest: mm_quest_oquest {                //  ? → ¿
+            mm_quest_oquest: mm_quest_oquest {              //  ? → ¿
               compatible = "zmk,behavior-mod-morph";
               label = "MM_QUEST_OQUEST";
               #binding-cells = <0>;
@@ -152,7 +152,7 @@
                 default_layer { label = "COLEMAK"; bindings = <
      ___TAB___ ____Q____ ____W____ ____F____ ____P____ ____B____                         ____Y____ ____L____ ____U____ ____Y____ _QUSTCLM_ _________
      _SLSHCOM_ ____A____ ____R____ ____S____ ____T____ ____G____                         ____M____ ____N____ ____E____ ____I____ ____O____ _QUOTACC_
-     __LCTRL__ __TEST2__ ____X____ ____C____ ____D____ __TEST3__                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ __RCTRL__
+     __LCTRL__ __TEST1__ ____X____ __TEST2__ ____D____ __TEST3__                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ __RCTRL__
                                              _________ __LSHFT__ _NAVREP__     _NUMSPC__ __BKSPC__ __ENTER__
                         >;};
 
