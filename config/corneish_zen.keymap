@@ -135,7 +135,16 @@
               //bindings = <&kp LC(A)>, <&kp LC(C)>;
               bindings = <&kp>, <&kp>;
             };
-
+            ht_nav_rep: ht_nav_rep {             //  NAV - REP
+            compatible = "zmk,behavior-hold-tap";
+              label = "HT-NAV-REP";
+              #binding-cells = <2>;
+             tapping-term-ms = <300>;
+              quick-tap-ms = <0>;
+              flavor = "tap-preferred";
+              //bindings = <&kp LC(A)>, <&kp LC(C)>;
+              bindings = <&kp>, <&mo>;
+            };
 
           };
 
@@ -178,7 +187,7 @@
 //  ║  REDO   │  UNDO   │   ALT   │  SHIFT  │  CTRL   │ SEARCH  ║                       ║         │  LEFT   │  DOWN   │   UP    │  RIGHT  │         ║
 //  ║         │         │         │         │         │  ENTER  ║                       ║         │         │         │         │         │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
-//  ║    \    │         │         │         │         │   ESC   ║                       ║         │         │         │         │         │         ║
+//  ║         │         │         │         │         │   ESC   ║                       ║         │         │         │         │         │         ║
 //  ║         │         │         │         │         │   MENU  ║                       ║         │         │         │         │         │         ║
 //  ╚═════════╧═════════╧═══════════════════╬─────────┼─────────╬═════════╗   ╔═════════╬─────────┼─────────╬═══════════════════╧═════════╧═════════╝
 //                                          ║  BOOTL  │         │XXXXXXXXX║   ║   SPC   │ BCKSPC  │  ENTER  ║
