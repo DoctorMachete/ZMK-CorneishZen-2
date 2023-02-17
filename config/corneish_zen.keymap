@@ -132,7 +132,8 @@
              tapping-term-ms = <300>;
               quick-tap-ms = <0>;
               flavor = "tap-preferred";
-              bindings = <&kp LC(A)>, <&kp LC(C)>;
+              //bindings = <&kp LC(A)>, <&kp LC(C)>;
+              bindings = <&kp>, <&kp>;
             };
 
 

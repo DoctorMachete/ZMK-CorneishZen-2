@@ -137,7 +137,8 @@
 //#define _CPYSLAL_ &ht_copy_selectall LC(A) LC(C)   //  ? ¿ ! ¡
 //#define _CPYSLAL_ &ht_copy_selectall &kp LC(A) &kp LC(C)   //  ? ¿ ! ¡
 //#define _CPYSLAL_ &ht_copy_selectall &kp LC(A) &kp LC(C)   //  ? ¿ ! ¡
-#define _CPYSLAL_ &ht_copy_selectall &LC(A) &LC(C)   //  ? ¿ ! ¡
+//#define _CPYSLAL_ &ht_copy_selectall &LC(A) &LC(C)   //  ? ¿ ! ¡
+#define _CPYSLAL_ &ht_copy_selectall LC(A) LC(C)   //  ? ¿ ! ¡
 
 
 #define __TEST1__ &td_repeat_test
