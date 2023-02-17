@@ -121,7 +121,8 @@
 #define _SLCTALL_    &kp LC(A)
 
 // LAYER TAPS
-#define _NAVREP__ &lt NAV &key_repeat
+//#define _NAVREP__ &lt NAV &key_repeat       // doesn't work
+#define _NAVREP__    &ht_nav_rep NAV 0        // repeat does work
 #define _NUMSPC__ &lt NUM SPACE
 
 
