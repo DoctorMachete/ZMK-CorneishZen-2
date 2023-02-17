@@ -57,7 +57,30 @@
             };
 
 
+            mm_slash_inicomment: mm_slash_inicomment {        
+              compatible = "zmk,behavior-mod-morph";
+              label = "MM_SLASH_INICOMMENT";
+              #binding-cells = <0>;
+              bindings = <&kp KC_SLASH>, <&macro_ini_comment>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            mm_bslash_endcomment: mm_bslash_endcomment {        
+              compatible = "zmk,behavior-mod-morph";
+              label = "MM_BSLASH_ENDCOMMENT";
+              #binding-cells = <0>;
+              bindings = <&kp KC_BSLASH>, <&macro_end_comment>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
 
+            ht_slash_comments: ht_quotes_accent {      
+            compatible = "zmk,behavior-hold-tap";
+              label = "HT_SLASH_COMMENTS";
+              #binding-cells = <2>;
+             tapping-term-ms = <300>;
+              quick-tap-ms = <0>;
+              flavor = "tap-preferred";
+              bindings = <&mm_bslash_endcomment>, <&mm_slash_inicomment>;
+            };
 
           };
 
