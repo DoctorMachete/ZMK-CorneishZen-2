@@ -94,7 +94,7 @@
                 compatible = "zmk,behavior-tap-dance";
                 label = "TD_REPEAT_TEST";
                 #binding-cells = <0>;
-                tapping-term-ms = <200>;
+                tapping-term-ms = <400>;
                 bindings = <&key_repeat>, <&lt NAV N8>, <&lt NUM N9>, <&kp N0>;
             };
 
