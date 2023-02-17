@@ -69,55 +69,55 @@
 
 
 
-#define ___TAB___ &kp TAB
-#define __LSHFT__ &kp LSHIFT
-#define __RSHFT__ &kp RSHIFT
-#define __LCTRL__ &kp LCTRL
-#define __RCTRL__ &kp RCTRL
-#define ___LALT__ &kp LALT
-#define ___RALT__ &kp RALT
-#define __BKSPC__ &kp BACKSPACE
-#define ___DEL___ &kp DELETE
-#define __ENTER__ &kp ENTER
-#define __LWIN___ &kp LEFT_WIN
-#define __RWIN___ &kp RIGHT_WIN
-#define __MENU___ &kp K_CONTEXT_MENU
-#define ___ESC___ &kp ESC
-#define __COMMA__ &kp COMMA
-#define ___DOT___ &kp DOT
-#define ___SPC___ &kp SPACE
-#define ___RPT___ &key_repeat
+#define ___TAB___    &kp TAB
+#define __LSHFT__    &kp LSHIFT
+#define __RSHFT__    &kp RSHIFT
+#define __LCTRL__    &kp LCTRL
+#define __RCTRL__    &kp RCTRL
+#define ___LALT__    &kp LALT
+#define ___RALT__    &kp RALT
+#define __BKSPC__    &kp BACKSPACE
+#define ___DEL___    &kp DELETE
+#define __ENTER__    &kp ENTER
+#define __LWIN___    &kp LEFT_WIN
+#define __RWIN___    &kp RIGHT_WIN
+#define __MENU___    &kp K_CONTEXT_MENU
+#define ___ESC___    &kp ESC
+#define __COMMA__    &kp COMMA
+#define ___DOT___    &kp DOT
+#define ___SPC___    &kp SPACE
+#define ___RPT___    &key_repeat
 
-#define KC_QUEST LS(MINUS)              //  ?
-#define __QUEST__ &kp KC_QUEST          //  ?
-#define KC_OQUEST LS(PLUS)              //  ¿
-#define _OQUEST__ &kp KC_OQUEST         //  ¿
-#define KC_QUOT   MINUS                 //  '
-#define __QUOT___ KC_QUOT     //  ' `
-#define KC_DQUOT  LS(NUMBER_2)      //  "
-#define __DQUOT__ &kp KC_DQUOT      //  "
-#define KC_ACCENT LEFT_BRACKET  //  ^ → SPC   macro is needed
-#define KC_ACUTE  LS(LEFT_BRACKET)  //  ^ → SPC   macro is needed
-#define __ACUTE__ &kp KC_ACUTE  //  ^ → SPC   macro is needed
-#define KC_ORDINAL GRAVE             //  º
-#define _ORDINAL_ &kp KC_ORDINAL             //  º
+#define KC_QUEST     LS(MINUS)              //  ?
+#define __QUEST__    &kp KC_QUEST          //  ?
+#define KC_OQUEST    LS(PLUS)              //  ¿
+#define _OQUEST__    &kp KC_OQUEST         //  ¿
+#define KC_QUOT      MINUS                 //  '
+#define __QUOT___    KC_QUOT     //  ' `
+#define KC_DQUOT     LS(NUMBER_2)      //  "
+#define __DQUOT__    &kp KC_DQUOT      //  "
+#define KC_ACCENT    LEFT_BRACKET  //  ^ → SPC   macro is needed
+#define KC_ACUTE     LS(LEFT_BRACKET)  //  ^ → SPC   macro is needed
+#define __ACUTE__    &kp KC_ACUTE  //  ^ → SPC   macro is needed
+#define KC_ORDINAL    GRAVE             //  º
+#define _ORDINAL_    &kp KC_ORDINAL             //  º
 
-#define __LEFT___ &kp LEFT_ARROW
-#define __DOWN___ &kp DOWN_ARROW
-#define ___UP____ &kp UP_ARROW
-#define __RIGHT__ &kp RIGHT_ARROW
-#define __INSRT__ &kp INSERT
-#define ___INI___ &kp HOME
-#define ___END___ &kp END
-#define __PGUP___ &kp PAGE_UP
-#define __PGDN___ &kp PAGE_DOWN
-#define __BOOTL__ &bootloader
+#define __LEFT___    &kp LEFT_ARROW
+#define __DOWN___    &kp DOWN_ARROW
+#define ___UP____    &kp UP_ARROW
+#define __RIGHT__    &kp RIGHT_ARROW
+#define __INSRT__    &kp INSERT
+#define ___INI___    &kp HOME
+#define ___END___    &kp END
+#define __PGUP___    &kp PAGE_UP
+#define __PGDN___    &kp PAGE_DOWN
+#define __BOOTL__    &bootloader
 
-#define __REDO___ &kp LC(Y)
-#define __UNDO___ &kp LC(Z)
-#define ___CUT___ &kp LC(X)
-#define __COPY___ &kp LC(C)
-#define __PASTE__ &kp LC(V)
+#define __REDO___    &kp LC(Y)
+#define __UNDO___    &kp LC(Z)
+#define ___CUT___    &kp LC(X)
+#define __COPY___    &kp LC(C)
+#define __PASTE__    &kp LC(V)
 
 
 // LAYER TAPS
@@ -133,7 +133,7 @@
 // MORPH + HOLD-TAP
 #define _QUOTACC_ &ht_quotes_accent 0 0     //  ' ` " ^
 #define _SLSHCOM_ &ht_slash_comments 0 0    // SLASH + open/close comments macro
-#define __QSTCLM__ &ht_quest_exclam 0 0         //  ? ¿ ! ¡
+#define _QUSTCLM_ &ht_quest_exclam 0 0         //  ? ¿ ! ¡
 
 
 
