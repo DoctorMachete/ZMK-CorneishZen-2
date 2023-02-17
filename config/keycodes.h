@@ -137,7 +137,7 @@
 
 
 
-#define __TEST1__ &combo_test_lt
+#define __TEST1__ &td_repeat_test
 #define __TEST2__ &td_repeat_test
 #define __TEST3__ &td_lt_lt_test
 
