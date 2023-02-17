@@ -61,7 +61,6 @@
               compatible = "zmk,behavior-mod-morph";
               label = "MM_SLASH_BSLASH";
               #binding-cells = <0>;
-              //bindings = <&kp KC_SLASH>, <&macro_ini_comment>;
               bindings = <&kp KC_SLASH>, <&kp KC_BSLASH>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
@@ -69,7 +68,6 @@
               compatible = "zmk,behavior-mod-morph";
               label = "MM_INICOMMENT_ENDCOMMENT";
               #binding-cells = <0>;
-              //bindings = <&kp KC_BSLASH>, <&macro_end_comment>;
               bindings = <&macro_ini_comment>, <&macro_end_comment>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
