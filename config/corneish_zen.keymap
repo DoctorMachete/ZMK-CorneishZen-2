@@ -153,7 +153,7 @@
             };
 
 
-            td_test: td_lt_navrep_numz {     // test TAP-DANCE + two LAYER-TAPS
+            td_test: td_test {     // test TAP-DANCE + two LAYER-TAPS
                 compatible = "zmk,behavior-tap-dance";
                 label = "TD_TEST";
                 #binding-cells = <0>;

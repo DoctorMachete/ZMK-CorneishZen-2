@@ -147,7 +147,7 @@
 #define __TEST1__ &td_repeat_test
 //#define __TEST2__ &ht_nav_rep A NUM
 //#define __TEST2__ &ht_nav_rep NUM K
-#define __TEST2__ &ht_nav_rep NUM 0
+#define __TEST2__ &td_test 0 0
 #define __TEST3__ &td_lt_lt_test
 
 
