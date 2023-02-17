@@ -133,6 +133,7 @@
 // MORPH + HOLD-TAP
 #define _QUOTACC_ &ht_quotes_accent 0 0     //  ' ` " ^
 #define _SLSHCOM_ &ht_slash_comments 0 0    // SLASH + open/close comments macro
+#define __QSTCLM__ &ht_quest_exclam 0 0         //  ? ¿ ! ¡
 
 
 

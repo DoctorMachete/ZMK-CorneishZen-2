@@ -98,6 +98,33 @@
                 bindings = <&key_repeat>, <&lt NAV N8>, <&lt NUM N9>, <&kp N0>;
             };
 
+
+
+            mm_quest_oquest: mm_quest_oquest {                //  ? → ¿
+              compatible = "zmk,behavior-mod-morph";
+              label = "MM_QUEST_OQUEST";
+              #binding-cells = <0>;
+              bindings = <&kp KC_QUEST>, <&kp KC_OQUEST>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            mm_exclam_oexclam: mm_exclam_oexclam {        //   ! → ¡
+              compatible = "zmk,behavior-mod-morph";
+              label = "MM_EXCLAM_OEXCLAM";
+              #binding-cells = <0>;
+              bindings = < &kp KC_EXCLAM>, <&kp KC_OEXCLAM>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+
+            ht_quest_exclam: ht_quest_exclam {             ///
+            compatible = "zmk,behavior-hold-tap";
+              label = "HT_QUEST_EXCLAM";
+              #binding-cells = <2>;
+             tapping-term-ms = <300>;
+              quick-tap-ms = <0>;
+              flavor = "tap-preferred";
+              bindings = <&mm_exclam_oexclam>, <&mm_quest_oquest>;
+            };
+
           };
 
          
@@ -110,8 +137,8 @@
 //  Base Layer: COLEMAK
 //    
 //  ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗                       ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗
-//  ║  TAB    │    Q    │    W    │    F    │    P    │    B    ║                       ║    J    │    L    │    U    │    Y    │    ¿    │         ║
-//  ║         │         │         │         │         │         ║                       ║         │         │         │         │    ?    │         ║
+//  ║  TAB    │    Q    │    W    │    F    │    P    │    B    ║                       ║    J    │    L    │    U    │    Y    │   ! ¡   │         ║
+//  ║         │         │         │         │         │         ║                       ║         │         │         │         │   ? ¿   │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢                       ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
 //  ║  */ /*  │    A    │    R    │    S    │    T    │    G    ║                       ║    M    │    N    │    E    │    I    │    O    │   ` ^   ║
 //  ║   / \   │         │         │         │         │         ║                       ║         │         │         │         │         │   ' "   ║
