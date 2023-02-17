@@ -57,18 +57,20 @@
             };
 
 
-            mm_slash_inicomment: mm_slash_inicomment {        
+            mm_slash_bslash: mm_slash_bslash {        
               compatible = "zmk,behavior-mod-morph";
-              label = "MM_SLASH_INICOMMENT";
+              label = "MM_SLASH_BSLASH";
               #binding-cells = <0>;
-              bindings = <&kp KC_SLASH>, <&macro_ini_comment>;
+              //bindings = <&kp KC_SLASH>, <&macro_ini_comment>;
+              bindings = <&kp KC_SLASH>, <&kp KC_BSLASH>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
-            mm_bslash_endcomment: mm_bslash_endcomment {        
+            mm_inicomment_endcomment: mm_inicomment_endcomment {        
               compatible = "zmk,behavior-mod-morph";
-              label = "MM_BSLASH_ENDCOMMENT";
+              label = "MM_INICOMMENT_ENDCOMMENT";
               #binding-cells = <0>;
-              bindings = <&kp KC_BSLASH>, <&macro_end_comment>;
+              //bindings = <&kp KC_BSLASH>, <&macro_end_comment>;
+              bindings = <&macro_ini_comment>, <&macro_end_comment>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
 
@@ -79,7 +81,7 @@
              tapping-term-ms = <300>;
               quick-tap-ms = <0>;
               flavor = "tap-preferred";
-              bindings = <&mm_bslash_endcomment>, <&mm_slash_inicomment>;
+              bindings = <&mm_inicomment_endcomment>, <&mm_slash_bslash>;
             };
 
           };
