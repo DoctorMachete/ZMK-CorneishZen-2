@@ -125,7 +125,7 @@
             };
 
 
-            ht_hold_to_tap: ht_hold_to_tap {             //  ? ¿ ! ¡
+            ht_hold_to_tap: ht_hold_to_tap {             //  REUSRABLE HOLD TO TAP for single tap actions (no morph)
             compatible = "zmk,behavior-hold-tap";
               label = "HT_HOLD_TO_TAP";
               #binding-cells = <2>;
@@ -135,6 +135,12 @@
               //bindings = <&kp LC(A)>, <&kp LC(C)>;
               bindings = <&kp>, <&kp>;
             };
+
+
+
+
+
+
             ht_nav_rep: ht_nav_rep {             //  NAV - REP
             compatible = "zmk,behavior-hold-tap";
               label = "HT-NAV-REP";
@@ -143,7 +149,7 @@
               quick-tap-ms = <0>;
               flavor = "tap-preferred";
               //bindings = <&kp LC(A)>, <&kp LC(C)>;
-              bindings = <&kp>, <&mo>;
+              bindings = <&kp W>, <&mo NUM>;
             };
 
           };
