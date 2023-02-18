@@ -22,11 +22,11 @@ macro_end_comment: macro_end_comment {                    //
 
 macro_accent_a: macro_accent_a {                    //    a → á
     label = "macro_accent_a"; compatible = "zmk,behavior-macro";
-    #binding-cells = <0>; bindings = <&macro_tap &kp KC_ACCLTR &kp A>;
+    #binding-cells = <0>; bindings = <&macro_tap &kp KC_ACCENT &kp A>;
 };
 macro_accent_a_ucase: macro_accent_a_ucase {                    //    a → á
     label = "macro_accent_a_ucase"; compatible = "zmk,behavior-macro";
-    #binding-cells = <0>; bindings = <&macro_tap &kp KC_ACCLTR &kp LS(A)>;
+    #binding-cells = <0>; bindings = <&macro_tap &kp KC_ACCENT &kp LS(A)>;
 };
 
 
