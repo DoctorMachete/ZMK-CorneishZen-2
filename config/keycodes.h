@@ -138,7 +138,7 @@
 #define _QUSTCLM_ &ht_quest_exclam 0 0      //  ? ¿ ! ¡
 #define _CPYSLAL_ &ht_hold_to_tap LC(A) LC(C)   //  COPY → PASTE
 #define _PASTEF2_ &ht_hold_to_tap F2 LC(V)   //  COPY → PASTE
-#define _SRCHENT_ &ht_hold_to_tap ENTER LC(F)   //  SEARCH → ENTER
+#define _SRCHENT_ &ht_hold_to_tap LC(F) ENTER    //  ENTER → SEARCH
 #define _ESCMENU_ &ht_hold_to_tap K_CONTEXT_MENU ESC   //  SEARCH → ENTER
 
 

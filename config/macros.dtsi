@@ -21,7 +21,6 @@ macro_end_comment: macro_end_comment {                    //
 
 macro_multiplication: macro_multiplication {                    // 0215 ×
     label = "macro_multiplication"; compatible = "zmk,behavior-macro";
-    //#binding-cells = <0>; bindings = <&macro_press LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N5>, <&macro_release LALT>;
-    #binding-cells = <0>; bindings = <&macro_press &kp LALT>, <&kp A &kp B &kp C &kp D>, <&macro_release &kp LALT>;
-    //#binding-cells = <0>; bindings = <&macro_tap &kp KC_ASTRSK &kp KC_SLASH>;
+    #binding-cells = <0>; bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N5>, <&macro_release &kp LALT>;
 };
+//ZMK_MACRO(my_macro, wait-ms = <30>; tap-ms = <40>;    bindings = <&kp Z &kp M &kp K>;)
