@@ -19,7 +19,7 @@ macro_end_comment: macro_end_comment {                    //
     #binding-cells = <0>; bindings = <&macro_tap &kp KC_ASTRSK &kp KC_SLASH>;
 };
 
-macro_ini_comment: macro_multiplication {                    // 0215 ×
-    label = "macro_ini_comment"; compatible = "zmk,behavior-macro";
-    #binding-cells = <0>; bindings = <&macro_press LALT>, <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N5>, <&macro_release LALT>;
-};
+//macro_ini_comment: macro_multiplication {                    // 0215 ×
+//    label = "macro_ini_comment"; compatible = "zmk,behavior-macro";
+//    #binding-cells = <0>; bindings = <&macro_press LALT>, <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N5>, <&macro_release LALT>;
+//};
