@@ -143,10 +143,10 @@
 
 
 
-#define __TEST1__ &td_repeat_test
+#define __TEST1__ &td_nav_rep_npad_togglenpad
 //#define __TEST2__ &ht_nav_rep A NUM
 //#define __TEST2__ &ht_nav_rep NUM K
-#define __TEST2__ &macro_multiplication
+#define __TEST2__ &td_nav_rep_npad_togglenpad
 #define __TEST3__ &td_nav_rep_npad_togglenpad
 
 
