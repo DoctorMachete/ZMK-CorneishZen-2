@@ -122,7 +122,8 @@
 
 // LAYER TAPS
 //#define _NAVREP__ &lt NAV &key_repeat       // doesn't work
-#define _NAVREP__    &ht_nav_rep NAV 0        // repeat does work
+//#define _NAVREP__    &ht_nav_rep NAV 0        // repeat does work
+#define _NAVREP__    &td_nav_rep_npad_togglenpad      // NAV-REP + NPADoREP + TOGGLENPAD
 #define _NUMSPC__    &lt NUM SPACE
 
 
@@ -135,10 +136,6 @@
 #define _QUOTACC_ &ht_quotes_accent 0 0     //  ' ` " ^
 #define _SLSHCOM_ &ht_slash_comments 0 0    // SLASH + open/close comments macro
 #define _QUSTCLM_ &ht_quest_exclam 0 0      //  ? ¿ ! ¡
-//#define _CPYSLAL_ &ht_copy_selectall LC(A) LC(C)   //  ? ¿ ! ¡
-//#define _CPYSLAL_ &ht_copy_selectall &kp LC(A) &kp LC(C)   //  ? ¿ ! ¡
-//#define _CPYSLAL_ &ht_copy_selectall &kp LC(A) &kp LC(C)   //  ? ¿ ! ¡
-//#define _CPYSLAL_ &ht_copy_selectall &LC(A) &LC(C)   //  ? ¿ ! ¡
 #define _CPYSLAL_ &ht_hold_to_tap LC(A) LC(C)   //  COPY → PASTE
 #define _PASTEF2_ &ht_hold_to_tap F2 LC(V)   //  COPY → PASTE
 
