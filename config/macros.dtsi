@@ -59,7 +59,7 @@ macro_accent_u: macro_accent_u {                    //    u → ú
 macro_accent_u_shifted: macro_accent_u_shifted {                    //    U → Ú
     label = "macro_accent_u_shifted"; compatible = "zmk,behavior-macro";
     #binding-cells = <0>; bindings = <&macro_tap &kp KC_ACCLTR &kp LS(U)>;
-};
+};//
 
 
 

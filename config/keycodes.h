@@ -142,8 +142,8 @@
 #define __ACC_I__ &mm_accent_i
 #define __ACC_O__ &mm_accent_o
 #define __ACC_U__ &mm_accent_u
-#define KC_ENE    SEMICOLON
-#define _ACC_ENE_ &kp KC_ENE
+#define KC_ENE    &SEMICOLON
+#define _ACC_ENE_ &kp SEMICOLON
 
 
 
