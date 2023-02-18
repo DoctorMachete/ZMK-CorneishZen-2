@@ -176,7 +176,13 @@
               bindings = <&macro_accent_a>, <&macro_accent_a_shifted>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
-
+            mm_accent_e: mm_accent_e {              //  e → é
+              compatible = "zmk,behavior-mod-morph";
+              label = "MM_ACCENT_E";
+              #binding-cells = <0>;
+              bindings = <&macro_accent_e>, <&macro_accent_e_shifted>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
 
           };
 

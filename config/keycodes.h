@@ -138,6 +138,11 @@
 
 // ACCENTS
 #define __ACC_A__ &mm_accent_a
+#define __ACC_E__ &mm_accent_a
+#define __ACC_I__ &mm_accent_a
+#define __ACC_O__ &mm_accent_a
+#define __ACC_U__ &mm_accent_a
+
 
 
 // HOLD TO TAP
