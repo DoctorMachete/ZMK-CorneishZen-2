@@ -151,9 +151,9 @@
               flavor = "tap-preferred";
               bindings = <&mo>, <&key_repeat>;
             };
-            ht_rctl_accents: ht_rctl_accents {             // RCTRL → TOGGLE LANGUAGE LAYER
+            ht_custom_mod_tap: ht_custom_mod_tap {             // RCTRL → TOGGLE LANGUAGE LAYER
             compatible = "zmk,behavior-hold-tap";
-              label = "HT_RCTL_ACCENTS";
+              label = "HT_CUSTOM_MOD_TAP";
               #binding-cells = <2>;
              tapping-term-ms = <200>;
               quick-tap-ms = <0>;
@@ -205,7 +205,7 @@
                 default_layer { label = "COLEMAK"; bindings = <
      ___TAB___ ____Q____ ____W____ ____F____ ____P____ ____B____                         ____Y____ ____L____ ____U____ ____Y____ _QUSTCLM_ _________
      _SLSHCOM_ ____A____ ____R____ ____S____ ____T____ ____G____                         ____M____ ____N____ ____E____ ____I____ ____O____ _QUOTACC_
-     __LCTRL__ __TEST1__ ____X____ __TEST2__ ____D____ __TEST3__                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ __RCTRL__
+     __LCTRL__ __TEST1__ ____X____ __TEST2__ ____D____ __TEST3__                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ _RCTLACC_
                                              _________ __LSHFT__ _NAVREP__     _NUMSPC__ __BKSPC__ __ENTER__
                         >;};
 //  Base Layer: ACCENTS
@@ -214,7 +214,7 @@
 //  ║         │         │         │         │         │         ║                       ║         │         │    U    │    Y    │         │         ║
 //  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢                       ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
-//  ║         │    A    │         │         │         │         ║                       ║         │    N    │    E    │    I    │    O    │         ║
+//  ║         │    Á    │         │         │         │         ║                       ║         │    N    │    E    │    I    │    O    │         ║
 //  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
 //  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │         ║
@@ -225,7 +225,7 @@
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
                 letter_accents_layer { label = "ACCENTS"; bindings = <
      X_______X X_______X X_______X X_______X X_______X X_______X                         X_______X X_______X ____U____ ____Y____ X_______X X_______X
-     X_______X ____A____ X_______X X_______X X_______X X_______X                         X_______X ____N____ ____E____ ____I____ ____O____ X_______X
+     X_______X __ACC_A__ X_______X X_______X X_______X X_______X                         X_______X ____N____ ____E____ ____I____ ____O____ X_______X
      X_______X X_______X X_______X X_______X X_______X X_______X                         X_______X X_______X X_______X X_______X X_______X X_______X
                                              X_______X X_______X X_______X     X_______X X_______X X_______X
                         >;};
