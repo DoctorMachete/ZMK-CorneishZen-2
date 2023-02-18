@@ -151,14 +151,14 @@
               flavor = "tap-preferred";
               bindings = <&mo>, <&key_repeat>;
             };
-            ht_rctl_accents: ht_rctl_accents {             //  TOGGLE LANGUAGE LAYER
+            ht_rctl_accents: ht_rctl_accents {             // RCTRL → TOGGLE LANGUAGE LAYER
             compatible = "zmk,behavior-hold-tap";
               label = "HT_RCTL_ACCENTS";
               #binding-cells = <2>;
              tapping-term-ms = <200>;
               quick-tap-ms = <0>;
               flavor = "tap-preferred";
-              bindings = <&mt>, <&tog>;
+              bindings = <&kp>, <&tog>;
             };
 
             td_nav_rep_npad_togglenpad: td_nav_rep_npad_togglenpad {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD

@@ -147,6 +147,7 @@
 
 
 
+//#define __TEST1__ &ht_rctl_accents RCTRL ACCENTS
 #define __TEST1__ &ht_rctl_accents RCTRL ACCENTS
 //#define __TEST2__ &ht_nav_rep A NUM
 //#define __TEST2__ &ht_nav_rep NUM K
