@@ -149,7 +149,7 @@
 #define __TEST1__ &macro_accent_a
 //#define __TEST2__ &ht_nav_rep A NUM
 //#define __TEST2__ &ht_nav_rep NUM K
-#define __TEST2__ &macro_accent_a_ucase
+#define __TEST2__ &macro_accent_a_shifted
 #define __TEST3__ &mm_accent_a
 
 
