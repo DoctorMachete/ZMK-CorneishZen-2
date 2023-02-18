@@ -158,7 +158,7 @@
                 label = "TD_NAV_REP_NPAD_TOGGLENPAD";
                 #binding-cells = <0>;
                 tapping-term-ms = <400>;
-                bindings = <&ht_nav_rep NAV 0>, <&lt NUM Z>;
+                bindings = <&ht_nav_rep NAV 0>, <&ht_nav_rep NUM 0>, <&kb Y>;
             };
           };
 
