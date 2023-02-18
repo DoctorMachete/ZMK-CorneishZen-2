@@ -97,12 +97,10 @@
 #define KC_DQUOT     LS(NUMBER_2)          //  "
 #define __DQUOT__    &kp KC_DQUOT          //  "
 #define KC_ACCENT    LEFT_BRACKET          //  ^ → SPC   macro is needed
-#define KC_ACUTE     LS(KC_ACCENT)         //  ^ → SPC   macro is needed
+#define KC_ACUTE     LS(LEFT_BRACKET)      //  ^ → SPC   macro is needed
 #define __ACUTE__    &kp KC_ACUTE          //  ^ → SPC   macro is needed
 #define KC_ORDINAL    GRAVE                //  º
 #define _ORDINAL_    &kp KC_ORDINAL        //  º
-#define KC_ACCLTR    APOSTROPHE        //  ´ for accented letters
-#define _ACC_LTR_    &kp KC_ACCLTR         //  ´ for accented letters
 
 #define __LEFT___    &kp LEFT_ARROW
 #define __DOWN___    &kp DOWN_ARROW
@@ -149,7 +147,7 @@
 #define __TEST1__ &macro_accent_a
 //#define __TEST2__ &ht_nav_rep A NUM
 //#define __TEST2__ &ht_nav_rep NUM K
-#define __TEST2__ &macr__UNDO___o_accent_a_ucase
+#define __TEST2__ &macro_accent_a_ucase
 #define __TEST3__ &mm_accent_a
 
 
