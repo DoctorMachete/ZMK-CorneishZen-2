@@ -115,8 +115,8 @@
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
               bindings = <&mo>, <&key_repeat>;
             };
-            ht_custom_mod_tap: ht_custom_mod_tap {             // RCTRL → TOGGLE LANGUAGE LAYER
-            compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_MOD_TAP";
+            ht_custom_mod_toggle: ht_custom_mod_toggle {             // RCTRL → TOGGLE LANGUAGE LAYER
+            compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_MOD_TOGGLE";
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
               bindings = <&kp>, <&tog>;
             };
@@ -157,6 +157,8 @@
               #binding-cells = <0>; bindings = <&macro_dier_u>, <&macro_dier_u_shifted>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
+
+            
             td_accent_dier_u: td_accent_dier_u {     // u → ú → ü
                 compatible = "zmk,behavior-tap-dance"; label = "TD_ACCENT_DIER_U";
                 #binding-cells = <0>; tapping-term-ms = <400>;
@@ -172,7 +174,6 @@
 
 
 //  Base Layer: COLEMAK
-//    
 //  ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗                       ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗
 //  ║  TAB    │    Q    │    W    │    F    │    P    │    B    ║                       ║    J    │    L    │    U    │    Y    │   ! ¡   │         ║
 //  ║         │         │         │         │         │         ║                       ║         │         │         │         │   ? ¿   │         ║
@@ -193,7 +194,6 @@
                                              _________ __LSHFT__ _NAVREP__     _NUMSPC__ __BKSPC__ __ENTER__
                         >;};
 //  Base Layer: ACCENTS
-//    
 //  ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗                       ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗
 //  ║         │         │         │         │         │         ║                       ║         │         │    Ü    │    Y    │         │         ║
 //  ║         │         │         │         │         │         ║                       ║         │         │    Ú    │         │         │         ║
@@ -215,7 +215,6 @@
                         >;};
 
 //  Base Layer: NAV
-//    
 //  ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗                       ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗
 //  ║  TAB    │         │   CUT   │SELECTALL│   F2    │ BACKSPC ║                       ║  DELETE │   INI   │  PREPAG │  AVPAG  │   END   │  INSERT ║
 //  ║         │         │         │  COPY   │  PASTE  │         ║                       ║         │         │         │         │         │         ║
@@ -239,7 +238,6 @@
 
 
 //  Base Layer: NUM
-//    
 //  ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗                       ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗
 //  ║   ALT   │         │    %    │    /    │    *    │    ÷    ║                       ║    !    │    +    │    -    │    =    │    €    │    ±    ║
 //  ║   TAB   │         │         │         │         │    ×    ║                       ║         │         │         │         │         │    ~    ║
