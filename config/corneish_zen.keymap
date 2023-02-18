@@ -157,8 +157,8 @@
               #binding-cells = <0>; bindings = <&macro_dier_u>, <&macro_dier_u_shifted>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
-            td_repeat_test: td_accent_dier_u {     // u → ú → ü
-                compatible = "zmk,behavior-tap-dance"; label = "TD_REPEAT_TEST";
+            td_accent_dier_u: td_accent_dier_u {     // u → ú → ü
+                compatible = "zmk,behavior-tap-dance"; label = "TD_ACCENT_DIER_U";
                 #binding-cells = <0>; tapping-term-ms = <400>;
                 bindings = <&mm_accent_u>, <&mm_dier_u>;
             };
