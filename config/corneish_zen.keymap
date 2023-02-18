@@ -16,12 +16,7 @@
 
 #include "keycodes.h"
 
-#define HOLD_TAP(NAME, BINDINGS1, BINDINGS2) \
-  ht_##NAME { \
-    compatible = "zmk,behavior-hold-tap"; label = "ht_##NAME";\
-    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred"; \
-    bindings = <BINDINGS1>, <BINDINGS2>; \
-  };
+
 
 
 
@@ -41,6 +36,12 @@
 
           };
           behaviors {
+            #define HOLD_TAP(NAME, BINDINGS1, BINDINGS2) \
+              ht_##NAME { \
+                compatible = "zmk,behavior-hold-tap"; label = "ht_##NAME";\
+                #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred"; \
+                bindings = <BINDINGS1>, <BINDINGS2>; \
+              };
             mm_quote_accent: mm_quote_accent {        // ' `
               compatible = "zmk,behavior-mod-morph"; label = "MM_QUOTE_ACCENT";
               #binding-cells = <0>; bindings = <&kp KC_QUOT>, <&macro_accent>;
