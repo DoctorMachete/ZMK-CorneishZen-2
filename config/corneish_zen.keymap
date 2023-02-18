@@ -33,107 +33,75 @@
           };
           behaviors {
             mm_quote_accent: mm_quote_accent {        // ' `
-              compatible = "zmk,behavior-mod-morph";
-              label = "MM_QUOTE_ACCENT";
-              #binding-cells = <0>;
-              bindings = <&kp KC_QUOT>, <&macro_accent>;
+              compatible = "zmk,behavior-mod-morph"; label = "MM_QUOTE_ACCENT";
+              #binding-cells = <0>; bindings = <&kp KC_QUOT>, <&macro_accent>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
             mm_dquote_acute: mm_dquote_acute {        // " ^
-              compatible = "zmk,behavior-mod-morph";
-              label = "MM_DQUOTE_ACUTE";
-              #binding-cells = <0>;
-              bindings = <&kp KC_DQUOT>, <&macro_acute>;
+              compatible = "zmk,behavior-mod-morph"; label = "MM_DQUOTE_ACUTE";
+              #binding-cells = <0>; bindings = <&kp KC_DQUOT>, <&macro_acute>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
 
             ht_quotes_accent: ht_quotes_accent {      //  ' ` ' ^/ 
-            compatible = "zmk,behavior-hold-tap";
-              label = "HT_QUOTES_ACCENT";
-              #binding-cells = <2>;
-             tapping-term-ms = <300>;
-              quick-tap-ms = <0>;
-              flavor = "tap-preferred";
+            compatible = "zmk,behavior-hold-tap"; label = "HT_QUOTES_ACCENT";
+              #binding-cells = <2>; tapping-term-ms = <300>; quick-tap-ms = <0>; flavor = "tap-preferred";
               bindings = <&mm_dquote_acute>, <&mm_quote_accent>;
             };
 
 
             mm_slash_bslash: mm_slash_bslash {        
-              compatible = "zmk,behavior-mod-morph";
-              label = "MM_SLASH_BSLASH";
-              #binding-cells = <0>;
-              bindings = <&kp KC_SLASH>, <&kp KC_BSLASH>;
+              compatible = "zmk,behavior-mod-morph"; label = "MM_SLASH_BSLASH";
+              #binding-cells = <0>; bindings = <&kp KC_SLASH>, <&kp KC_BSLASH>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
             mm_inicomment_endcomment: mm_inicomment_endcomment {        
-              compatible = "zmk,behavior-mod-morph";
-              label = "MM_INICOMMENT_ENDCOMMENT";
-              #binding-cells = <0>;
-              bindings = <&macro_ini_comment>, <&macro_end_comment>;
+              compatible = "zmk,behavior-mod-morph"; label = "MM_INICOMMENT_ENDCOMMENT";
+              #binding-cells = <0>; bindings = <&macro_ini_comment>, <&macro_end_comment>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
 
             ht_slash_comments: ht_slash_comments {      
-            compatible = "zmk,behavior-hold-tap";
-              label = "HT_SLASH_COMMENTS";
-              #binding-cells = <2>;
-             tapping-term-ms = <300>;
-              quick-tap-ms = <200>;
+            compatible = "zmk,behavior-hold-tap"; label = "HT_SLASH_COMMENTS";
+              #binding-cells = <2>; tapping-term-ms = <300>; quick-tap-ms = <200>;
               flavor = "tap-preferred";
               bindings = <&mm_inicomment_endcomment>, <&mm_slash_bslash>;
             };
 
 
             td_lt_lt_test: td_lt_lt_test {     // test TAP-DANCE + two LAYER-TAPS
-                compatible = "zmk,behavior-tap-dance";
-                label = "TD_LT_LT_TEST";
-                #binding-cells = <0>;
-                tapping-term-ms = <200>;
+                compatible = "zmk,behavior-tap-dance"; label = "TD_LT_LT_TEST";
+                #binding-cells = <0>; tapping-term-ms = <200>;
                 bindings = <&lt NAV N5>, <&lt NUM N6>, <&kp N7>;
             };
             td_repeat_test: td_repeat_test {     // test TAP-DANCE + two LAYER-TAPS
-                compatible = "zmk,behavior-tap-dance";
-                label = "TD_REPEAT_TEST";
-                #binding-cells = <0>;
-                tapping-term-ms = <400>;
+                compatible = "zmk,behavior-tap-dance"; label = "TD_REPEAT_TEST";
+                #binding-cells = <0>; tapping-term-ms = <400>;
                 bindings = <&key_repeat>, <&lt NAV N8>, <&lt NUM N9>, <&kp N0>;
             };
 
 
 
             mm_quest_oquest: mm_quest_oquest {              //  ? → ¿
-              compatible = "zmk,behavior-mod-morph";
-              label = "MM_QUEST_OQUEST";
-              #binding-cells = <0>;
-              bindings = <&kp KC_QUEST>, <&kp KC_OQUEST>;
+              compatible = "zmk,behavior-mod-morph"; label = "MM_QUEST_OQUEST";
+              #binding-cells = <0>; bindings = <&kp KC_QUEST>, <&kp KC_OQUEST>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
             mm_exclam_oexclam: mm_exclam_oexclam {        //   ! → ¡
-              compatible = "zmk,behavior-mod-morph";
-              label = "MM_EXCLAM_OEXCLAM";
-              #binding-cells = <0>;
-              bindings = < &kp KC_EXCLAM>, <&kp KC_OEXCLAM>;
+              compatible = "zmk,behavior-mod-morph"; label = "MM_EXCLAM_OEXCLAM";
+              #binding-cells = <0>; bindings = < &kp KC_EXCLAM>, <&kp KC_OEXCLAM>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
             ht_quest_exclam: ht_quest_exclam {             //  ? ¿ ! ¡
-            compatible = "zmk,behavior-hold-tap";
-              label = "HT_QUEST_EXCLAM";
-              #binding-cells = <2>;
-             tapping-term-ms = <300>;
-              quick-tap-ms = <200>;
-              flavor = "tap-preferred";
+            compatible = "zmk,behavior-hold-tap"; label = "HT_QUEST_EXCLAM";
+              #binding-cells = <2>; tapping-term-ms = <300>; quick-tap-ms = <200>; flavor = "tap-preferred";
               bindings = <&mm_exclam_oexclam>, <&mm_quest_oquest>;
             };
 
 
             ht_hold_to_tap: ht_hold_to_tap {             //  REUSRABLE HOLD TO TAP for single tap actions (no morph)
-            compatible = "zmk,behavior-hold-tap";
-              label = "HT_HOLD_TO_TAP";
-              #binding-cells = <2>;
-             tapping-term-ms = <300>;
-              quick-tap-ms = <0>;
-              flavor = "tap-preferred";
-              //bindings = <&kp LC(A)>, <&kp LC(C)>;
+            compatible = "zmk,behavior-hold-tap"; label = "HT_HOLD_TO_TAP";
+              #binding-cells = <2>; tapping-term-ms = <300>; quick-tap-ms = <0>; flavor = "tap-preferred";
               bindings = <&kp>, <&kp>;
             };
 
@@ -143,44 +111,45 @@
 
 
             ht_nav_rep: ht_nav_rep {             //  NAV - REP
-            compatible = "zmk,behavior-hold-tap";
-              label = "HT_NAV_REP";
-              #binding-cells = <2>;
-             tapping-term-ms = <200>;
-              quick-tap-ms = <200>;
-              flavor = "tap-preferred";
+            compatible = "zmk,behavior-hold-tap"; label = "HT_NAV_REP";
+              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
               bindings = <&mo>, <&key_repeat>;
             };
             ht_custom_mod_tap: ht_custom_mod_tap {             // RCTRL → TOGGLE LANGUAGE LAYER
-            compatible = "zmk,behavior-hold-tap";
-              label = "HT_CUSTOM_MOD_TAP";
-              #binding-cells = <2>;
-             tapping-term-ms = <200>;
-              quick-tap-ms = <0>;
-              flavor = "tap-preferred";
+            compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_MOD_TAP";
+              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
               bindings = <&kp>, <&tog>;
             };
 
             td_nav_rep_npad_togglenpad: td_nav_rep_npad_togglenpad {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD
-                compatible = "zmk,behavior-tap-dance";
-                label = "TD_NAV_REP_NPAD_TOGGLENPAD";
-                #binding-cells = <0>;
-                tapping-term-ms = <250>;
+                compatible = "zmk,behavior-tap-dance"; label = "TD_NAV_REP_NPAD_TOGGLENPAD";
+                #binding-cells = <0>; tapping-term-ms = <250>;
                 bindings = <&ht_nav_rep NAV 0>, <&ht_nav_rep NUM 0>, <&kp Y>;
             };
 
             mm_accent_a: mm_accent_a {              //  a → á
-              compatible = "zmk,behavior-mod-morph";
-              label = "MM_ACCENT_A";
-              #binding-cells = <0>;
-              bindings = <&macro_accent_a>, <&macro_accent_a_shifted>;
+              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_A";
+              #binding-cells = <0>; bindings = <&macro_accent_a>, <&macro_accent_a_shifted>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
             mm_accent_e: mm_accent_e {              //  e → é
-              compatible = "zmk,behavior-mod-morph";
-              label = "MM_ACCENT_E";
-              #binding-cells = <0>;
-              bindings = <&macro_accent_e>, <&macro_accent_e_shifted>;
+              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_E";
+              #binding-cells = <0>; bindings = <&macro_accent_e>, <&macro_accent_e_shifted>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            mm_accent_e: mm_accent_e {              //  e → é
+              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_E";
+              #binding-cells = <0>; bindings = <&macro_accent_e>, <&macro_accent_e_shifted>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            mm_accent_e: mm_accent_e {              //  e → é
+              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_E";
+              #binding-cells = <0>; bindings = <&macro_accent_e>, <&macro_accent_e_shifted>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            mm_accent_e: mm_accent_e {              //  e → é
+              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_E";
+              #binding-cells = <0>; bindings = <&macro_accent_e>, <&macro_accent_e_shifted>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
 
