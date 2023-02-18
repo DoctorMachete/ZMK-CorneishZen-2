@@ -112,6 +112,7 @@
 #define __PGUP___    &kp PAGE_UP
 #define __PGDN___    &kp PAGE_DOWN
 #define __BOOTL__    &bootloader
+#define __RESET__    &reset
 
 #define __REDO___    &kp LC(Y)
 #define __UNDO___    &kp LC(Z)
