@@ -101,6 +101,8 @@
 #define __ACUTE__    &kp KC_ACUTE          //  ^ → SPC   macro is needed
 #define KC_ORDINAL    GRAVE                //  º
 #define _ORDINAL_    &kp KC_ORDINAL        //  º
+#define KC_ACCLTR    APOSTROPHE            //  ´
+
 
 #define __LEFT___    &kp LEFT_ARROW
 #define __DOWN___    &kp DOWN_ARROW
