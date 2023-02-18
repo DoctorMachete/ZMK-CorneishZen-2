@@ -139,20 +139,24 @@
             };
             mm_accent_i: mm_accent_i {              //  i → í
               compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_I";
-              #binding-cells = <0>; bindings = <&macro_accent_e>, <&macro_accent_e_shifted>;
+              #binding-cells = <0>; bindings = <&macro_accent_i>, <&macro_accent_i_shifted>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
             mm_accent_o: mm_accent_o {              //  o → ó
               compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_O";
-              #binding-cells = <0>; bindings = <&macro_accent_e>, <&macro_accent_e_shifted>;
+              #binding-cells = <0>; bindings = <&macro_accent_o>, <&macro_accent_o_shifted>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
             mm_accent_u: mm_accent_u {              //  u → ú
               compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_U";
+              #binding-cells = <0>; bindings = <&macro_accent_u>, <&macro_accent_u_shifted>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            mm_dier_u: mm_dier_u {              //  u → ü
+              compatible = "zmk,behavior-mod-morph"; label = "MM_DIER_U";
               #binding-cells = <0>; bindings = <&macro_accent_e>, <&macro_accent_e_shifted>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
-
           };
 
          
