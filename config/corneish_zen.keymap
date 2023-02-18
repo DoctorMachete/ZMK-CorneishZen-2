@@ -137,18 +137,18 @@
               #binding-cells = <0>; bindings = <&macro_accent_e>, <&macro_accent_e_shifted>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
-            mm_accent_e: mm_accent_e {              //  e → é
-              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_E";
+            mm_accent_i: mm_accent_i {              //  i → í
+              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_I";
               #binding-cells = <0>; bindings = <&macro_accent_e>, <&macro_accent_e_shifted>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
-            mm_accent_e: mm_accent_e {              //  e → é
-              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_E";
+            mm_accent_o: mm_accent_o {              //  o → ó
+              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_O";
               #binding-cells = <0>; bindings = <&macro_accent_e>, <&macro_accent_e_shifted>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
-            mm_accent_e: mm_accent_e {              //  e → é
-              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_E";
+            mm_accent_u: mm_accent_u {              //  u → ú
+              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_U";
               #binding-cells = <0>; bindings = <&macro_accent_e>, <&macro_accent_e_shifted>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
