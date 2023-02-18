@@ -166,7 +166,7 @@
               compatible = "zmk,behavior-mod-morph";
               label = "MM_ACCENT_A";
               #binding-cells = <0>;
-              bindings = <macro_accent_a_ucase>, <macro_accent_a>;
+              bindings = <&macro_accent_a_ucase>, <&macro_accent_a>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
 
