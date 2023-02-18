@@ -16,6 +16,15 @@
 
 #include "keycodes.h"
 
+#define HOLD_TAP(NAME, BINDINGS1, BINDINGS2, TAPPING_TERM, QUICK_TAP) \
+  ht_##NAME { \
+    compatible = "zmk,behavior-hold-tap"; label = "ht_##NAME";\
+    #binding-cells = <2>; tapping-term-ms = <TAPPING_TERM>; quick-tap-ms = <QUICK_TAP>; flavor = "tap-preferred"; \
+    bindings = <BINDINGS1>, <BINDINGS2>; \
+  };
+
+
+
 / {
   chosen {
     zmk,matrix_transform = &default_transform;
@@ -132,11 +141,13 @@
               #binding-cells = <0>; bindings = <&macro_accent_a>, <&macro_accent_a_shifted>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
-            ht_accent_a: ht_accent_a {             //  a → á
-            compatible = "zmk,behavior-hold-tap"; label = "HT_ACCENT_A";
-              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
-              bindings = <&mm_accent_a>, <&kp>;
-            };            
+//            ht_accent_a: ht_accent_a {             //  a → á
+//            compatible = "zmk,behavior-hold-tap"; label = "HT_ACCENT_A";
+//              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
+ //             bindings = <&mm_accent_a>, <&kp>;
+ //           };    
+            HOLD_TAP(accent_a, &mm_accent_a, &kp, 200, 200)
+
             mm_accent_e: mm_accent_e {              //  e → é
               compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_E";
               #binding-cells = <0>; bindings = <&macro_accent_e>, <&macro_accent_e_shifted>;
