@@ -161,6 +161,16 @@
                 tapping-term-ms = <250>;
                 bindings = <&ht_nav_rep NAV 0>, <&ht_nav_rep NUM 0>, <&kp Y>;
             };
+
+            mm_accent_a: mm_accent_a {              //  a → á
+              compatible = "zmk,behavior-mod-morph";
+              label = "MM_ACCENT_A";
+              #binding-cells = <0>;
+              bindings = <macro_accent_a_ucase>, <macro_accent_a>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+
+
           };
 
          
