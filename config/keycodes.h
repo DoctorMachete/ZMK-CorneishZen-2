@@ -124,10 +124,11 @@
 #define _SLCTALL_    &kp LC(A)
 
 // LAYER TAPS
-//#define _NAVREP__ &lt NAV &key_repeat       // doesn't work
-//#define _NAVREP__    &ht_nav_rep NAV 0        // repeat does work
 #define _NAVREP__    &td_nav_rep_npad_togglenpad      // NAV-REP + NPADoREP + TOGGLENPAD
 #define _NUMSPC__    &lt NUM SPACE
+
+// MOD TAPS
+//#define _RCTLACC_    &lt NUM SPACE
 
 
 // MOD TAPS
@@ -146,10 +147,10 @@
 
 
 
-#define __TEST1__ &macro_accent_a
+#define __TEST1__ &ht_rctl_accents RCTRL ACCENTS
 //#define __TEST2__ &ht_nav_rep A NUM
 //#define __TEST2__ &ht_nav_rep NUM K
-#define __TEST2__ &macro_accent_a_shifted
+#define __TEST2__ &mm_accent_a
 #define __TEST3__ &mm_accent_a
 
 
