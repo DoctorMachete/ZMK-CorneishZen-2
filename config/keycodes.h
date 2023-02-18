@@ -136,18 +136,18 @@
 #define _QUOTACC_ &ht_quotes_accent 0 0     //  ' ` " ^
 #define _SLSHCOM_ &ht_slash_comments 0 0    // SLASH + open/close comments macro
 #define _QUSTCLM_ &ht_quest_exclam 0 0      //  ? ¿ ! ¡
-#define _CPYSLAL_ &ht_hold_to_tap LC(A) LC(C)   //  COPY → PASTE
-#define _PASTEF2_ &ht_hold_to_tap F2 LC(V)   //  COPY → PASTE
+#define _CPYSLAL_ &ht_hold_to_tap LC(A) LC(C)   //  COPY → SELECTALL
+#define _PASTEF2_ &ht_hold_to_tap F2 LC(V)   //  PASTE → F2
 #define _SRCHENT_ &ht_hold_to_tap LC(F) ENTER    //  ENTER → SEARCH
-#define _ESCMENU_ &ht_hold_to_tap K_CONTEXT_MENU ESC   //  SEARCH → ENTER
+#define _ESCMENU_ &ht_hold_to_tap K_CONTEXT_MENU ESC   //  MENU → ESC
 
 
 
 #define __TEST1__ &macro_multiplication
 //#define __TEST2__ &ht_nav_rep A NUM
 //#define __TEST2__ &ht_nav_rep NUM K
-#define __TEST2__ &td_nav_rep_npad_togglenpad
-#define __TEST3__ &td_nav_rep_npad_togglenpad
+#define __TEST2__ &macro_division
+#define __TEST3__ &macro_power2
 
 
 
