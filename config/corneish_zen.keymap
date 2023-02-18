@@ -125,7 +125,7 @@
             };
 
 
-            ht_hold_to_tap: ht_hold_to_tap {             //  REUSRABLE HOLD TO TAP for two single tap actions (no morph)
+            ht_hold_to_tap: ht_hold_to_tap {             //  REUSRABLE HOLD TO TAP for single tap actions (no morph)
             compatible = "zmk,behavior-hold-tap";
               label = "HT_HOLD_TO_TAP";
               #binding-cells = <2>;
@@ -153,7 +153,7 @@
             };
 
 
-            td_NAV_REP_: td_nav_rep_npad_togglenpad {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPAD-TOGGLENPAD
+            td_nav_rep_npad_togglenpad: td_nav_rep_npad_togglenpad {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPAD-TOGGLENPAD
                 compatible = "zmk,behavior-tap-dance";
                 label = "TD_NAV_REP_NPAD_TOGGLENPAD";
                 #binding-cells = <0>;
