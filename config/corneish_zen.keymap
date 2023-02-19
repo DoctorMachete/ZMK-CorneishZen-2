@@ -108,7 +108,7 @@
             ht_custom_tog_tap: ht_custom_tog_tap {             
               compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_TOG_TAP";
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
-              bindings = <&mo>, <&kp>;
+              bindings = <&tog>, <&kp>;
             };          
             ht_custom_mod_toggle: ht_custom_mod_toggle {             // RCTRL → TOGGLE LANGUAGE LAYER
               compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_MOD_TOGGLE";
@@ -194,7 +194,7 @@
             td_num_spc_npad_togglenpad: td_num_spc_npad_togglenpad {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD
                 compatible = "zmk,behavior-tap-dance"; label = "TD_NUM_SPC_NPAD_TOGGLENPAD";
                 #binding-cells = <0>; tapping-term-ms = <250>;
-                bindings = <&ht_custom_mo_tap NUM SPACE>, <&ht_custom_tog_tap NPAD SPACE>;
+                bindings = <&ht_custom_mo_tap NUM SPACE>, <&ht_custom_tog_tap NPAD SPACE>, <&kp SPACE>;
             };
 
           };
