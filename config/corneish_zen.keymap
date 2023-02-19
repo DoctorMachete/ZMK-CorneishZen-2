@@ -32,7 +32,7 @@
 
           };
           behaviors {
-            // LAYER COLEMAK ****************************************************************************************************************  
+            // LAYER COLEMAK ************************************************************************************************************************
             mm_quote_accent: mm_quote_accent {        // ' `
               compatible = "zmk,behavior-mod-morph"; label = "MM_QUOTE_ACCENT";
               #binding-cells = <0>; bindings = <&kp KC_QUOT>, <&macro_accent>;
@@ -69,20 +69,6 @@
               bindings = <&mm_inicomment_endcomment>, <&mm_slash_bslash>;
             };
 
-
-            td_lt_lt_test: td_lt_lt_test {     // test TAP-DANCE + two LAYER-TAPS
-                compatible = "zmk,behavior-tap-dance"; label = "TD_LT_LT_TEST";
-                #binding-cells = <0>; tapping-term-ms = <200>;
-                bindings = <&lt NAV N5>, <&lt NUM N6>, <&kp N7>;
-            };
-            td_repeat_test: td_repeat_test {     // test TAP-DANCE + two LAYER-TAPS
-                compatible = "zmk,behavior-tap-dance"; label = "TD_REPEAT_TEST";
-                #binding-cells = <0>; tapping-term-ms = <400>;
-                bindings = <&key_repeat>, <&lt NAV N8>, <&lt NUM N9>, <&kp N0>;
-            };
-
-
-
             mm_quest_oquest: mm_quest_oquest {              //  ? → ¿
               compatible = "zmk,behavior-mod-morph"; label = "MM_QUEST_OQUEST";
               #binding-cells = <0>; bindings = <&kp KC_QUEST>, <&kp KC_OQUEST>;
@@ -99,18 +85,26 @@
               bindings = <&mm_exclam_oexclam>, <&mm_quest_oquest>;
             };
 
-
-            //ht_hold_to_tap: ht_hold_to_tap {             //  REUSRABLE HOLD TO TAP for single tap actions (no morph)
-            //compatible = "zmk,behavior-hold-tap"; label = "HT_HOLD_TO_TAP";
-            //  #binding-cells = <2>; tapping-term-ms = <300>; quick-tap-ms = <0>; flavor = "tap-preferred";
-            //  bindings = <&kp>, <&kp>;
-            //};
             ht_custom_tap_tap: ht_custom_tap_tap {             // REUSABLE tap for both the hold and the tap actions, so two keys are expected as parameters
               compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_TAP_TAP";
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
               bindings = <&kp>, <&kp>;
             };
 
+            ht_nav_rep: ht_nav_rep {             //  NAV - REP
+              compatible = "zmk,behavior-hold-tap"; label = "HT_NAV_REP";
+              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
+              bindings = <&mo>, <&key_repeat>;
+            };
+            ht_custom_mod_toggle: ht_custom_mod_toggle {             // RCTRL → TOGGLE LANGUAGE LAYER
+              compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_MOD_TOGGLE";
+              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
+              bindings = <&kp>, <&tog>;
+            };            
+            // END LAYER COLEMAK ********************************************************************************************************************
+            
+            
+            // LAYER ACCENTS ************************************************************************************************************************
             mm_accent_a: mm_accent_a {              //  á → Á
               compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_A";
               #binding-cells = <0>; bindings = <&macro_accent_a>, <&macro_accent_a_shifted>;
@@ -171,21 +165,12 @@
                 #binding-cells = <0>; tapping-term-ms = <200>;
                 bindings = <&ht_accent_u 0 U>, <&mm_dier_u>;
             };
+            // END LAYER ACCENTS ********************************************************************************************************************
 
 
 
 
 
-            ht_nav_rep: ht_nav_rep {             //  NAV - REP
-              compatible = "zmk,behavior-hold-tap"; label = "HT_NAV_REP";
-              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
-              bindings = <&mo>, <&key_repeat>;
-            };
-            ht_custom_mod_toggle: ht_custom_mod_toggle {             // RCTRL → TOGGLE LANGUAGE LAYER
-              compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_MOD_TOGGLE";
-              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
-              bindings = <&kp>, <&tog>;
-            };
 
             td_nav_rep_npad_togglenpad: td_nav_rep_npad_togglenpad {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD
                 compatible = "zmk,behavior-tap-dance"; label = "TD_NAV_REP_NPAD_TOGGLENPAD";
@@ -249,14 +234,14 @@
 //  ║  TAB    │         │   CUT   │SELECTALL│   F2    │ BACKSPC ║                       ║  DELETE │   INI   │  PREPAG │  AVPAG  │   END   │  INSERT ║
 //  ║         │         │         │  COPY   │  PASTE  │         ║                       ║         │         │         │         │         │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢                       ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
-//  ║  REDO   │  UNDO   │   ALT   │  SHIFT  │  CTRL   │  ENTER  ║                       ║         │  LEFT   │  DOWN   │   UP    │  RIGHT  │         ║
-//  ║         │         │         │         │         │ SEARCH  ║                       ║         │         │         │         │         │         ║
+//  ║  REDO   │  UNDO   │   ALT   │  SHIFT  │  CTRL   │ SEARCH  ║                       ║         │  LEFT   │  DOWN   │   UP    │  RIGHT  │         ║
+//  ║         │         │         │         │         │  ENTER  ║                       ║         │         │         │         │         │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
 //  ║  RESET  │         │         │         │         │   MENU  ║                       ║         │         │         │         │         │         ║
-//  ║         │         │         │         │         │   ESC   ║                       ║         │         │         │         │         │         ║
+//  ║  SOFT   │         │         │         │         │   ESC   ║                       ║         │         │         │         │         │         ║
 //  ╚═════════╧═════════╧═══════════════════╬─────────┼─────────╬═════════╗   ╔═════════╬─────────┼─────────╬═════════╧═════════╧═════════╧═════════╝
-//                                          ║  BOOTL  │         │XXXXXXXXX║   ║   SPC   │ BCKSPC  │  ENTER  ║
-//                                          ║         │         │XXXXXXXXX║   ║         │         │         ║
+//                                          ║  RESET  │         │XXXXXXXXX║   ║   SPC   │ BCKSPC  │  ENTER  ║
+//                                          ║  BOOTL  │         │XXXXXXXXX║   ║         │         │         ║
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
                 navigation_layer { label = "NAV"; bindings = <
      ___TAB___ _________ ___CUT___ _CPYSLAL_ _PASTEF2_ __BKSPC__                         ___DEL___ ___INI___ __PGUP___ __PGDN___ ___END___ __INSRT__
@@ -276,10 +261,10 @@
 //  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
 //  ║  LCTRL  │         │         │         │         │    ∞    ║                       ║         │         │    ,    │    .    │    ≥    │  RESET  ║
-//  ║         │         │         │         │         │    º    ║                       ║         │         │         │         │    ≤    │         ║
+//  ║         │         │         │         │         │    º    ║                       ║         │         │         │         │    ≤    │  SOFT   ║
 //  ╚═════════╧═════════╧═══════════════════╬─────────┼─────────╬═════════╗   ╔═════════╬─────────┼─────────╬═════════╧═════════╧═════════╧═════════╝
-//                                          ║  ENTER  │ BCKSPC  │   SPC   ║   ║XXXXXXXXX│         │  BOOTL  ║
-//                                          ║         │         │         ║   ║XXXXXXXXX│         │         ║
+//                                          ║  ENTER  │ BCKSPC  │   SPC   ║   ║XXXXXXXXX│         │  RESET  ║
+//                                          ║         │         │         ║   ║XXXXXXXXX│         │  BOOTL  ║
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
 //  
                 num_layer { label = "NUM"; bindings = <
