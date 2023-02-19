@@ -25,3 +25,5 @@ compatible = "zmk,combos";
 
 COMBO(testqw, &kp W, 1 2, COLEMAK)
 //COMBO(test_lt, &lt NUM N3, 12 13, COLEMAK)    // combo_test_lt for testing the use of layer tap combos so that can be used to compensate for REPEAT not working with a LT
+COMBO(Activate_Gaming_Layer, &to GAMING, 9 10 11, COLEMAK)
+COMBO(Activate_Colemak_Layer, &to COLEMAK, 9 10 11, GAMING)
