@@ -144,21 +144,21 @@
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
               bindings = <&mm_accent_o>, <&kp>;
             };  
-//            mm_accent_u: mm_accent_u {              //  ú → Ú
-//              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_U";
-//              #binding-cells = <0>; bindings = <&macro_accent_u>, <&macro_accent_u_shifted>;
-//              mods = <(MOD_LSFT|MOD_RSFT)>;
-//            };
-//            mm_dier_u: mm_dier_u {              //  ü → Ü
-//              compatible = "zmk,behavior-mod-morph"; label = "MM_DIER_U";
-//              #binding-cells = <0>; bindings = <&macro_dier_u>, <&macro_dier_u_shifted>;
-//              mods = <(MOD_LSFT|MOD_RSFT)>;
-//            };
-//            ht_accent_u: ht_accent_u {             //  uU → úÚ
-//            compatible = "zmk,behavior-hold-tap"; label = "HT_ACCENT_U";
-//              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
-//              bindings = <&mm_accent_u>, <&kp>;
-//            };  
+            mm_accent_u: mm_accent_u {              //  ú → Ú
+              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_U";
+              #binding-cells = <0>; bindings = <&macro_accent_u>, <&macro_accent_u_shifted>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            mm_dier_u: mm_dier_u {              //  ü → Ü
+              compatible = "zmk,behavior-mod-morph"; label = "MM_DIER_U";
+              #binding-cells = <0>; bindings = <&macro_dier_u>, <&macro_dier_u_shifted>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            ht_accent_u: ht_accent_u {             //  uU → úÚ
+            compatible = "zmk,behavior-hold-tap"; label = "HT_ACCENT_U";
+              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
+              bindings = <&mm_accent_u>, <&kp>;
+            };  
             
 //            td_accent_dier_u: td_accent_dier_u {     // uU / úÚ → üÜ
 //                compatible = "zmk,behavior-tap-dance"; label = "TD_ACCENT_DIER_U";
@@ -214,7 +214,7 @@
                 default_layer { label = "COLEMAK"; bindings = <
      ___TAB___ ____Q____ ____W____ ____F____ ____P____ ____B____                         ____Y____ ____L____ ____U____ ____Y____ _QUSTCLM_ _________
      _SLSHCOM_ ____A____ ____R____ ____S____ ____T____ ____G____                         ____M____ ____N____ ____E____ ____I____ ____O____ _QUOTACC_
-     __LCTRL__ __TEST1__ ____X____ __TEST2__ ____D____ __TEST3__                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ _RCTLACC_
+     __LCTRL__ __TEST1__ __TEST2__ __TEST2__ __TEST3__ ____V____                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ _RCTLACC_
                                              _________ __LSHFT__ _NAVREP__     _NUMSPC__ __BKSPC__ __ENTER__
                         >;};
 //  Base Layer: ACCENTS
