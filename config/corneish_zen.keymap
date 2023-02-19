@@ -32,6 +32,7 @@
 
           };
           behaviors {
+            // LAYER COLEMAK ****************************************************************************************************************  
             mm_quote_accent: mm_quote_accent {        // ' `
               compatible = "zmk,behavior-mod-morph"; label = "MM_QUOTE_ACCENT";
               #binding-cells = <0>; bindings = <&kp KC_QUOT>, <&macro_accent>;
@@ -99,11 +100,17 @@
             };
 
 
-            ht_hold_to_tap: ht_hold_to_tap {             //  REUSRABLE HOLD TO TAP for single tap actions (no morph)
-            compatible = "zmk,behavior-hold-tap"; label = "HT_HOLD_TO_TAP";
-              #binding-cells = <2>; tapping-term-ms = <300>; quick-tap-ms = <0>; flavor = "tap-preferred";
+            //ht_hold_to_tap: ht_hold_to_tap {             //  REUSRABLE HOLD TO TAP for single tap actions (no morph)
+            //compatible = "zmk,behavior-hold-tap"; label = "HT_HOLD_TO_TAP";
+            //  #binding-cells = <2>; tapping-term-ms = <300>; quick-tap-ms = <0>; flavor = "tap-preferred";
+            //  bindings = <&kp>, <&kp>;
+            //};
+            ht_custom_tap_tap: ht_custom_tap_tap {             // REUSABLE tap for both the hold and the tap actions, so two keys are expected as parameters
+              compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_TAP_TAP";
+              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
               bindings = <&kp>, <&kp>;
             };
+
             mm_accent_a: mm_accent_a {              //  á → Á
               compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_A";
               #binding-cells = <0>; bindings = <&macro_accent_a>, <&macro_accent_a_shifted>;
@@ -179,11 +186,7 @@
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
               bindings = <&kp>, <&tog>;
             };
-            ht_custom_tap_tap: ht_custom_tap_tap {             // RCTRL → TOGGLE LANGUAGE LAYER
-              compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_TAP_TAP";
-              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
-              bindings = <&kp>, <&kp>;
-            };
+
             td_nav_rep_npad_togglenpad: td_nav_rep_npad_togglenpad {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD
                 compatible = "zmk,behavior-tap-dance"; label = "TD_NAV_REP_NPAD_TOGGLENPAD";
                 #binding-cells = <0>; tapping-term-ms = <250>;
@@ -222,11 +225,11 @@
                         >;};
 //  Base Layer: ACCENTS
 //  ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗                       ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗
-//  ║         │         │         │         │         │         ║                       ║         │         │    Ü    │    Y    │         │         ║
-//  ║         │         │         │         │         │         ║                       ║         │         │    Ú    │         │         │         ║
+//  ║         │         │         │         │         │         ║                       ║         │         │    Ü    │         │         │         ║
+//  ║         │         │         │         │         │         ║                       ║         │         │   Ú U   │         │         │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢                       ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
 //  ║         │    Á    │         │         │         │         ║                       ║         │    Ñ    │    É    │    Í    │    Ó    │         ║
-//  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │         ║
+//  ║         │    A    │         │         │         │         ║                       ║         │    N    │    E    │    I    │    O    │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
 //  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │         ║
 //  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │         ║

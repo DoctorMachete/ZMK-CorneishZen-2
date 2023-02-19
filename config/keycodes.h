@@ -152,10 +152,14 @@
 #define _QUOTACC_ &ht_quotes_accent 0 0     //  ' ` " ^
 #define _SLSHCOM_ &ht_slash_comments 0 0    // SLASH + open/close comments macro
 #define _QUSTCLM_ &ht_quest_exclam 0 0      //  ? ¿ ! ¡
-#define _CPYSLAL_ &ht_hold_to_tap LC(A) LC(C)   //  COPY → SELECTALL
-#define _PASTEF2_ &ht_hold_to_tap F2 LC(V)   //  PASTE → F2
-#define _SRCHENT_ &ht_hold_to_tap LC(F) ENTER    //  ENTER → SEARCH
-#define _ESCMENU_ &ht_hold_to_tap K_CONTEXT_MENU ESC   //  MENU → ESC
+//#define _CPYSLAL_ &ht_hold_to_tap LC(A) LC(C)   //  COPY → SELECTALL
+//#define _PASTEF2_ &ht_hold_to_tap F2 LC(V)   //  PASTE → F2
+//#define _SRCHENT_ &ht_hold_to_tap LC(F) ENTER    //  ENTER → SEARCH
+//#define _ESCMENU_ &ht_hold_to_tap K_CONTEXT_MENU ESC   //  MENU → ESC
+#define _CPYSLAL_ &ht_custom_tap_tap LC(A) LC(C)   //  COPY → SELECTALL
+#define _PASTEF2_ &ht_custom_tap_tap F2 LC(V)   //  PASTE → F2
+#define _SRCHENT_ &ht_custom_tap_tap LC(F) ENTER    //  ENTER → SEARCH
+#define _ESCMENU_ &ht_custom_tap_tap K_CONTEXT_MENU ESC   //  MENU → ESC
 
 
 
