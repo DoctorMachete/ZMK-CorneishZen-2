@@ -136,7 +136,8 @@
 
 // LAYER TAPS
 #define _NAVREP__    &td_nav_rep_npad_togglenpad      // NAV-REP + NPADoREP + TOGGLENPAD
-#define _NUMSPC__    &lt NUM SPACE
+//#define _NUMSPC__    &lt NUM SPACE
+#define _NUMSPC__    &td_num_spc_npad_togglenpad
 
 // MOD TAPS
 //#define _RCTLACC_    &lt NUM SPACE
@@ -182,3 +183,4 @@
 #define __TEST3__ &ht_accent_u 0 U
 #define __TEST4__ &td_accent_dier_u //&ht_accent_u
 
+#define _TOGNPAD_ &tog NPAD

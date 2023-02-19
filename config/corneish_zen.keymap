@@ -179,9 +179,13 @@
             td_nav_rep_npad_togglenpad: td_nav_rep_npad_togglenpad {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD
                 compatible = "zmk,behavior-tap-dance"; label = "TD_NAV_REP_NPAD_TOGGLENPAD";
                 #binding-cells = <0>; tapping-term-ms = <250>;
-                bindings = <&ht_nav_rep NAV 0>, <&ht_nav_rep NUM 0>, <&kp Y>;
+                bindings = <&ht_nav_rep NAV 0>, <&ht_nav_rep NPAD 0>, <&kp Y>;
             };
-
+            td_num_spc_npad_togglenpad: td_num_spc_npad_togglenpad {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD
+                compatible = "zmk,behavior-tap-dance"; label = "TD_NUM_SPC_NPAD_TOGGLENPAD";
+                #binding-cells = <0>; tapping-term-ms = <250>;
+                bindings = <&ht_nav_rep NUM 0>, <&ht_nav_rep NPAD 0>, <&kp SPACE>;
+            };
 
           };
 
@@ -310,8 +314,8 @@
 //  ║         │    0    │    4    │    5    │    6    │         ║                       ║         │    4    │    5    │    6    │    0    │         ║
 //  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
-//  ║         │         │    1    │    2    │    3    │         ║                       ║         │    1    │    2    │    3    │         │         ║
-//  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │         ║
+//  ║  TOGGLE │         │    1    │    2    │    3    │         ║                       ║         │    1    │    2    │    3    │         │  TOGGLE ║
+//  ║   NPAD  │         │         │         │         │         ║                       ║         │         │         │         │         │   NPAD  ║
 //  ╚═════════╧═════════╧═══════════════════╬─────────┼─────────╬═════════╗   ╔═════════╬─────────┼─────────╬═════════╧═════════╧═════════╧═════════╝
 //                                          ║         │         │XXXXXXXXX║   ║XXXXXXXXX│         │         ║
 //                                          ║         │         │XXXXXXXXX║   ║XXXXXXXXX│         │         ║
@@ -320,7 +324,7 @@
                 numpad_layer { label = "NPAD"; bindings = <
      _________ _________ ___KP7___ ___KP8___ ___KP9___ _________                         _________ ___KP7___ ___KP8___ ___KP9___ _________ _________
      _________ ___KP0___ ___KP4___ ___KP5___ ___KP6___ _________                         _________ ___KP4___ ___KP5___ ___KP6___ ___KP0___ _________
-     _________ _________ ___KP1___ ___KP2___ ___KP3___ ___TEMP__                         _________ ___KP1___ ___KP2___ ___KP3___ _________ _________
+     _TOGNPAD_ _________ ___KP1___ ___KP2___ ___KP3___ ___TEMP__                         _________ ___KP1___ ___KP2___ ___KP3___ _________ _TOGNPAD_
                                              _________ _________ X_______X     X_______X _________ _________
                         >;};
 
