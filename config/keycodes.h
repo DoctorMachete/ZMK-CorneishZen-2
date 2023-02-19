@@ -144,7 +144,7 @@
 #define __ACC_O__ &ht_accent_o 0 O
 #define __ACC_U__ &td_accent_dier_u
 #define KC_ENE    SEMICOLON
-#define _ACC_ENE_ &kp KC_ENE
+#define _ACC_ENE_ &ht_custom_tap_tap KC_ENE N // &kp KC_ENE
 
 
 
