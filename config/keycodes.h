@@ -139,9 +139,9 @@
 // ACCENTS
 //#define __ACC_A__ &ht_accent_a mm_accent_a A
 #define __ACC_A__ &ht_accent_a 0 A
-#define __ACC_E__ &mm_accent_e
-#define __ACC_I__ &mm_accent_i
-#define __ACC_O__ &mm_accent_o
+#define __ACC_E__ &ht_accent_e 0 E
+#define __ACC_I__ &ht_accent_i 0 I
+#define __ACC_O__ &ht_accent_o 0 O
 #define __ACC_U__ &td_accent_dier_u
 #define KC_ENE    &SEMICOLON
 #define _ACC_ENE_ &kp SEMICOLON
