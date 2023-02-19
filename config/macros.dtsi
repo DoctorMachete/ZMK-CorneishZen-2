@@ -51,23 +51,23 @@ macro_accent_o: macro_accent_o {                    //    o → ó
 macro_accent_o_shifted: macro_accent_o_shifted {                    //    O → Ó
     label = "macro_accent_o_shifted"; compatible = "zmk,behavior-macro";
     #binding-cells = <0>; bindings = <&macro_tap &kp KC_ACCLTR &kp LS(O)>;
+};  //////////////////////////////////////
+macro_accent_u: macro_accent_u {                    //    u → ú
+    label = "macro_accent_u"; compatible = "zmk,behavior-macro";
+    #binding-cells = <0>; bindings = <&macro_tap &kp KC_ACCLTR &kp U>;
 };
-//macro_accent_u: macro_accent_u {                    //    u → ú
-//    label = "macro_accent_u"; compatible = "zmk,behavior-macro";
-//    #binding-cells = <0>; bindings = <&macro_tap &kp KC_ACCLTR &kp U>;
-//};
-//macro_accent_u_shifted: macro_accent_u_shifted {                    //    U → Ú
-//    label = "macro_accent_u_shifted"; compatible = "zmk,behavior-macro";
-//    #binding-cells = <0>; bindings = <&macro_tap &kp KC_ACCLTR &kp LS(U)>;
-//};
-//macro_dier_u: macro_dier_u {                    //    u → ü
-//    label = "macro_dier_u"; compatible = "zmk,behavior-macro";
-//    #binding-cells = <0>; bindings = <&macro_tap &kp LS(KC_ACCLTR) &kp U>;
-//};
-//macro_dier_u_shifted: macro_dier_u_shifted {                    //    U → Ü
-//    label = "macro_dier_u_shifted"; compatible = "zmk,behavior-macro";
-//    #binding-cells = <0>; bindings = <&macro_tap &kp LS(KC_ACCLTR) &kp LS(U)>;
-//};//
+macro_accent_u_shifted: macro_accent_u_shifted {                    //    U → Ú
+    label = "macro_accent_u_shifted"; compatible = "zmk,behavior-macro";
+    #binding-cells = <0>; bindings = <&macro_tap &kp KC_ACCLTR &kp LS(U)>;
+};
+macro_dier_u: macro_dier_u {                    //    u → ü
+    label = "macro_dier_u"; compatible = "zmk,behavior-macro";
+    #binding-cells = <0>; bindings = <&macro_tap &kp LS(KC_ACCLTR) &kp U>;
+};
+macro_dier_u_shifted: macro_dier_u_shifted {                    //    U → Ü
+    label = "macro_dier_u_shifted"; compatible = "zmk,behavior-macro";
+    #binding-cells = <0>; bindings = <&macro_tap &kp LS(KC_ACCLTR) &kp LS(U)>;
+};
 
 
 
