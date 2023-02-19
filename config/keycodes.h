@@ -39,6 +39,16 @@
 #define ____8____ &kp NUMBER_8
 #define ____9____ &kp NUMBER_9
 #define ____0____ &kp NUMBER_0
+#define ___KP1___ &kp KP_NUMBER_1
+#define ___KP2___ &kp KP_NUMBER_2
+#define ___KP3___ &kp KP_NUMBER_3
+#define ___KP4___ &kp KP_NUMBER_4
+#define ___KP5___ &kp KP_NUMBER_5
+#define ___KP6___ &kp KP_NUMBER_6
+#define ___KP7___ &kp KP_NUMBER_7
+#define ___KP8___ &kp KP_NUMBER_8
+#define ___KP9___ &kp KP_NUMBER_9
+#define ___KP0___ &kp KP_NUMBER_0
 
 #define KC_PERCENT   LS(NUMBER_5)            // %
 #define _PERCENT_    &kp KC_PERCENT          // %
