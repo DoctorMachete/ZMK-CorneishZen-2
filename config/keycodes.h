@@ -164,6 +164,6 @@
 //#define __TEST2__ &ht_nav_rep A NUM
 //#define __TEST2__ &ht_nav_rep NUM K
 #define __TEST2__ &mm_dier_u
-#define __TEST3__ &ht_accent_u
-#define __TEST4__ &kp A //&ht_accent_u
+#define __TEST3__ &ht_accent_u 0 U
+#define __TEST4__ &td_accent_dier_u //&ht_accent_u
 
