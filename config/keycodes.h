@@ -160,7 +160,7 @@
 
 
 //#define __TEST1__ &ht_rctl_accents RCTRL ACCENTS
-#define __TEST1__ &mm_accent_a
+#define __TEST1__ &kp A
 //#define __TEST2__ &ht_nav_rep A NUM
 //#define __TEST2__ &ht_nav_rep NUM K
 #define __TEST2__ &kp A
