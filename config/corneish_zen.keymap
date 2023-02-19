@@ -36,13 +36,6 @@
 
           };
           behaviors {
-           // #define HOLD_TAP(NAME, BINDINGS1, BINDINGS2) \
-            //  ht_##NAME { \
-            //    compatible = "zmk,behavior-hold-tap"; label = U_STRINGIFY("ht_##NAME");\
-            //    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred"; \
-           //     bindings = <BINDINGS1>, <BINDINGS2>; \
-           //   };
-
             mm_quote_accent: mm_quote_accent {        // ' `
               compatible = "zmk,behavior-mod-morph"; label = "MM_QUOTE_ACCENT";
               #binding-cells = <0>; bindings = <&kp KC_QUOT>, <&macro_accent>;
@@ -138,14 +131,50 @@
                 bindings = <&ht_nav_rep NAV 0>, <&ht_nav_rep NUM 0>, <&kp Y>;
             };
 
+            mm_accent_a: mm_accent_a {              //  a → á
+              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_A";
+              #binding-cells = <0>; bindings = <&macro_accent_a>, <&macro_accent_a_shifted>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+//            ht_accent_a: ht_accent_a {             //  a → á
+//            compatible = "zmk,behavior-hold-tap"; label = "HT_ACCENT_A";
+//              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
+ //             bindings = <&mm_accent_a>, <&kp>;
+ //           };    
+            HOLD_TAP(accent_a, &mm_accent_a, &kp);
 
-        //    HOLD_TAP(accent_a, &mm_accent_a, &kp);
+            mm_accent_e: mm_accent_e {              //  e → é
+              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_E";
+              #binding-cells = <0>; bindings = <&macro_accent_e>, <&macro_accent_e_shifted>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            mm_accent_i: mm_accent_i {              //  i → í
+              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_I";
+              #binding-cells = <0>; bindings = <&macro_accent_i>, <&macro_accent_i_shifted>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            mm_accent_o: mm_accent_o {              //  o → ó
+              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_O";
+              #binding-cells = <0>; bindings = <&macro_accent_o>, <&macro_accent_o_shifted>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            mm_accent_u: mm_accent_u {              //  u → ú
+              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_U";
+              #binding-cells = <0>; bindings = <&macro_accent_u>, <&macro_accent_u_shifted>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            mm_dier_u: mm_dier_u {              //  u → ü
+              compatible = "zmk,behavior-mod-morph"; label = "MM_DIER_U";
+              #binding-cells = <0>; bindings = <&macro_dier_u>, <&macro_dier_u_shifted>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
 
-
-
-
-
-
+            
+            td_accent_dier_u: td_accent_dier_u {     // u → ú → ü
+                compatible = "zmk,behavior-tap-dance"; label = "TD_ACCENT_DIER_U";
+                #binding-cells = <0>; tapping-term-ms = <400>;
+                bindings = <&mm_accent_u>, <&mm_dier_u>;
+            };
           };
 
          
