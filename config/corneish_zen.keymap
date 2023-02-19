@@ -100,6 +100,11 @@
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
               bindings = <&mo>, <&key_repeat>;
             };
+            ht_custom_mo_tap: ht_custom_mo_tap {             //  NUM - SPC
+              compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_MO_TAP";
+              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
+              bindings = <&mo>, <&kp>;
+            };            
             ht_custom_mod_toggle: ht_custom_mod_toggle {             // RCTRL → TOGGLE LANGUAGE LAYER
               compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_MOD_TOGGLE";
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
@@ -184,7 +189,7 @@
             td_num_spc_npad_togglenpad: td_num_spc_npad_togglenpad {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD
                 compatible = "zmk,behavior-tap-dance"; label = "TD_NUM_SPC_NPAD_TOGGLENPAD";
                 #binding-cells = <0>; tapping-term-ms = <250>;
-                bindings = <&ht_nav_rep NUM 0>, <&ht_nav_rep NPAD 0>, <&kp SPACE>;
+                bindings = <&ht_custom_mo_tap NUM SPACE>, <&ht_custom_mo_tap NPAD SPACE>, <&kp SPACE>;
             };
 
           };
