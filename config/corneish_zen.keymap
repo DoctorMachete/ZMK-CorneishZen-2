@@ -100,6 +100,11 @@
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
               bindings = <&mo>, <&key_repeat>;
             };
+            ht_nav_rep: ht_npad_rep {             //  NAV - REP
+              compatible = "zmk,behavior-hold-tap"; label = "HT_NPAD_REP";
+              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
+              bindings = <&tog>, <&key_repeat>;
+            };
             ht_custom_mo_tap: ht_custom_mo_tap {             
               compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_MO_TAP";
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
@@ -189,7 +194,7 @@
             td_nav_rep_npad_togglenpad: td_nav_rep_npad_togglenpad {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD
                 compatible = "zmk,behavior-tap-dance"; label = "TD_NAV_REP_NPAD_TOGGLENPAD";
                 #binding-cells = <0>; tapping-term-ms = <250>;
-                bindings = <&ht_nav_rep NAV 0>, <&ht_nav_rep NPAD 0>, <&kp Y>;
+                bindings = <&ht_nav_rep NAV 0>, <&ht_npad_rep NPAD 0>, <&kp Y>;
             };
             td_num_spc_npad_togglenpad: td_num_spc_npad_togglenpad {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD
                 compatible = "zmk,behavior-tap-dance"; label = "TD_NUM_SPC_NPAD_TOGGLENPAD";
