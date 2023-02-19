@@ -141,10 +141,10 @@
 #define __ACC_A__ &ht_accent_a 0 A
 #define __ACC_E__ &ht_accent_e 0 E
 #define __ACC_I__ &ht_accent_i 0 I
-#define __ACC_O__ &kp O //&ht_accent_o 0 O
+#define __ACC_O__ &ht_accent_o 0 O
 #define __ACC_U__ &kp U //&td_accent_dier_u
 #define KC_ENE    SEMICOLON
-#define _ACC_ENE_ &kp SEMICOLON
+#define _ACC_ENE_ &kp KC_ENE
 
 
 

@@ -44,14 +44,14 @@ macro_accent_i_shifted: macro_accent_i_shifted {                    //    I → 
     label = "macro_accent_i_shifted"; compatible = "zmk,behavior-macro";
     #binding-cells = <0>; bindings = <&macro_tap &kp KC_ACCLTR &kp LS(I)>;
 };
-//macro_accent_o: macro_accent_o {                    //    o → ó
-//    label = "macro_accent_o"; compatible = "zmk,behavior-macro";
-//    #binding-cells = <0>; bindings = <&macro_tap &kp KC_ACCLTR &kp O>;
-//};
-//macro_accent_o_shifted: macro_accent_o_shifted {                    //    O → Ó
-//    label = "macro_accent_o_shifted"; compatible = "zmk,behavior-macro";
-//    #binding-cells = <0>; bindings = <&macro_tap &kp KC_ACCLTR &kp LS(O)>;
-//};
+macro_accent_o: macro_accent_o {                    //    o → ó
+    label = "macro_accent_o"; compatible = "zmk,behavior-macro";
+    #binding-cells = <0>; bindings = <&macro_tap &kp KC_ACCLTR &kp O>;
+};
+macro_accent_o_shifted: macro_accent_o_shifted {                    //    O → Ó
+    label = "macro_accent_o_shifted"; compatible = "zmk,behavior-macro";
+    #binding-cells = <0>; bindings = <&macro_tap &kp KC_ACCLTR &kp LS(O)>;
+};
 //macro_accent_u: macro_accent_u {                    //    u → ú
 //    label = "macro_accent_u"; compatible = "zmk,behavior-macro";
 //    #binding-cells = <0>; bindings = <&macro_tap &kp KC_ACCLTR &kp U>;
