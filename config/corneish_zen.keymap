@@ -124,16 +124,16 @@
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
               bindings = <&mm_accent_e>, <&kp>;
             };    
-//            mm_accent_i: mm_accent_i {              //  í → Í
-//              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_I";
-//              #binding-cells = <0>; bindings = <&macro_accent_i>, <&macro_accent_i_shifted>;
-//              mods = <(MOD_LSFT|MOD_RSFT)>;
-//            };
-//            ht_accent_i: ht_accent_i {             //  iI → íÍ
-//            compatible = "zmk,behavior-hold-tap"; label = "HT_ACCENT_I";
-//              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
-//              bindings = <&mm_accent_i>, <&kp>;
-//            };                
+            mm_accent_i: mm_accent_i {              //  í → Í
+              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_I";
+              #binding-cells = <0>; bindings = <&macro_accent_i>, <&macro_accent_i_shifted>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            ht_accent_i: ht_accent_i {             //  iI → íÍ
+            compatible = "zmk,behavior-hold-tap"; label = "HT_ACCENT_I";
+              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
+              bindings = <&mm_accent_i>, <&kp>;
+            };                
 //            mm_accent_o: mm_accent_o {              //  ó → Ó
 //              compatible = "zmk,behavior-mod-morph"; label = "MM_ACCENT_O";
 //              #binding-cells = <0>; bindings = <&macro_accent_o>, <&macro_accent_o_shifted>;
@@ -233,7 +233,7 @@
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
                 letter_accents_layer { label = "ACCENTS"; bindings = <
      X_______X X_______X X_______X X_______X X_______X X_______X                         X_______X X_______X X_______X X_______X X_______X X_______X
-     X_______X __ACC_A__ X_______X X_______X X_______X X_______X                         X_______X X_______X __ACC_E__ X_______X X_______X X_______X
+     X_______X __ACC_A__ X_______X X_______X X_______X X_______X                         X_______X X_______X __ACC_E__ __ACC_I__ X_______X X_______X
      X_______X X_______X X_______X X_______X X_______X X_______X                         X_______X X_______X X_______X X_______X X_______X X_______X
                                              X_______X X_______X X_______X     X_______X X_______X X_______X
                         >;};
