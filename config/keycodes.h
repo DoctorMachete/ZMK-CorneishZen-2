@@ -138,6 +138,7 @@
 #define _NAVREP__    &td_nav_rep_npad_togglenpad      // NAV-REP + NPADoREP + TOGGLENPAD
 //#define _NUMSPC__    &lt NUM SPACE
 #define _NUMSPC__    &td_num_spc_npad_togglenpad
+#define _NPADKP0_    &ht_custom_tog_tap NPAD KP_NUMBER_0
 
 // MOD TAPS
 //#define _RCTLACC_    &lt NUM SPACE
