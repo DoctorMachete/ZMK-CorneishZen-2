@@ -76,7 +76,7 @@
 #define KC_EUR       RA(NUMBER_5)            // €
 #define ___EUR___    &kp KC_EUR              // €
 //#define _APPROX__ &kp                      // ~ ±
-#define KC_UNDSC     &kp A        // __
+#define KC_UNDSC     LS(KC_MINUS)        // __
 #define __UNDSC__    &kp KC_UNDSC            // __
 //#define _LSSEQUL_ &kp 
 
