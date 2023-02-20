@@ -91,7 +91,7 @@
 
             ht_custom_tap_tap: ht_custom_tap_tap {             // REUSABLE tap for both the hold and the tap actions, so two keys are expected as parameters
               compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_TAP_TAP";
-              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
+              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
               bindings = <&kp>, <&kp>;
             };
 
