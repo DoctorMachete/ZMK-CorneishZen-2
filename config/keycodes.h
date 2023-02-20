@@ -49,6 +49,10 @@
 #define ___KP8___ &kp KP_NUMBER_8
 #define ___KP9___ &kp KP_NUMBER_9
 #define ___KP0___ &kp KP_NUMBER_0
+#define __KPDOT__ &kp KP_DOT
+#define __KPENT__ &kp KP_ENTER
+
+
 
 #define KC_PERCENT   LS(NUMBER_5)            // %
 #define _PERCENT_    &kp KC_PERCENT          // %
