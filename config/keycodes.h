@@ -176,6 +176,7 @@
 #define _PASTEF2_ &ht_custom_tap_tap F2 LC(V)   //  PASTE → F2
 #define _SRCHENT_ &ht_custom_tap_tap LC(F) ENTER    //  ENTER → SEARCH
 #define _ESCMENU_ &ht_custom_tap_tap K_CONTEXT_MENU ESC   //  MENU → ESC
+#define _UNDSEQU_ &ht_custom_tap_tap KC_EQUAL KC_UNDSC   //  _ → =
 
 
 
