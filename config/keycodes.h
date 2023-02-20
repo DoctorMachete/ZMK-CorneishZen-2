@@ -156,6 +156,9 @@
 #define _SFTBENT_ &mt LSHIFT KP_ENTER
 #define _LANLOCK_ &mt LALT KP_NUMLOCK
 
+// MOD MORPHS
+#define _BKSPCDL_ &mm_backspace_delete
+
 
 // ACCENTS
 //#define __ACC_A__ &ht_accent_a mm_accent_a A
