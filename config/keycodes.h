@@ -153,7 +153,7 @@
 #define _RCTLACC_ &ht_custom_mod_toggle RCTRL ACCENTS     // RCTRL → TOGGLE LANGUAGE LAYER
 //#define _RCTLACC_ &ht_custom_mod_toggle RCTRL ACCENTS     // RCTRL → TOGGLE LANGUAGE LAYER
 #define _SFTBSPC_ &mt LSHIFT BACKSPACE
-
+#define _LANLOCK_ &mt LALT LOCKING_NUM
 
 
 // ACCENTS

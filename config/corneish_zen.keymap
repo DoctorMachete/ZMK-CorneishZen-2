@@ -332,15 +332,15 @@
 //  ║  LCTRL  │    ,    │    1    │    2    │    3    │  ENTER  ║                       ║         │    1    │    2    │    3    │         │  RCTRL  ║
 //  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │         ║
 //  ╚═════════╧═════════╧═══════════════════╬─────────┼─────────╬═════════╗   ╔═════════╬─────────┼─────────╬═════════╧═════════╧═════════╧═════════╝
-//                                          ║  NLOCK  │ BCKSPC  │XXXXXXXXX║   ║XXXXXXXXX│         │         ║
-//                                          ║  LALT   │ LSHIFT  │XXXXXXXXX║   ║XXXXXXXXX│         │         ║
+//                                          ║  LALT   │ LSHIFT  │XXXXXXXXX║   ║XXXXXXXXX│ LSHIFT  │  LALT   ║
+//                                          ║  NLOCK  │ BCKSPC  │XXXXXXXXX║   ║XXXXXXXXX│ BCKSPC  │  NLOCK  ║
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
 //  
                 numpad_layer { label = "NPAD"; bindings = <
      ___TAB___ _NSLSASK_ ___KP7___ ___KP8___ ___KP9___ _NPLUSMN_                         _________ ___KP7___ ___KP8___ ___KP9___ _________ ___TAB___
      _UNDSEQU_ ___KP0___ ___KP4___ ___KP5___ ___KP6___ ___SPC___                         _________ ___KP4___ ___KP5___ ___KP6___ ___KP0___ _________
      __LCTRL__ __COMMA__ ___KP1___ ___KP2___ ___KP3___ __KPENT__                         _________ ___KP1___ ___KP2___ ___KP3___ _________ _________
-                                             _________ _SFTBSPC_ _NPADKP0_     _NPADKP0_ _SFTBSPC_ _________
+                                             _LANLOCK_ _SFTBSPC_ _NPADKP0_     _NPADKP0_ _SFTBSPC_ _________
                         >;};
 
 
