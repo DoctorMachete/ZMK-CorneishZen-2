@@ -148,7 +148,7 @@
 #define __ALTAB__ &mt LALT TAB
 #define _RCTLACC_ &ht_custom_mod_toggle RCTRL ACCENTS     // RCTRL → TOGGLE LANGUAGE LAYER
 //#define _RCTLACC_ &ht_custom_mod_toggle RCTRL ACCENTS     // RCTRL → TOGGLE LANGUAGE LAYER
-//#define _RCTLACC_ &mt LSHIFT BACKSPACE
+#define _SFTBSPC_ &mt LSHIFT BACKSPACE
 
 
 
