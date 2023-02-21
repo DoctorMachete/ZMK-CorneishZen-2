@@ -219,7 +219,8 @@
 
 
 //#define __TEST1__ &ht_rctl_accents RCTRL ACCENTS
-#define __TEST1__ &mm_accent_u
+#define __TEST1__ &ht_custom_tap_tap LSHIFT LSHIFT
+
 //#define __TEST2__ &ht_nav_rep A NUM
 //#define __TEST2__ &ht_nav_rep NUM K
 #define __TEST2__ &mm_dier_u
