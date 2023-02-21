@@ -120,6 +120,10 @@
 #define __ENTER__    &kp ENTER
 #define __LWIN___    &kp LEFT_WIN
 #define __RWIN___    &kp RIGHT_WIN
+#define _OSSHIFT_     &ht_custom_tap_sk LSHIFT LSHIFT
+#define __OSALT__     &ht_custom_tap_sk LALT LALT
+#define __OSCTL__     &ht_custom_tap_sk LCTRL LCTRL
+
 #define __MENU___    &kp K_CONTEXT_MENU
 #define ___ESC___    &kp ESC
 #define __COMMA__    &kp COMMA
@@ -167,10 +171,9 @@
 
 // LAYER TAPS
 #define _NAVREP__    &td_nav_rep_npad_togglenpad      // NAV-REP + NPADoREP + TOGGLENPAD
-//#define _NUMSPC__    &lt NUM SPACE
 #define _NUMSPC__    &td_num_spc_npad_togglenpad
 #define _NPADKP0_    &ht_custom_tog_tap NPAD KP_NUMBER_0
-
+#define _SFTFUNC_    &td_shift_func_capslock
 // MOD TAPS
 //#define _RCTLACC_    &lt NUM SPACE
 
