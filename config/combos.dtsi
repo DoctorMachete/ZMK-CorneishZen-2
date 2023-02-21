@@ -42,5 +42,5 @@ COMBO(Number_8, &kp N8,  8 20, GAMING)
 COMBO(Number_9, &kp N9,  9 21, GAMING)
 COMBO(Number_0, &kp N0, 10 22, GAMING)
 
-COMBO(Number_0, &mo FUNC, 36 37, COLEMAK FUNC)
-COMBO(Number_0, &mo FUNC, 37 38, COLEMAK FUNC)
+COMBO(Number_func1, &mo FUNC, 36 37, COLEMAK FUNC)
+COMBO(Number_func2, &mo FUNC, 37 38, COLEMAK FUNC)
