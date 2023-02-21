@@ -219,7 +219,7 @@
 
 
 //#define __TEST1__ &ht_rctl_accents RCTRL ACCENTS
-#define __TEST1__ &ht_custom_tap_tap LSHIFT LSHIFT
+#define __TEST1__ &ht_custom_tap_sk LSHIFT LSHIFT
 #define __TEST2__ &ht_custom_mo_tap FUNC CAPSLOCK
 #define __TEST3__ &td_shift_func_capslock
 

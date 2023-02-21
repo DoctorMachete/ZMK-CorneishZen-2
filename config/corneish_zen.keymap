@@ -94,7 +94,11 @@
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
               bindings = <&kp>, <&kp>;
             };
-
+            ht_custom_tap_sk: ht_custom_tap_sk {             // REUSABLE tap for both the hold and the tap actions, so two keys are expected as parameters
+              compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_TAP_SK";
+              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
+              bindings = <&kp>, <&sk>;
+            };
             ht_nav_rep: ht_nav_rep {             //  NAV - REP
               compatible = "zmk,behavior-hold-tap"; label = "HT_NAV_REP";
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
@@ -133,7 +137,7 @@
             td_shift_func_capslock: td_shift_func_capslock {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD
                 compatible = "zmk,behavior-tap-dance"; label = "TD_SHIFT_FUNC_CAPSLOCK";
                 #binding-cells = <0>; tapping-term-ms = <250>;
-                bindings = <&ht_custom_tap_tap LSHIFT LSHIFT>, <&ht_custom_mo_tap FUNC CAPSLOCK>, <&kp SPACE>;
+                bindings = <&ht_custom_tap_sk LSHIFT LSHIFT>, <&ht_custom_mo_tap FUNC CAPSLOCK>;
             };        
             // END LAYER COLEMAK ********************************************************************************************************************
             
