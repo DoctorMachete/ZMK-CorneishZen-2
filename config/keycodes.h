@@ -220,11 +220,11 @@
 
 //#define __TEST1__ &ht_rctl_accents RCTRL ACCENTS
 #define __TEST1__ &ht_custom_tap_tap LSHIFT LSHIFT
+#define __TEST2__ &ht_custom_mo_tap FUNC CAPSLOCK
+#define __TEST3__ &td_shift_func_capslock
 
-//#define __TEST2__ &ht_nav_rep A NUM
-//#define __TEST2__ &ht_nav_rep NUM K
-#define __TEST2__ &mm_dier_u
-#define __TEST3__ &ht_accent_u 0 U
+
+
 #define __TEST4__ &td_accent_dier_u //&ht_accent_u
 
 #define _TOGNPAD_ &tog NPAD

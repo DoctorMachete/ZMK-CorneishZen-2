@@ -105,7 +105,16 @@
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
               bindings = <&tog>, <&key_repeat>;
             };
-            
+            td_nav_rep_npad_togglenpad: td_nav_rep_npad_togglenpad {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD
+                compatible = "zmk,behavior-tap-dance"; label = "TD_NAV_REP_NPAD_TOGGLENPAD";
+                #binding-cells = <0>; tapping-term-ms = <250>;
+                bindings = <&ht_nav_rep NAV 0>, <&ht_npad_rep NPAD 0>, <&kp Y>;
+            };
+            td_num_spc_npad_togglenpad: td_num_spc_npad_togglenpad {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD
+                compatible = "zmk,behavior-tap-dance"; label = "TD_NUM_SPC_NPAD_TOGGLENPAD";
+                #binding-cells = <0>; tapping-term-ms = <250>;
+                bindings = <&ht_custom_mo_tap NUM SPACE>, <&ht_custom_tog_tap NPAD SPACE>, <&kp SPACE>;
+            };
             ht_custom_mo_tap: ht_custom_mo_tap {             
               compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_MO_TAP";
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
@@ -120,7 +129,12 @@
               compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_MOD_TOGGLE";
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
               bindings = <&kp>, <&tog>;
-            };            
+            };  
+            td_shift_func_capslock: td_shift_func_capslock {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD
+                compatible = "zmk,behavior-tap-dance"; label = "TD_SHIFT_FUNC_CAPSLOCK";
+                #binding-cells = <0>; tapping-term-ms = <250>;
+                bindings = <&ht_custom_tap_tap LSHIFT LSHIFT>, <&ht_custom_mo_tap FUNC CAPSLOCK>, <&kp SPACE>;
+            };        
             // END LAYER COLEMAK ********************************************************************************************************************
             
             
@@ -201,16 +215,7 @@
 
 
 
-            td_nav_rep_npad_togglenpad: td_nav_rep_npad_togglenpad {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD
-                compatible = "zmk,behavior-tap-dance"; label = "TD_NAV_REP_NPAD_TOGGLENPAD";
-                #binding-cells = <0>; tapping-term-ms = <250>;
-                bindings = <&ht_nav_rep NAV 0>, <&ht_npad_rep NPAD 0>, <&kp Y>;
-            };
-            td_num_spc_npad_togglenpad: td_num_spc_npad_togglenpad {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD
-                compatible = "zmk,behavior-tap-dance"; label = "TD_NUM_SPC_NPAD_TOGGLENPAD";
-                #binding-cells = <0>; tapping-term-ms = <250>;
-                bindings = <&ht_custom_mo_tap NUM SPACE>, <&ht_custom_tog_tap NPAD SPACE>, <&kp SPACE>;
-            };
+
 
           };
 
@@ -239,7 +244,7 @@
      ___TAB___ ____Q____ ____W____ ____F____ ____P____ ____B____                         ____Y____ ____L____ ____U____ ____Y____ _QUSTCLM_ _________
      _SLSHCOM_ ____A____ ____R____ ____S____ ____T____ ____G____                         ____M____ ____N____ ____E____ ____I____ ____O____ _QUOTACC_
      __LCTRL__ __TEST1__ __TEST2__ __TEST3__ __TEST4__ ____V____                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ _RCTLACC_
-                                             _________ __TEST1__ _NAVREP__     _NUMSPC__ __BKSPC__ __ENTER__
+                                             _________ __TEST3__ _NAVREP__     _NUMSPC__ __BKSPC__ __ENTER__
                         >;};
 
 
