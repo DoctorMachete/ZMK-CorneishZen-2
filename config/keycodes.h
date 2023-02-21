@@ -51,6 +51,31 @@
 #define ___KP0___ &kp KP_NUMBER_0
 #define __KPDOT__ &kp KP_DOT
 #define __KPENT__ &kp KP_ENTER
+#define ___F1____ &kp F1
+#define ___F2____ &kp F2
+#define ___F3____ &kp F3
+#define ___F4____ &kp F4
+#define ___F5____ &kp F5
+#define ___F6____ &kp F6
+#define ___F7____ &kp F7
+#define ___F8____ &kp F8
+#define ___F9____ &kp F9
+#define ___F10___ &kp F10
+#define ___F11___ &kp F11
+#define ___F12___ &kp F12
+#define ___F13___ &kp F13
+#define ___F14___ &kp F14
+#define ___F15___ &kp F15
+#define ___F16___ &kp F16
+#define ___F17___ &kp F17
+#define ___F18___ &kp F18
+#define ___F19___ &kp F19
+#define ___F20___ &kp F20
+#define ___F21___ &kp F21
+#define ___F22___ &kp F22
+#define ___F23___ &kp F23
+#define ___F24___ &kp F24
+
 
 
 
@@ -137,6 +162,8 @@
 #define __COPY___    &kp LC(C)
 #define __PASTE__    &kp LC(V)
 #define _SLCTALL_    &kp LC(A)
+#define _PRNTSCN_    &kp PRINTSCREEN
+#define _SNIPSCN_    &kp LG(LS(S))
 
 // LAYER TAPS
 #define _NAVREP__    &td_nav_rep_npad_togglenpad      // NAV-REP + NPADoREP + TOGGLENPAD
@@ -187,6 +214,7 @@
 #define _UNDSEQU_ &ht_custom_tap_tap KC_EQUAL KC_UNDSC   //  _ → =
 #define _NSLSASK_ &ht_custom_tap_tap KP_ASTERISK KP_SLASH   //  / → *
 #define _NPLUSMN_ &ht_custom_tap_tap KP_MINUS KP_PLUS   //  + → -
+
 
 
 
