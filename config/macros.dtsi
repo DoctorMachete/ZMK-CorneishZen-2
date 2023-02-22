@@ -91,5 +91,3 @@ ZMK_MACRO(macro_division, wait-ms = <30>; tap-ms = <10>;                        
   bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N7>, <&macro_release &kp LALT>;)
 ZMK_MACRO(macro_power2, wait-ms = <30>; tap-ms = <10>;                                                   // 0178 ²
   bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N8>, <&macro_release &kp LALT>;)
-
-t
