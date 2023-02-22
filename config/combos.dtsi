@@ -53,8 +53,8 @@ COMBO(Number_0, &kp N0, 10 22, GAMING)
                   ╰────────────╯ ╰────────────╯
 */
 
-COMBO(Number_0, &ht_lcbracket_leftparleftbrack KC_LCBR 0, 16 17, COLEMAK)
-COMBO(Number_0, &ht_lcbracket_rightparrightbrack KC_RCBR 0, 18 19, COLEMAK)
+COMBO(Number_1617, &ht_lcbracket_leftparleftbrack KC_LCBR 0, 16 17, COLEMAK)
+COMBO(Number_1819, &ht_lcbracket_rightparrightbrack KC_RCBR 0, 18 19, COLEMAK)
 
-COMBO(Number_0, &ht_lcbracket_leftparleftbrack KC_LCBR 0, 7 19, COLEMAK)
-COMBO(Number_0, &ht_lcbracket_rightparrightbrack KC_RCBR 0, 8 20, COLEMAK)
+COMBO(Number_719, &ht_lcbracket_leftparleftbrack KC_LCBR 0, 7 19, COLEMAK)
+COMBO(Number_820, &ht_lcbracket_rightparrightbrack KC_RCBR 0, 8 20, COLEMAK)
