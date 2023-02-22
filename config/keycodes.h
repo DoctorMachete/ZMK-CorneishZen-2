@@ -247,8 +247,8 @@
 
 
 #define __TEST1__    &ht_ordinal_infinite 0 KC_ORDINAL
-#define __TEST2__    &ht_squaretwo_half 0 0
-#define __TEST3__    &ht_squarethree_fourth 0 0
-#define __TEST4__ &td_accent_dier_u //&ht_accent_u
+#define __TEST2__    &bk A //&ht_squaretwo_half 0 0
+#define __TEST3__    &bk A //&ht_squarethree_fourth 0 0
+#define __TEST4__    &bk A //&td_accent_dier_u //&ht_accent_u
 
 #define _TOGNPAD_ &tog NPAD
