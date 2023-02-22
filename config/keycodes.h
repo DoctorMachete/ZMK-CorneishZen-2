@@ -153,7 +153,8 @@
 #define _KC_LBRC_    &kp RA(KC_ACCENT)      // [
 #define _KC_RBRC_    &kp RA(KC_PLUS)      // ]  ---
 #define _KC_LCBR_    &kp RA(KC_ACCLTR)    // {  ----
-#define _KC_RCBR_    &kp RA(TILDE)        // }
+#define _KC_RCBR_    &kp RA(HASH)        // }
+#define C_CEDILLA    &kp HASH    // Ç
 
 #define __LEFT___    &kp LEFT_ARROW
 #define __DOWN___    &kp DOWN_ARROW
