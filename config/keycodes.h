@@ -160,11 +160,11 @@
 #define __BOOTL__    &bootloader
 #define __RESET__    &reset
 #define _BT__CLR_    &bt BT_CLR
-#define __BT__1__    &bt BT_SEL 1
-#define __BT__2__    &bt BT_SEL 2
-#define __BT__3__    &bt BT_SEL 3
-#define __BT__4__    &bt BT_SEL 4
-#define __BT__5__    &bt BT_SEL 5
+#define __BT__1__    &bt BT_SEL 0
+#define __BT__2__    &bt BT_SEL 1
+#define __BT__3__    &bt BT_SEL 2
+#define __BT__4__    &bt BT_SEL 3
+#define __BT__5__    &bt BT_SEL 4
 #define __MUTE___    &kp C_MUTE
 #define __MPREV__    &kp C_PREVIOUS
 #define __MPLAY__    &kp C_PLAY_PAUSE
