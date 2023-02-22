@@ -250,7 +250,7 @@
 
 //#define __TEST1__ &ht_rctl_accents RCTRL ACCENTS
 #define MM_LEFT    &mm_leftparleftbrack_leftcbracket   // Ç
-#define MM_RIGHT    &ht_lcbracket_leftparleftbrack KC_LCBR 0         // }
+#define HT_LEFT    &ht_lcbracket_leftparleftbrack KC_LCBR 0         // }
 
 #define __TEST1__    &mm_rightpar_rightbrack   // Ç
 #define __TEST2__    &ht_lcbracket_rightparrightbrack KC_RCBR 0         // }
