@@ -244,13 +244,13 @@
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
               bindings = <&macro_infinite>, <&kp>;
             };  
-            ht_power2_half: ht_squaretwo_half {             // ² → ½
-              compatible = "zmk,behavior-hold-tap"; label = "HT_SQUARETWO_HALF";
+            ht_power2_half: ht_power2_half {             // ² → ½
+              compatible = "zmk,behavior-hold-tap"; label = "HT_POWER2_HALF";
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
               bindings = <&macro_half>, <&macro_power2>;
             };             
-            ht_power3_fourth: ht_squarethree_fourth {             // ³ → macro_fourth
-              compatible = "zmk,behavior-hold-tap"; label = "HT_SQUAREFOUR_FOURTH";
+            ht_power3_fourth: ht_power3_fourth {             // ³ → macro_fourth
+              compatible = "zmk,behavior-hold-tap"; label = "HT_POWER3_FOURTH";
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
               bindings = <&macro_fourth>, <&macro_power3>;
             };  
