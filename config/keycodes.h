@@ -252,8 +252,8 @@
 #define MM_LEFT    &mm_leftparleftbrack_leftcbracket   // Ç
 #define HT_LEFT    &ht_lcbracket_leftparleftbrack KC_LCBR 0         // }
 
-#define __TEST1__    &mm_rightpar_rightbrack   // Ç
-#define __TEST2__    &ht_lcbracket_rightparrightbrack KC_RCBR 0         // }
+#define __TEST1__    &kp RA(N4)  // ~
+#define __TEST2__    &ht_minus_underscore_equal_rightarrow 0 KC_MINUS
 #define __TEST3__    &kp A
 
 

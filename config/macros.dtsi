@@ -85,9 +85,28 @@ macro_power2: macro_power2 {                    // 0178 ²
 };
 */
 
-ZMK_MACRO(macro_multiplication, wait-ms = <30>; tap-ms = <10>;                                            // 0215 ×
+ZMK_MACRO(macro_multiplication, wait-ms = <30>; tap-ms = <10>;                                           // 0215 ×
   bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N5>, <&macro_release &kp LALT>;)
-ZMK_MACRO(macro_division, wait-ms = <30>; tap-ms = <10>;                                                  // 0247 ÷
+ZMK_MACRO(macro_division, wait-ms = <30>; tap-ms = <10>;                                                 // 0247 ÷
   bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N7>, <&macro_release &kp LALT>;)
 ZMK_MACRO(macro_power2, wait-ms = <30>; tap-ms = <10>;                                                   // 0178 ²
   bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N8>, <&macro_release &kp LALT>;)
+ZMK_MACRO(macro_power3, wait-ms = <30>; tap-ms = <10>;                                                   // 0179 ³
+  bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N9>, <&macro_release &kp LALT>;)
+ZMK_MACRO(macro_half, wait-ms = <30>; tap-ms = <10>;                                                     // 0189 ½
+  bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N8 &kp KP_N9>, <&macro_release &kp LALT>;)
+ZMK_MACRO(macro_fourth, wait-ms = <30>; tap-ms = <10>;                                                   // 0188 ¼
+  bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N8 &kp KP_N8>, <&macro_release &kp LALT>;)
+ZMK_MACRO(macro_plusminus, wait-ms = <30>; tap-ms = <10>;                                                // 0177 ±
+  bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N7>, <&macro_release &kp LALT>;)
+ZMK_MACRO(macro_moreequal, wait-ms = <30>; tap-ms = <10>;                                                // 243 ≥
+  bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N2 &kp KP_N4 &kp KP_N3>, <&macro_release &kp LALT>;)
+ZMK_MACRO(macro_lessequal, wait-ms = <30>; tap-ms = <10>;                                                // 242 ≤
+  bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N2 &kp KP_N4 &kp KP_N2>, <&macro_release &kp LALT>;)
+ZMK_MACRO(macro_infinite, wait-ms = <30>; tap-ms = <10>;                                                 // 236 ∞
+  bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N2 &kp KP_N3 &kp KP_N6>, <&macro_release &kp LALT>;)
+ZMK_MACRO(macro_right_arrow, wait-ms = <30>; tap-ms = <10>;                                                    // 26 →
+  bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N2 &kp KP_N6>, <&macro_release &kp LALT>;)
+
+
+
