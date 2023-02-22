@@ -165,13 +165,12 @@
 #define __BT__3__    &bt BT_SEL 3
 #define __BT__4__    &bt BT_SEL 4
 #define __BT__5__    &bt BT_SEL 5
-#define __MUTE___    &kp K_MUTE
-#define __MPREV__    &kp K_PREVIOUS
-#define __MPLAY__    &kp K_PLAY_PAUSE
-#define __MPNXT__    &kp K_NEXT
-#define __VMUTE__    &kp K_MUTE
-#define __VOLUP__    &kp K_VOL_UP
-#define __VOLDN__    &kp K_VOL_DN
+#define __MUTE___    &kp C_MUTE
+#define __MPREV__    &kp C_PREVIOUS
+#define __MPLAY__    &kp C_PLAY_PAUSE
+#define __MPNXT__    &kp C_NEXT
+#define __VOLUP__    &kp C_VOL_UP
+#define __VOLDN__    &kp C_VOL_DN
 
 
 #define __REDO___    &kp LC(Y)
