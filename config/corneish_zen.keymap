@@ -243,7 +243,7 @@
 
             mm_rightpar_rightbrack: mm_rightpar_rightbrack {              //  ) → ]
               compatible = "zmk,behavior-mod-morph"; label = "MM_RIGHTPAR_RIGHTBRACK";
-              #binding-cells = <0>; bindings = <&kp KC_RBR>, <&kp KC_RPRN>;
+              #binding-cells = <0>; bindings = <&kp KC_RPRN>, <&kp KC_RBR>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
             mm_rightparrightbrack_rightcbracket: mm_rightparrightbrack_rightcbracket {              //  )] → }
