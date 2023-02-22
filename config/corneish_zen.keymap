@@ -233,7 +233,7 @@
             mm_leftparleftbrack_leftcbracket: mm_leftparleftbrack_leftcbracket {              //  [( → {
               compatible = "zmk,behavior-mod-morph"; label = "MM_LEFTPARLEFTBRACK_LEFTCBRACKET";
               #binding-cells = <0>; bindings = <&mm_leftpar_leftbrack>, <&kp KC_LCBR>;
-              mods = <(MOD_LALT)>;
+              mods = <(MOD_LALT|MOD_RALT)>;
             };        
             // TEMP *********************************************************************************************************************************
 
