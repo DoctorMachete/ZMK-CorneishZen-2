@@ -196,7 +196,10 @@
 #define __PASTE__    &kp LC(V)
 #define _SLCTALL_    &kp LC(A)
 #define _PRNTSCN_    &kp PRINTSCREEN
-#define _SNIPSCN_    &kp LG(LS(S))
+#define _SNIPSCN_    &kp LG(LS(S))      // snip screenshot 
+#define KC_CLIPST    LG(V)              // clipboard history
+#define CLPHSTCUT    &ht_custom_tap_tap KC_CLIPST LC(X)      // clipboard history
+
 
 // LAYER TAPS
 #define _NAVREP__    &td_nav_rep_npad_togglenpad      // NAV-REP + NPADoREP + TOGGLENPAD
