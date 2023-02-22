@@ -238,7 +238,7 @@
             ht_lcbracket_leftparleftbrack: ht_lcbracket_leftparleftbrack {             //  uU → úÚ
             compatible = "zmk,behavior-hold-tap"; label = "HT_LCBRACKET_LEFTPARLEFTBRACK";
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
-              bindings = <&kp A>, <&mm_leftpar_leftbrack>;
+              bindings = <&kp>, <&mm_leftpar_leftbrack>;
             };    
             // END COMBOS ****************************************************************************************************************************
 
