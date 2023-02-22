@@ -16,7 +16,7 @@
 #define NUM 4
 #define NPAD 5
 #define FUNC 6
-#define EXTRA 6
+#define EXTRA 7
 
 #include "keycodes.h"
 
