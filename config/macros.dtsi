@@ -70,7 +70,7 @@ macro_dier_u_shifted: macro_dier_u_shifted {                    //    U → Ü
 };
 
 
-
+/*
 macro_multiplication: macro_multiplication {                    // 0215 ×
     label = "macro_multiplication"; compatible = "zmk,behavior-macro"; wait-ms = <30>; tap-ms = <10>;
     #binding-cells = <0>; bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N5>, <&macro_release &kp LALT>;  // without &macro_tap it seems to assume the previous &macro_press, which leads to the keyboard freezing
@@ -83,12 +83,13 @@ macro_power2: macro_power2 {                    // 0178 ²
     label = "macro_power2"; compatible = "zmk,behavior-macro"; wait-ms = <30>; tap-ms = <10>;
     #binding-cells = <0>; bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N8>, <&macro_release &kp LALT>;
 };
+*/
 
+ZMK_MACRO(macro_multiplication, wait-ms = <30>; tap-ms = <10>;                                            // 0215 ×
+  bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N5>, <&macro_release &kp LALT>;)
+ZMK_MACRO(macro_division, wait-ms = <30>; tap-ms = <10>;                                                  // 0247 ÷
+  bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N7>, <&macro_release &kp LALT>;)
+ZMK_MACRO(macro_power2, wait-ms = <30>; tap-ms = <10>;                                                   // 0178 ²
+  bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N8>, <&macro_release &kp LALT>;)
 
-//ZMK_MACRO(macro_multiplication, wait-ms = <60>; tap-ms = <100>;                                                  // 0215 ×
-//  bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N5>, <&macro_release &kp LALT>;)
-//ZMK_MACRO(macro_division, wait-ms = <60>; tap-ms = <60>;                                                  // 0247 ÷
-//  bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N7>, <&macro_release &kp LALT>;)
-//ZMK_MACRO(macro_power2, wait-ms = <60>; tap-ms = <60>;                                                   // 0178 ²
-//  bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N8>, <&macro_release &kp LALT>;)
-
+t
