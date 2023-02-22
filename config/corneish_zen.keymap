@@ -235,10 +235,26 @@
               #binding-cells = <0>; bindings = <&mm_leftpar_leftbrack>, <&kp KC_LCBR>;
               mods = <(MOD_LALT|MOD_RALT)>;
             };    
-            ht_lcbracket_leftparleftbrack: ht_lcbracket_leftparleftbrack {             //  uU → úÚ
+            ht_lcbracket_leftparleftbrack: ht_lcbracket_leftparleftbrack {             //  [( → {
             compatible = "zmk,behavior-hold-tap"; label = "HT_LCBRACKET_LEFTPARLEFTBRACK";
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
               bindings = <&kp>, <&mm_leftpar_leftbrack>;
+            };    
+
+            mm_rightpar_rightbrack: mm_rightpar_rightbrack {              //  ) → ]
+              compatible = "zmk,behavior-mod-morph"; label = "MM_RIGHTPAR_RIGHTBRACK";
+              #binding-cells = <0>; bindings = <&kp KC_RBR>, <&kp KC_RPRN>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            mm_rightparrightbrack_rightcbracket: mm_rightparrightbrack_rightcbracket {              //  )] → }
+              compatible = "zmk,behavior-mod-morph"; label = "MM_RIGHTPARRIGHTBRACK_RIGHTCBRACKET";
+              #binding-cells = <0>; bindings = <&mm_rightpar_rightbrack>, <&kp KC_RCBR>;
+              mods = <(MOD_LALT|MOD_RALT)>;
+            };    
+            ht_lcbracket_rightparrightbrack: ht_lcbracket_rightparrightbrack {             //  )] → }
+            compatible = "zmk,behavior-hold-tap"; label = "HT_LCBRACKET_RIGHTPARRIGHTBRACK";
+              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
+              bindings = <&kp>, <&mm_rightpar_rightbrack>;
             };    
             // END COMBOS ****************************************************************************************************************************
 
@@ -270,7 +286,7 @@
                 default_layer { label = "COLEMAK"; bindings = <
      ___TAB___ ____Q____ ____W____ ____F____ ____P____ ____B____                         ____Y____ ____L____ ____U____ ____Y____ _QUSTCLM_ _________
      _SLSHCOM_ ____A____ ____R____ ____S____ ____T____ _________                         ____M____ ____N____ ____E____ ____I____ ____O____ _QUOTACC_
-     _________ __TEST1__ __TEST2__ __TEST3__ _________ _________                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ _RCTLACC_
+     _________ __TEST1__ __TEST2__ _________ _________ _________                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ _RCTLACC_
                                              ___LALT__ _SFTFUNC_ _NAVREP__     _NUMSPC__ XTRABKSPC _RALTENT_
                         >;};
 
