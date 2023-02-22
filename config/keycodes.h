@@ -246,7 +246,7 @@
 
 
 
-#define __TEST1__    &kp A //&ht_ordinal_infinite 0 KC_ORDINAL
+#define __TEST1__    &ht_ordinal_infinite 0 KC_ORDINAL
 #define __TEST2__    &kp A //&ht_squaretwo_half 0 0
 #define __TEST3__    &kp A //&ht_squarethree_fourth 0 0
 #define __TEST4__    &kp A //&td_accent_dier_u //&ht_accent_u
