@@ -96,6 +96,8 @@
 #define ___PLUS__    &kp KC_PLUS             // +
 #define KC_MINUS     SLASH                   // -
 #define __MINUS__    &kp KC_MINUS            // -
+#define KC_UNDERS    LS(KC_MINUS)            // _
+#define __UNDRS__    &kp KC_UNDERS            // -
 #define KC_EQUAL     LS(NUMBER_0)            // =
 #define __EQUAL__    &kp KC_EQUAL            // =
 #define KC_EUR       RA(NUMBER_5)            // €
@@ -244,15 +246,13 @@
 #define _UNDSEQU_ &ht_custom_tap_tap KC_EQUAL KC_UNDSC   //  _ → =
 #define _NSLSASK_ &ht_custom_tap_tap KP_ASTERISK KP_SLASH   //  / → *
 #define _NPLUSMN_ &ht_custom_tap_tap KP_MINUS KP_PLUS   //  + → -
-
-
+#define MINUNEQAR &ht_minus_underscore_equal_rightarrow 0 KC_MINUS  // -_ → =→
+#define _TILDEPM_ &mm_tilde_plusminus  // ~ → ±
 
 
 //#define __TEST1__ &ht_rctl_accents RCTRL ACCENTS
-#define MM_LEFT    &mm_leftparleftbrack_leftcbracket   // Ç
-#define HT_LEFT    &ht_lcbracket_leftparleftbrack KC_LCBR 0         // }
 
-#define __TEST1__    &kp RA(N4)  // ~
+#define __TEST1__    &mm_tilde_plusminus  // ~ → ±
 #define __TEST2__    &ht_minus_underscore_equal_rightarrow 0 KC_MINUS
 #define __TEST3__    &kp A
 

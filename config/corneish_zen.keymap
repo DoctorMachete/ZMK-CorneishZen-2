@@ -149,11 +149,16 @@
               #binding-cells = <0>; bindings = <&kp KC_EQUAL>, <&macro_right_arrow>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };
-            ht_minus_underscore_equal_rightarrow: ht_minus_underscore_equal_rightarrow {             // RCTRL → TOGGLE LANGUAGE LAYER
+            ht_minus_underscore_equal_rightarrow: ht_minus_underscore_equal_rightarrow {             // -_ → =→
               compatible = "zmk,behavior-hold-tap"; label = "HT_MINUS_UNDERSCORE_EQUAL_RIGHTARROW";
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
               bindings = <&mm_equal_rightarrow>, <&kp>;
             };  
+            mm_tilde_plusminus: mm_tilde_plusminus {              //  = → →
+              compatible = "zmk,behavior-mod-morph"; label = "MM_TILDE_PLUSMINUS";
+              #binding-cells = <0>; bindings = <&macro_tilde>, <&macro_plusminus>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
             // END LAYER COLEMAK ********************************************************************************************************************
             
             
@@ -295,7 +300,7 @@
                 default_layer { label = "COLEMAK"; bindings = <
      ___TAB___ ____Q____ ____W____ ____F____ ____P____ ____B____                         ____Y____ ____L____ ____U____ ____Y____ _QUSTCLM_ _________
      _SLSHCOM_ ____A____ ____R____ ____S____ ____T____ _________                         ____M____ ____N____ ____E____ ____I____ ____O____ _QUOTACC_
-     _________ __TEST1__ __TEST2__ __TEST3__ _________ _________                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ _RCTLACC_
+     _________ __TEST1__ __TEST2__ __TEST3__ _________ _________                         ____K____ ____H____ __COMMA__ ___DOT___ MINUNEQAR _RCTLACC_
                                              ___LALT__ _SFTFUNC_ _NAVREP__     _NUMSPC__ XTRABKSPC _RALTENT_
                         >;};
 
@@ -381,8 +386,8 @@
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
 //  
                 num_layer { label = "NUM"; bindings = <
-     __ALTAB__ _________ _PERCENT_ __SLASH__ _ASTRSK__ ___TEMP__                         _EXCLAM__ ___PLUS__ __MINUS__ __EQUAL__ ___EUR___ ___TEMP__
-     __LSHFT__ ____1____ ____2____ ____3____ ____4____ ____5____                         ____6____ ____7____ ____8____ ____9____ ____0____ ___TEMP__
+     __ALTAB__ _________ _PERCENT_ __SLASH__ _ASTRSK__ ___TEMP__                         _EXCLAM__ ___PLUS__ __MINUS__ __EQUAL__ ___EUR___ _TILDEPM_
+     __LSHFT__ ____1____ ____2____ ____3____ ____4____ ____5____                         ____6____ ____7____ ____8____ ____9____ ____0____ __UNDRS__
      __LCTRL__ _________ _________ _________ _________ ___TEMP__                         _________ _________ __COMMA__ ___DOT___ ___TEMP__ __RESET__
                                              __ENTER__ __BKSPC__ ___SPC___     X_______X X_______X __BOOTL__
                         >;};
