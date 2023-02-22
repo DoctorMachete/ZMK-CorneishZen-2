@@ -139,6 +139,8 @@
                 #binding-cells = <0>; tapping-term-ms = <250>;
                 bindings = <&ht_custom_tap_sk LSHIFT LSHIFT>, <&ht_custom_mo_tap FUNC CAPSLOCK>;
             };        
+
+
             // END LAYER COLEMAK ********************************************************************************************************************
             
             
@@ -241,14 +243,14 @@
 //  ║  lCTRL  │    Z    │    X    │    C    │    D    │    V    ║                       ║    K    │    H    │   , ;   │   . :   │  - _    │ ACCENTS ║
 //  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │  RCTRL  ║
 //  ╚═════════╧═════════╧═════════╧═════════╬─────────┼─────────╬═════════╗   ╔═════════╬─────────┼─────────╬═════════╧═════════╧═════════╧═════════╝
-//                                          ║   RPT   │  SHIFT  │   NAV   ║   ║   NUM   │ BCKSPC  │  ENTER  ║
-//                                          ║         │         │   REP   ║   ║   SPC   │         │         ║
+//                                          ║  LALT   │  FUNC   │   NAV   ║   ║   NUM   │ EXTRA   │  RALT   ║
+//                                          ║         │  SHIFT  │   REP   ║   ║   SPC   │ BCKSPC  │  ENTER  ║
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
                 default_layer { label = "COLEMAK"; bindings = <
      ___TAB___ ____Q____ ____W____ ____F____ ____P____ ____B____                         ____Y____ ____L____ ____U____ ____Y____ _QUSTCLM_ _________
      _SLSHCOM_ ____A____ ____R____ ____S____ ____T____ ____G____                         ____M____ ____N____ ____E____ ____I____ ____O____ _QUOTACC_
      __LCTRL__ __TEST1__ __TEST2__ __TEST3__ __TEST4__ ____V____                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ _RCTLACC_
-                                             _________ _SFTFUNC_ _NAVREP__     _NUMSPC__ __BKSPC__ __ENTER__
+                                             _________ _SFTFUNC_ _NAVREP__     _NUMSPC__ __BKSPC__ _RALTENT_
                         >;};
 
 

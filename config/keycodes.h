@@ -199,6 +199,8 @@
 //#define _SFTBSPC_ &mt LSHIFT BACKSPACE
 #define _SFTBENT_ &mt LSHIFT KP_ENTER
 #define _LANLOCK_ &mt LALT KP_NUMLOCK
+#define _RALTENT_ &mt RALT ENTER
+#define BKSPCXTRA &mt RALT ENTER
 
 // MOD MORPHS
 #define _BKSPCDL_ &mm_backspace_delete
