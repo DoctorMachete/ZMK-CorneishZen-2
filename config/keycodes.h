@@ -250,7 +250,7 @@
 
 //#define __TEST1__ &ht_rctl_accents RCTRL ACCENTS
 #define __TEST1__    &mm_leftparleftbrack_leftcbracket   // Ç
-#define __TEST2__    &kp RA(NON_US_HASH)          // }
+#define __TEST2__    &ht_lcbracket_leftparleftbrack _KC_LCBR_ 0         // }
 #define __TEST3__    &td_shift_func_capslock
 #define __TEST2__    &kp RA(NON_US_HASH)          // }
 #define __TEST3__    &kp NON_US_HASH    // Ç

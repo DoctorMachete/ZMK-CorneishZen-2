@@ -214,7 +214,7 @@
 
 
             // LAYER NPAD ***************************************************************************************************************************
-            mm_backspace_delete: mm_backspace_delete {              //  ó → Ó
+            mm_backspace_delete: mm_backspace_delete {              //  
               compatible = "zmk,behavior-mod-morph"; label = "MM_BACKSPACE_DELETE";
               #binding-cells = <0>; bindings = <&kp BACKSPACE>, <&kp DELETE>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -224,7 +224,7 @@
 
 
 
-            // TEMP *********************************************************************************************************************************
+            // COMBOS *******************************************************************************************************************************
             mm_leftpar_leftbrack: mm_leftpar_leftbrack {              //  ( → [
               compatible = "zmk,behavior-mod-morph"; label = "MM_LEFTPAR_LEFTBRACK";
               #binding-cells = <0>; bindings = <&kp KC_LPRN>, <&kp KC_LBRC>;
@@ -234,8 +234,13 @@
               compatible = "zmk,behavior-mod-morph"; label = "MM_LEFTPARLEFTBRACK_LEFTCBRACKET";
               #binding-cells = <0>; bindings = <&mm_leftpar_leftbrack>, <&kp KC_LCBR>;
               mods = <(MOD_LALT|MOD_RALT)>;
-            };        
-            // TEMP *********************************************************************************************************************************
+            };    
+            ht_lcbracket_leftparleftbrack: ht_lcbracket_leftparleftbrack {             //  uU → úÚ
+            compatible = "zmk,behavior-hold-tap"; label = "HT_LCBRACKET_LEFTPARLEFTBRACK";
+              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
+              bindings = <&kp>, <&mm_leftpar_leftbrack>;
+            };    
+            // END COMBOS ****************************************************************************************************************************
 
 
 
@@ -265,7 +270,7 @@
                 default_layer { label = "COLEMAK"; bindings = <
      ___TAB___ ____Q____ ____W____ ____F____ ____P____ ____B____                         ____Y____ ____L____ ____U____ ____Y____ _QUSTCLM_ _________
      _SLSHCOM_ ____A____ ____R____ ____S____ ____T____ __TEST1__                         ____M____ ____N____ ____E____ ____I____ ____O____ _QUOTACC_
-     _KC_LPRN_ _KC_RPRN_ _KC_LBRC_ _KC_RBRC_ _KC_LCBR_ _KC_RCBR_                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ _RCTLACC_
+     __TEST1__ __TEST2__ __TEST1__ __TEST1__ __TEST1__ __TEST1__                         ____K____ ____H____ __COMMA__ ___DOT___ __MINUS__ _RCTLACC_
                                              ___LALT__ _SFTFUNC_ _NAVREP__     _NUMSPC__ XTRABKSPC _RALTENT_
                         >;};
 
