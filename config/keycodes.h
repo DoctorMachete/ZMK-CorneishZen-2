@@ -148,13 +148,19 @@
 #define KC_ACCLTR    APOSTROPHE            //  ´
 
 
-#define _KC_LPRN_    &kp LS(N8)            // (  ---
-#define _KC_RPRN_    &kp LS(N9)            // )  ---
-#define _KC_LBRC_    &kp RA(KC_ACCENT)     // [
-#define _KC_RBRC_    &kp RA(KC_PLUS)       // ]  ---
-#define _KC_LCBR_    &kp RA(KC_ACCLTR)     // {  ----
+#define KC_LPRN      LS(N8)            // (
+#define _KC_LPRN_    &kp KC_LPRN            // (
+#define KC_RPRN      LS(N9)            // )
+#define _KC_RPRN_    &kp KC_RPRN            // )
+#define KC_LBRC      RA(KC_ACCENT)     // [
+#define _KC_LBRC_    &kp KC_LBRC     // [
+#define KC_RBR       RA(KC_PLUS)       // ]
+#define _KC_RBRC_    &kp KC_RBR       // ]
+#define KC_LCBR      RA(KC_ACCLTR)     // {
+#define _KC_LCBR_    &kp KC_LCBR     // {
 #define KC_CDILLA    NON_US_HASH           // Ç
-#define _KC_RCBR_    &kp RA(KC_CDILLA)     // }
+#define KC_RCBR      RA(KC_CDILLA)     // }
+#define _KC_RCBR_    &kp KC_RCBR     // }
 
 #define __LEFT___    &kp LEFT_ARROW
 #define __DOWN___    &kp DOWN_ARROW
