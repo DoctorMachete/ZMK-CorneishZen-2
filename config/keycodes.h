@@ -148,13 +148,13 @@
 #define KC_ACCLTR    APOSTROPHE            //  ´
 
 
-#define _KC_LPRN_    &kp LS(N8)           // (  ---
-#define _KC_RPRN_    &kp LS(N9)           // )  ---
-#define _KC_LBRC_    &kp RA(KC_ACCENT)      // [
-#define _KC_RBRC_    &kp RA(KC_PLUS)      // ]  ---
-#define _KC_LCBR_    &kp RA(KC_ACCLTR)    // {  ----
-#define _KC_RCBR_    &kp RA(HASH)        // }
-#define C_CEDILLA    &kp HASH    // Ç
+#define _KC_LPRN_    &kp LS(N8)            // (  ---
+#define _KC_RPRN_    &kp LS(N9)            // )  ---
+#define _KC_LBRC_    &kp RA(KC_ACCENT)     // [
+#define _KC_RBRC_    &kp RA(KC_PLUS)       // ]  ---
+#define _KC_LCBR_    &kp RA(KC_ACCLTR)     // {  ----
+#define _KC_RCBR_    &kp RA(NON_US_HASH)          // }
+#define C_CEDILLA    &kp NON_US_HASH    // Ç
 
 #define __LEFT___    &kp LEFT_ARROW
 #define __DOWN___    &kp DOWN_ARROW
@@ -243,10 +243,11 @@
 
 
 //#define __TEST1__ &ht_rctl_accents RCTRL ACCENTS
-#define __TEST1__ &ht_custom_tap_sk LSHIFT LSHIFT
-#define __TEST2__ &ht_custom_mo_tap FUNC CAPSLOCK
-#define __TEST3__ &td_shift_func_capslock
-
+#define __TEST1__    &kp NON_US_HASH    // Ç
+#define __TEST2__    &kp RA(NON_US_HASH)          // }
+#define __TEST3__    &td_shift_func_capslock
+#define __TEST2__    &kp RA(NON_US_HASH)          // }
+#define __TEST3__    &kp NON_US_HASH    // Ç
 
 
 #define __TEST4__ &td_accent_dier_u //&ht_accent_u
