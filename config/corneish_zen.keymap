@@ -249,11 +249,16 @@
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
               bindings = <&macro_half>, <&macro_power2>;
             };             
-            ht_power3_fourth: ht_power3_fourth {             // ³ → macro_fourth
+            ht_power3_fourth: ht_power3_fourth {             // ³ → ¼
               compatible = "zmk,behavior-hold-tap"; label = "HT_POWER3_FOURTH";
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
               bindings = <&macro_fourth>, <&macro_power3>;
             };  
+            td_ord_inf_power_fraction: td_ord_inf_power_fraction {     // º ² ³ ∞ ½ ¼
+                compatible = "zmk,behavior-tap-dance"; label = "TD_ORD_INF_POWER_FRACTION";
+                #binding-cells = <0>; tapping-term-ms = <200>;
+                bindings = <&ht_ordinal_infinite 0 KC_ORDINAL>, <&ht_power2_half 0 0>, <&ht_power3_fourth 0 0>;
+            };
             // END LAYER NUM ************************************************************************************************************************
 
 
@@ -331,7 +336,7 @@
                 default_layer { label = "COLEMAK"; bindings = <
      ___TAB___ ____Q____ ____W____ ____F____ ____P____ ____B____                         ____Y____ ____L____ ____U____ ____Y____ _QUSTCLM_ _________
      _SLSHCOM_ ____A____ ____R____ ____S____ ____T____ _________                         ____M____ ____N____ ____E____ ____I____ ____O____ _QUOTACC_
-     _________ __TEST1__ __TEST2__ __TEST3__ _________ _________                         ____K____ ____H____ __COMMA__ ___DOT___ MINUNEQAR _RCTLACC_
+     _________ __TEST1__ __TEST2__ __TEST3__ __TEST4__ _________                         ____K____ ____H____ __COMMA__ ___DOT___ MINUNEQAR _RCTLACC_
                                              ___LALT__ _SFTFUNC_ _NAVREP__     _NUMSPC__ XTRABKSPC _RALTENT_
                         >;};
 
