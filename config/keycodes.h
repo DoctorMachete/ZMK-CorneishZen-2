@@ -188,9 +188,7 @@
 #define _NUMSPC__    &td_num_spc_npad_togglenpad
 #define _NPADKP0_    &ht_custom_tog_tap NPAD KP_NUMBER_0
 #define _SFTFUNC_    &td_shift_func_capslock
-// MOD TAPS
-//#define _RCTLACC_    &lt NUM SPACE
-
+#define XTRABKSPC    &ht_extra_backspace_delete EXTRA 0
 
 // MOD TAPS
 #define __ALTAB__ &mt LALT TAB
@@ -200,7 +198,7 @@
 #define _SFTBENT_ &mt LSHIFT KP_ENTER
 #define _LANLOCK_ &mt LALT KP_NUMLOCK
 #define _RALTENT_ &mt RALT ENTER
-#define BKSPCXTRA &mt RALT ENTER
+
 
 // MOD MORPHS
 #define _BKSPCDL_ &mm_backspace_delete
