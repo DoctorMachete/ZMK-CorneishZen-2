@@ -247,12 +247,12 @@
 #define _NSLSASK_ &ht_custom_tap_tap KP_ASTERISK KP_SLASH   //  / → *
 #define _NPLUSMN_ &ht_custom_tap_tap KP_MINUS KP_PLUS   //  + → -
 #define MINUNEQAR &ht_minus_underscore_equal_rightarrow 0 KC_MINUS  // -_ → =→
-#define _TILDEPM_ &mm_tilde_plusminus  // ~ → ±
+#define _TILDEPM_ &ht_plusminus_tilde 0 0   // ~ → ±
 
 
 //#define __TEST1__ &ht_rctl_accents RCTRL ACCENTS
 
-#define __TEST1__    &mm_tilde_plusminus  // ~ → ±
+#define __TEST1__    &ht_plusminus_tilde 0 0  // ~ → ±
 #define __TEST2__    &ht_minus_underscore_equal_rightarrow 0 KC_MINUS
 #define __TEST3__    &kp A
 

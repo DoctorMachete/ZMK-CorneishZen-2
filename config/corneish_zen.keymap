@@ -154,11 +154,17 @@
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
               bindings = <&mm_equal_rightarrow>, <&kp>;
             };  
-            mm_tilde_plusminus: mm_tilde_plusminus {              //  = → →
+  /*          mm_tilde_plusminus: mm_tilde_plusminus {              //  = → →
               compatible = "zmk,behavior-mod-morph"; label = "MM_TILDE_PLUSMINUS";
               #binding-cells = <0>; bindings = <&macro_tilde>, <&macro_plusminus>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
-            };
+            };*/
+            ht_plusminus_tilde: ht_plusminus_tilde {             // -_ → =→
+              compatible = "zmk,behavior-hold-tap"; label = "HT_PLUSMINUS_TILDE";
+              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
+              bindings = <&macro_plusminus>, <&macro_tilde>;
+            };  
+            
             // END LAYER COLEMAK ********************************************************************************************************************
             
             
