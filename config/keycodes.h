@@ -243,7 +243,8 @@
 #define _TILDEPM_    &ht_plusminus_tilde 0 0   // ~ → ±
 #define _MULTDIV_    &ht_multiplication_division 0 0   // × → ÷
 
-
+// TAP DANCE
+#define _TDORDNF_    &td_ord_inf_power_fraction // º ² ³ ∞ ½ ¼  // º ² ³ ∞ ½ ¼
 
 
 #define __TEST1__    &ht_ordinal_infinite 0 KC_ORDINAL
