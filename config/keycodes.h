@@ -153,7 +153,7 @@
 #define _KC_LBRC_    &kp RA(KC_ACCENT)     // [
 #define _KC_RBRC_    &kp RA(KC_PLUS)       // ]  ---
 #define _KC_LCBR_    &kp RA(KC_ACCLTR)     // {  ----
-#define KC_CDILLA    NON_US_HASH       // Ç
+#define KC_CDILLA    NON_US_HASH           // Ç
 #define _KC_RCBR_    &kp RA(KC_CDILLA)     // }
 
 #define __LEFT___    &kp LEFT_ARROW
