@@ -206,51 +206,45 @@
 #define XTRABKSPC    &ht_extra_backspace_delete EXTRA 0
 
 // MOD TAPS
-#define __ALTAB__ &mt LALT TAB
-#define _RCTLACC_ &ht_custom_mod_toggle RCTRL ACCENTS     // RCTRL → TOGGLE LANGUAGE LAYER
-//#define _RCTLACC_ &ht_custom_mod_toggle RCTRL ACCENTS     // RCTRL → TOGGLE LANGUAGE LAYER
-//#define _SFTBSPC_ &mt LSHIFT BACKSPACE
-#define _SFTBENT_ &mt LSHIFT KP_ENTER
-#define _LANLOCK_ &mt LALT KP_NUMLOCK
-#define _RALTENT_ &mt RALT ENTER
+#define __ALTAB__    &mt LALT TAB
+#define _RCTLACC_    &ht_custom_mod_toggle RCTRL ACCENTS     // RCTRL → TOGGLE LANGUAGE LAYER
+#define _SFTBENT_    &mt LSHIFT KP_ENTER
+#define _LANLOCK_    &mt LALT KP_NUMLOCK
+#define _RALTENT_    &mt RALT ENTER
 
 
 // MOD MORPHS
-#define _BKSPCDL_ &mm_backspace_delete
+#define _BKSPCDL_    &mm_backspace_delete
 
 
 // ACCENTS
-//#define __ACC_A__ &ht_accent_a mm_accent_a A
-#define __ACC_A__ &ht_accent_a 0 A
-#define __ACC_E__ &ht_accent_e 0 E
-#define __ACC_I__ &ht_accent_i 0 I
-#define __ACC_O__ &ht_accent_o 0 O
-#define __ACC_U__ &td_accent_dier_u
-#define KC_ENE    SEMICOLON
-#define _ACC_ENE_ &ht_custom_tap_tap KC_ENE N // &kp KC_ENE
+#define __ACC_A__    &ht_accent_a 0 A
+#define __ACC_E__    &ht_accent_e 0 E
+#define __ACC_I__    &ht_accent_i 0 I
+#define __ACC_O__    &ht_accent_o 0 O
+#define __ACC_U__    &td_accent_dier_u
+#define KC_ENE       SEMICOLON
+#define _ACC_ENE_    &ht_custom_tap_tap KC_ENE N // &kp KC_ENE
 
 
 
 // HOLD TO TAP
-#define _QUOTACC_ &ht_quotes_accent 0 0     //  ' ` " ^
-#define _SLSHCOM_ &ht_slash_comments 0 0    // SLASH + open/close comments macro
-#define _QUSTCLM_ &ht_quest_exclam 0 0      //  ? ¿ ! ¡
-//#define _CPYSLAL_ &ht_hold_to_tap LC(A) LC(C)   //  COPY → SELECTALL
-//#define _PASTEF2_ &ht_hold_to_tap F2 LC(V)   //  PASTE → F2
-//#define _SRCHENT_ &ht_hold_to_tap LC(F) ENTER    //  ENTER → SEARCH
-//#define _ESCMENU_ &ht_hold_to_tap K_CONTEXT_MENU ESC   //  MENU → ESC
-#define _CPYSLAL_ &ht_custom_tap_tap LC(A) LC(C)   //  COPY → SELECTALL
-#define _PASTEF2_ &ht_custom_tap_tap F2 LC(V)   //  PASTE → F2
-#define _SRCHENT_ &ht_custom_tap_tap LC(F) ENTER    //  ENTER → SEARCH
-#define _ESCMENU_ &ht_custom_tap_tap K_CONTEXT_MENU ESC   //  MENU → ESC
-#define _UNDSEQU_ &ht_custom_tap_tap KC_EQUAL KC_UNDSC   //  _ → =
-#define _NSLSASK_ &ht_custom_tap_tap KP_ASTERISK KP_SLASH   //  / → *
-#define _NPLUSMN_ &ht_custom_tap_tap KP_MINUS KP_PLUS   //  + → -
-#define MINUNEQAR &ht_minus_underscore_equal_rightarrow 0 KC_MINUS  // -_ → =→
-#define _TILDEPM_ &ht_plusminus_tilde 0 0   // ~ → ±
+#define _QUOTACC_    &ht_quotes_accent 0 0     //  ' ` " ^
+#define _SLSHCOM_    &ht_slash_comments 0 0    // SLASH + open/close comments macro
+#define _QUSTCLM_    &ht_quest_exclam 0 0      //  ? ¿ ! ¡
+#define _CPYSLAL_    &ht_custom_tap_tap LC(A) LC(C)   //  COPY → SELECTALL
+#define _PASTEF2_    &ht_custom_tap_tap F2 LC(V)   //  PASTE → F2
+#define _SRCHENT_    &ht_custom_tap_tap LC(F) ENTER    //  ENTER → SEARCH
+#define _ESCMENU_    &ht_custom_tap_tap K_CONTEXT_MENU ESC   //  MENU → ESC
+#define _UNDSEQU_    &ht_custom_tap_tap KC_EQUAL KC_UNDSC   //  _ → =
+#define _NSLSASK_    &ht_custom_tap_tap KP_ASTERISK KP_SLASH   //  / → *
+#define _NPLUSMN_    &ht_custom_tap_tap KP_MINUS KP_PLUS   //  + → -
+#define MINUNEQAR    &ht_minus_underscore_equal_rightarrow 0 KC_MINUS  // -_ → =→
+#define _TILDEPM_    &ht_plusminus_tilde 0 0   // ~ → ±
+#define _MULTDIV_    &ht_multiplication_division 0 0   // × → ÷
 
 
-//#define __TEST1__ &ht_rctl_accents RCTRL ACCENTS
+
 
 #define __TEST1__    &ht_plusminus_tilde 0 0  // ~ → ±
 #define __TEST2__    &ht_minus_underscore_equal_rightarrow 0 KC_MINUS

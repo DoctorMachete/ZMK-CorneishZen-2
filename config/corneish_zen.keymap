@@ -159,11 +159,7 @@
               #binding-cells = <0>; bindings = <&macro_tilde>, <&macro_plusminus>;
               mods = <(MOD_LSFT|MOD_RSFT)>;
             };*/
-            ht_plusminus_tilde: ht_plusminus_tilde {             // -_ → =→
-              compatible = "zmk,behavior-hold-tap"; label = "HT_PLUSMINUS_TILDE";
-              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
-              bindings = <&macro_plusminus>, <&macro_tilde>;
-            };  
+
             
             // END LAYER COLEMAK ********************************************************************************************************************
             
@@ -230,6 +226,20 @@
                 bindings = <&ht_accent_u 0 U>, <&mm_dier_u>;
             };
             // END LAYER ACCENTS ********************************************************************************************************************
+
+
+            // LAYER NUM ****************************************************************************************************************************
+            ht_multiplication_division: ht_multiplication_division {             // -_ → =→
+              compatible = "zmk,behavior-hold-tap"; label = "HT_MULTIPLICATION_DIVISION";
+              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
+              bindings = <&macro_plusminus>, <&macro_multiplication>;
+            };              
+            ht_plusminus_tilde: ht_plusminus_tilde {             // -_ → =→
+              compatible = "zmk,behavior-hold-tap"; label = "HT_PLUSMINUS_TILDE";
+              #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
+              bindings = <&macro_division>, <&macro_tilde>;
+            };  
+            // END LAYER NUM ************************************************************************************************************************
 
 
 
@@ -384,15 +394,15 @@
 //  ║  SHIFT  │    1    │    2    │    3    │    4    │    5    ║                       ║    6    │    7    │    8    │    9    │    0    │    _    ║
 //  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
-//  ║  LCTRL  │         │         │         │         │    ∞    ║                       ║         │         │    ,    │    .    │    ≥    │  RESET  ║
-//  ║         │         │         │         │         │    º    ║                       ║         │         │         │         │    ≤    │  SOFT   ║
+//  ║  LCTRL  │         │         │         │         │  ¼ ½ ∞  ║                       ║         │         │    ,    │    .    │    ≥    │  RESET  ║
+//  ║         │         │         │         │         │  ³ ² º  ║                       ║         │         │         │         │    ≤    │  SOFT   ║
 //  ╚═════════╧═════════╧═════════╧═════════╬─────────┼─────────╬═════════╗   ╔═════════╬─────────┼─────────╬═════════╧═════════╧═════════╧═════════╝
 //                                          ║  ENTER  │ BCKSPC  │   SPC   ║   ║XXXXXXXXX│         │  RESET  ║
 //                                          ║         │         │         ║   ║XXXXXXXXX│         │  BOOTL  ║
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
 //  
                 num_layer { label = "NUM"; bindings = <
-     __ALTAB__ _________ _PERCENT_ __SLASH__ _ASTRSK__ ___TEMP__                         _EXCLAM__ ___PLUS__ __MINUS__ __EQUAL__ ___EUR___ _TILDEPM_
+     __ALTAB__ _________ _PERCENT_ __SLASH__ _ASTRSK__ _MULTDIV_                         _EXCLAM__ ___PLUS__ __MINUS__ __EQUAL__ ___EUR___ _TILDEPM_
      __LSHFT__ ____1____ ____2____ ____3____ ____4____ ____5____                         ____6____ ____7____ ____8____ ____9____ ____0____ __UNDRS__
      __LCTRL__ _________ _________ _________ _________ ___TEMP__                         _________ _________ __COMMA__ ___DOT___ ___TEMP__ __RESET__
                                              __ENTER__ __BKSPC__ ___SPC___     X_______X X_______X __BOOTL__
