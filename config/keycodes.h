@@ -87,7 +87,6 @@
 #define __BSLASH_    &kp KC_BSLASH           //  
 #define KC_ASTRSK    LS(RIGHT_BRACKET)       // *
 #define _ASTRSK__    &kp KC_ASTRSK           // *
-//#define _MULTDIV_ &kp 
 #define KC_EXCLAM    LS(NUMBER_1)            // !
 #define _EXCLAM__    &kp KC_EXCLAM           // !
 #define KC_OEXCLAM   EQUAL                   // ¡
@@ -102,10 +101,19 @@
 #define __EQUAL__    &kp KC_EQUAL            // =
 #define KC_EUR       RA(NUMBER_5)            // €
 #define ___EUR___    &kp KC_EUR              // €
-//#define _APPROX__ &kp                      // ~ ±
-#define KC_UNDSC     LS(KC_MINUS)        // __
+#define KC_UNDSC     LS(KC_MINUS)            // __
 #define __UNDSC__    &kp KC_UNDSC            // __
 //#define _LSSEQUL_ &kp 
+#define KC_PIPE      LA(NUMBER_1)            // |
+#define __PIPE___    &kp KC_PIPE             // |
+#define KC_ARR       LA(NUMBER_2)            // @
+#define ___ARR___    &kp KC_ARR              // @
+#define KC_HASH      LA(NUMBER_3)            // #
+#define __HASH___    &kp KC_HASH             // #
+#define KC_DOLLAR    LS(NUMBER_4)            // $
+#define __DOLLR__    &kp KC_DOLLAR           // $
+#define KC_AMP       LS(NUMBER_6)            // &
+#define ___AMP___    &kp KC_AMP              // &
 
 
 
