@@ -43,7 +43,7 @@ compatible = "zmk,combos";
 
 COMBO(ESC_0012,                   &kp ESC, 0 12, COLEMAK ACCENTS GAMING)
 COMBO(HT_Delete_Backspace_1224,   &ht_custom_tap_tap DELETE BACKSPACE, 12 24, COLEMAK ACCENTS)          //  |
-COMBO(Space_2425,                 &kp SPACE, 2425, COLEMAK ACCENTS)          //  SPACE
+COMBO(Space_2425,                 &kp SPACE, 24 25, COLEMAK ACCENTS)          //  SPACE
 COMBO(Pipe_0113,                  &kp KC_PIPE, 1 13, COLEMAK ACCENTS)          //  |
 COMBO(Arr_0214,                   &kp KC_ARR, 2 14, COLEMAK ACCENTS)          //  @
 COMBO(Hash_0315,                  &kp KC_HASH, 3 15, COLEMAK ACCENTS)          //  #
