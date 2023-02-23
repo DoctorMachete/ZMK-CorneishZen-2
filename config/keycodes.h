@@ -104,11 +104,11 @@
 #define KC_UNDSC     LS(KC_MINUS)            // __
 #define __UNDSC__    &kp KC_UNDSC            // __
 //#define _LSSEQUL_ &kp 
-#define KC_PIPE      LA(NUMBER_1)            // |
+#define KC_PIPE      RA(NUMBER_1)            // |
 #define __PIPE___    &kp KC_PIPE             // |
-#define KC_ARR       LA(NUMBER_2)            // @
+#define KC_ARR       RA(NUMBER_2)            // @
 #define ___ARR___    &kp KC_ARR              // @
-#define KC_HASH      LA(NUMBER_3)            // #
+#define KC_HASH      RA(NUMBER_3)            // #
 #define __HASH___    &kp KC_HASH             // #
 #define KC_DOLLAR    LS(NUMBER_4)            // $
 #define __DOLLR__    &kp KC_DOLLAR           // $

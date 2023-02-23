@@ -41,8 +41,8 @@ compatible = "zmk,combos";
 */
 
 
-COMBO(ESC_0011,                   &kp ESC, 0 1, COLEMAK ACCENTS GAMING)
-COMBO(HT_Delete_Backspace_1213,   &ht_custom_tap_tap DELETE BACKSPACE, 12 13, COLEMAK ACCENTS)          //  |
+COMBO(ESC_0012,                   &kp ESC, 0 12, COLEMAK ACCENTS GAMING)
+COMBO(HT_Delete_Backspace_1224,   &ht_custom_tap_tap DELETE BACKSPACE, 12 24, COLEMAK ACCENTS)          //  |
 COMBO(Space_2425,                 &kp SPACE, 2425, COLEMAK ACCENTS)          //  SPACE
 COMBO(Pipe_0113,                  &kp KC_PIPE, 1 13, COLEMAK ACCENTS)          //  |
 COMBO(Arr_0214,                   &kp KC_ARR, 2 14, COLEMAK ACCENTS)          //  @
@@ -53,7 +53,7 @@ COMBO(Amp_0618,                   &kp KC_AMP, 6 18, COLEMAK ACCENTS)          //
 COMBO(LeftParBrack_0719,          &ht_lcbracket_leftparleftbrack KC_LCBR 0, 7 19, COLEMAK ACCENTS)          //  ([{, ( → normal, [ → shifted, { → hold
 COMBO(RightParBrack_0820,         &ht_lcbracket_rightparrightbrack KC_RCBR 0, 8 20, COLEMAK ACCENTS)        //  )]}, ) → normal, ] → shifted, } → hold
 COMBO(GamingLayer_091011,         &to GAMING, 9 10 11, COLEMAK)
-COMBO(CapsWord_2937,              &caps_word, 2937, COLEMAK)
+COMBO(CapsWord_2937,              &caps_word, 29 37, COLEMAK)
 
 // LAYER gaming
 COMBO(Activate_Colemak_Layer, &to COLEMAK, 9 10 11, GAMING)
