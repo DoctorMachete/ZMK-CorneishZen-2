@@ -114,6 +114,8 @@
 #define __DOLLR__    &kp KC_DOLLAR           // $
 #define KC_AMP       LS(NUMBER_6)            // &
 #define ___AMP___    &kp KC_AMP              // &
+#define KC_LESS      NON_US_BSLH             // <
+#define KC_GREAT     LS(KC_LESS)             // >
 
 
 
@@ -210,6 +212,7 @@
 #define KC_ZOOMIN    &kp LG(KC_PLUS)       // zoom in
 #define KC_ZOOMOU    &kp LG(KC_MINUS)      // zoom out
 #define KC_ZOOMCL    &kp LG(ESC)           // zoom close
+
 
 
 // LAYER TAPS

@@ -54,6 +54,8 @@ COMBO(LeftParBrack_0719,          &ht_lcbracket_leftparleftbrack KC_LCBR 0, 7 19
 COMBO(RightParBrack_0820,         &ht_lcbracket_rightparrightbrack KC_RCBR 0, 8 20, COLEMAK ACCENTS)        //  )]}, ) → normal, ] → shifted, } → hold
 COMBO(GamingLayer_091011,         &to GAMING, 9 10 11, COLEMAK)
 COMBO(CapsWord_2937,              &caps_word, 29 37, COLEMAK)
+COMBO(LessLessEqual_2133,         &ht_less_lessequal 0 KC_LESS, 21 33, COLEMAK)
+COMBO(GreaterGreaterEqual_2234,   &ht_greater_greaterequal 0 KC_GREAT, 22 34, COLEMAK)
 
 // LAYER gaming
 COMBO(Activate_Colemak_Layer, &to COLEMAK, 9 10 11, GAMING)
