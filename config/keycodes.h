@@ -191,6 +191,10 @@
 #define __BT__3__    &bt BT_SEL 2
 #define __BT__4__    &bt BT_SEL 3
 #define __BT__5__    &bt BT_SEL 4
+#define _BT_PREF_    &out OUT_BLE
+#define _USBPREF_    &out OUT_USB
+#define BTUSBTOGG    &out OUT_TOG
+
 #define __MUTE___    &kp C_MUTE
 #define __MPREV__    &kp C_PREVIOUS
 #define __MPLAY__    &kp C_PLAY_PAUSE
