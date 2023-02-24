@@ -207,9 +207,9 @@
 #define _SNIPSCN_    &kp LG(LS(S))      // snip screenshot 
 #define KC_CLIPST    LG(V)              // clipboard history
 #define CLPHSTCUT    &ht_custom_tap_tap KC_CLIPST LC(X)      // clipboard history
-#define KC_ZOOMIN    &LG(KC_PLUS)       // zoom in
-#define KC_ZOOMOU    &LG(KC_MINUS)      // zoom out
-#define KC_ZOOMCL    &LG(ESC)           // zoom close
+#define KC_ZOOMIN    &kp LG(KC_PLUS)       // zoom in
+#define KC_ZOOMOU    &kp LG(KC_MINUS)      // zoom out
+#define KC_ZOOMCL    &kp LG(ESC)           // zoom close
 
 
 // LAYER TAPS
