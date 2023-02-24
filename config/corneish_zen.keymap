@@ -154,11 +154,6 @@
               #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
               bindings = <&mm_equal_rightarrow>, <&kp>;
             };  
-  /*          mm_tilde_plusminus: mm_tilde_plusminus {              //  = → →
-              compatible = "zmk,behavior-mod-morph"; label = "MM_TILDE_PLUSMINUS";
-              #binding-cells = <0>; bindings = <&macro_tilde>, <&macro_plusminus>;
-              mods = <(MOD_LSFT|MOD_RSFT)>;
-            };*/
 
             
             // END LAYER COLEMAK ********************************************************************************************************************
@@ -327,8 +322,8 @@
 //  ║  */ /*  │    A    │    R    │    S    │    T    │    G    ║                       ║    M    │    N    │    E    │    I    │    O    │   ` ^   ║
 //  ║   / \   │         │         │         │         │         ║                       ║         │         │         │         │         │   ' "   ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
-//  ║  LCTRL  │    Z    │    X    │    C    │    D    │    V    ║                       ║    K    │    H    │   , ;   │   . :   │  → =    │ ACCENTS ║
-//  ║         │         │         │         │         │         ║                       ║         │         │         │         │  - _    │  RCTRL  ║
+//  ║  LCTRL  │    Z    │    X    │    C    │    D    │   WIN   ║                       ║   WIN   │    H    │   , ;   │   . :   │  → =    │ ACCENTS ║
+//  ║         │         │         │         │         │    V    ║                       ║    K    │         │         │         │  - _    │  RCTRL  ║
 //  ╚═════════╧═════════╧═════════╧═════════╬─────────┼─────────╬═════════╗   ╔═════════╬─────────┼─────────╬═════════╧═════════╧═════════╧═════════╝
 //                                          ║  LALT   │  FUNC   │   NAV   ║   ║   NUM   │ EXTRA   │  RALT   ║
 //                                          ║         │  SHIFT  │   REP   ║   ║   SPC   │ BCKSPC  │  ENTER  ║
@@ -336,7 +331,7 @@
                 default_layer { label = "COLEMAK"; bindings = <
      ___TAB___ ____Q____ ____W____ ____F____ ____P____ ____B____                         ____Y____ ____L____ ____U____ ____Y____ _QUSTCLM_ _________
      _SLSHCOM_ ____A____ ____R____ ____S____ ____T____ _________                         ____M____ ____N____ ____E____ ____I____ ____O____ _QUOTACC_
-     _________ __TEST1__ __TEST2__ __TEST3__ __TEST4__ _________                         ____K____ ____H____ __COMMA__ ___DOT___ MINUNEQAR _RCTLACC_
+     _________ __TEST1__ __TEST2__ __TEST3__ __TEST4__ __WIN_V__                         __WIN_K__ ____H____ __COMMA__ ___DOT___ MINUNEQAR _RCTLACC_
                                              ___LALT__ _SFTFUNC_ _NAVREP__     _NUMSPC__ XTRABKSPC _RALTENT_
                         >;};
 
@@ -391,8 +386,8 @@
 //  ║  REDO   │  UNDO   │   ALT   │  SHIFT  │  CTRL   │ SEARCH  ║                       ║         │  LEFT   │  DOWN   │   UP    │  RIGHT  │         ║
 //  ║         │         │         │         │         │  ENTER  ║                       ║         │         │         │         │         │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
-//  ║  RESET  │         │         │  LWIN   │         │   MENU  ║                       ║         │         │         │         │         │         ║
-//  ║  SOFT   │         │         │         │         │   ESC   ║                       ║         │         │         │         │         │         ║
+//  ║  RESET  │         │         │  LWIN   │         │   MENU  ║                       ║         │  ZOOM   │  ZOOM   │  ZOOM   │         │         ║
+//  ║  SOFT   │         │         │         │         │   ESC   ║                       ║         │   IN    │   OUT   │  CLOSE  │         │         ║
 //  ╚═════════╧═════════╧═════════╧═════════╬─────────┼─────────╬═════════╗   ╔═════════╬─────────┼─────────╬═════════╧═════════╧═════════╧═════════╝
 //                                          ║  RESET  │         │XXXXXXXXX║   ║   SPC   │ BCKSPC  │  ENTER  ║
 //                                          ║  BOOTL  │         │XXXXXXXXX║   ║         │         │         ║
@@ -400,7 +395,7 @@
                 navigation_layer { label = "NAV"; bindings = <
      ___TAB___ _________ CLPHSTCUT _CPYSLAL_ _PASTEF2_ __BKSPC__                         ___DEL___ ___INI___ __PGDN___ __PGUP___ ___END___ __INSRT__
      __REDO___ __UNDO___ ___LALT__ __LSHFT__ __LCTRL__ _SRCHENT_                         _________ __LEFT___ __DOWN___ ___UP____ __RIGHT__ _________
-     __RESET__ _________ _________ __LWIN___ _________ _ESCMENU_                         _________ _________ _________ _________ _________ _________
+     __RESET__ _________ _________ __LWIN___ _________ _ESCMENU_                         _________ ___TEMP__ ___TEMP__ ___TEMP__ _________ _________
                                              __BOOTL__ X_______X X_______X     ___SPC___ __BKSPC__ __ENTER__
                         >;};
 
