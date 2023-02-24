@@ -136,12 +136,12 @@ mm_greater_greaterequal: mm_greater_greaterequal {                              
 };
 ht_less_lessequal: ht_less_lessequal {                                                   // < → ≤
     compatible = "zmk,behavior-hold-tap"; label = "HT_LESS_LESSEQUAL";
-    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
+    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
     bindings = <&mm_less_lessequal>, <&kp>;
 };  
 ht_greater_greaterequal: ht_greater_greaterequal {                                       // > → ≥
     compatible = "zmk,behavior-hold-tap"; label = "HT_GREATER_GREATEREQUAL";
-    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
+    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
     bindings = <&mm_greater_greaterequal>, <&kp>;
 }; 
 // END LAYER COLEMAK ********************************************************************************************************************
