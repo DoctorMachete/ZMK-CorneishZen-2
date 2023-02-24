@@ -57,16 +57,43 @@ COMBO(CapsWord_2937,              &caps_word, 29 37, COLEMAK)
 COMBO(LessLessEqual_2133,         &ht_less_lessequal 0 KC_LESS, 21 33, COLEMAK)
 COMBO(GreaterGreaterEqual_2234,   &ht_greater_greaterequal 0 KC_GREAT, 22 34, COLEMAK)
 
+
+
+/*                KEY POSITIONS
+
+  ╭────────────────────────╮         ╭────────────────────────╮
+  │  0   1   2   3   4   5 │         │  6   7   8   9  10  11 │
+  │ 12  13  14  15  16  17 │         │ 18  19  20  21  22  23 │
+  │ 24  25  26  27  28  29 ╰───╮ ╭───╯ 30  31  32  33  34  35 │
+  ╰───────────────╮ 36  37  38 │ │ 39  40  41 ╭───────────────╯
+                  ╰────────────╯ ╰────────────╯
+*/
 // LAYER gaming
 COMBO(Activate_Colemak_Layer, &to COLEMAK, 9 10 11, GAMING)
 
-COMBO(Number_1, &kp N1,  1 13, GAMING)
-COMBO(Number_2, &kp N2,  2 14, GAMING)
-COMBO(Number_3, &kp N3,  3 15, GAMING)
-COMBO(Number_4, &kp N4,  4 16, GAMING)
-COMBO(Number_5, &kp N5,  5 17, GAMING)
-COMBO(Number_6, &kp N6,  6 18, GAMING)
-COMBO(Number_7, &kp N7,  7 19, GAMING)
-COMBO(Number_8, &kp N8,  8 20, GAMING)
-COMBO(Number_9, &kp N9,  9 21, GAMING)
-COMBO(Number_0, &kp N0, 10 22, GAMING)
+COMBO(Number_1, &kp N1,    1 13, GAMING)
+COMBO(Number_2, &kp N2,    2 14, GAMING)
+COMBO(Number_3, &kp N3,    3 15, GAMING)
+COMBO(Number_4, &kp N4,    4 16, GAMING)
+COMBO(Number_5, &kp N5,    5 17, GAMING)
+COMBO(Number_6, &kp N6,    6 18, GAMING)
+COMBO(Number_7, &kp N7,    7 19, GAMING)
+COMBO(Number_8, &kp N8,    8 20, GAMING)
+COMBO(Number_9, &kp N9,    9 21, GAMING)
+COMBO(Number_0, &kp N0,   10 22, GAMING)
+COMBO(F1,       &kp F1,   12 24, GAMING)
+COMBO(F2,       &kp F2,   13 25, GAMING)
+COMBO(F3,       &kp F3,   14 26, GAMING)
+COMBO(F4,       &kp F4,   15 27, GAMING)
+COMBO(F5,       &kp F5,   16 28, GAMING)
+COMBO(F6,       &kp F6,   17 29, GAMING)
+COMBO(F7,       &kp F7,   18 30, GAMING)
+COMBO(F8,       &kp F8,   19 31, GAMING)
+COMBO(F9,       &kp F9,   20 32, GAMING)
+COMBO(F10,      &kp F10,  21 33, GAMING)
+COMBO(F11,      &kp F11,  22 34, GAMING)
+COMBO(F12,      &kp F12,  23 35, GAMING)
+
+
+
+
