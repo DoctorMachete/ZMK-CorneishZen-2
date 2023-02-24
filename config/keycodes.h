@@ -265,8 +265,8 @@
 #define _TDORDNF_    &td_ord_inf_power_fraction // º ² ³ ∞ ½ ¼  // º ² ³ ∞ ½ ¼
 
 
-#define __TEST1__    &ht_ordinal_infinite 0 KC_ORDINAL
-#define __TEST2__    &ht_power2_half 0 0
+#define __TEST1__    &ht_less_lessequal 0 KC_LESS
+#define __TEST2__    &ht_greater_greaterequal 0 KC_GREAT
 #define __TEST3__    &ht_power3_fourth 0 0
 #define __TEST4__    &td_ord_inf_power_fraction   // º ² ³ ∞ ½ ¼
 
