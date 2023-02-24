@@ -8,6 +8,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define COLEMAK 0
 #define ACCENTS 1
@@ -218,7 +219,7 @@
 //  
 
                 extra_layer { label = "EXTRA"; bindings = <
-     _________ _________ _________ BTUSBTOGG _________ _________                         _________ ___INI___ __PGDN___ __PGUP___ ___END___ _________
+     _________ _BT_PREF_ _USBPREF_ BTUSBTOGG _________ _________                         _________ ___INI___ __PGDN___ __PGUP___ ___END___ _________
      _BT__CLR_ __BT__1__ __BT__2__ __BT__3__ __BT__4__ __BT__5__                         _________ __MPREV__ __MPLAY__ __MPNXT__ _________ _________
      _________ _________ _________ _________ _________ _________                         _________ __MUTE___ __VOLUP__ __VOLDN__ _________ _________
                                              _________ _________ _________     _________ X_______X _________
