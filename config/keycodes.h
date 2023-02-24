@@ -261,8 +261,11 @@
 #define _NSLSASK_    &ht_custom_tap_tap KP_ASTERISK KP_SLASH   //  / → *
 #define _NPLUSMN_    &ht_custom_tap_tap KP_MINUS KP_PLUS   //  + → -
 #define MINUNEQAR    &ht_minus_underscore_equal_rightarrow 0 KC_MINUS  // -_ → =→
-#define _TILDEPM_    &ht_plusminus_tilde 0 0   // ~ → ±
-#define _MULTDIV_    &ht_multiplication_division 0 0   // × → ÷
+#define _TILDEPM_    &ht_plusminus_tilde 0 0                // ~ → ±
+#define _MULTDIV_    &ht_multiplication_division 0 0        // × → ÷
+#define _COMLESS_    &ht_less_lessequal 0 COMMA             // ;, → <≤
+#define _DOT_GRT_    &ht_greater_greaterequal 0 DOT         // :. → >≥
+
 
 // TAP DANCE
 #define _TDORDNF_    &td_ord_inf_power_fraction // º ² ³ ∞ ½ ¼  // º ² ³ ∞ ½ ¼
