@@ -37,15 +37,15 @@
               #include "macros.dtsi"
         };
         behaviors {
-            &sk {
-                  release-after-ms = <2000>;
-                  quick-release;
-                  /delete-property/ ignore-modifiers;
-            };
+
               #include "behaviors.dtsi"
         };
 
-         
+              &sk {
+                  release-after-ms = <2000>;
+                  quick-release;
+                  /delete-property/ ignore-modifiers;
+            };       
         keymap {
                 compatible = "zmk,keymap";
 
