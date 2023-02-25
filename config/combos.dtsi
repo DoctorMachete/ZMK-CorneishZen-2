@@ -53,7 +53,8 @@ COMBO(Amp_0618,                   &kp KC_AMP, 6 18, COLEMAK ACCENTS)          //
 COMBO(LeftParBrack_0719,          &ht_lcbracket_leftparleftbrack KC_LCBR 0, 7 19, COLEMAK ACCENTS)          //  ([{, ( → normal, [ → shifted, { → hold
 COMBO(RightParBrack_0820,         &ht_lcbracket_rightparrightbrack KC_RCBR 0, 8 20, COLEMAK ACCENTS)        //  )]}, ) → normal, ] → shifted, } → hold
 COMBO(GamingLayer_091011,         &to GAMING, 9 10 11, COLEMAK ACCENTS)                                     // GAMING
-COMBO(CapsWord_2937,              &caps_word, 29 37, COLEMAK ACCENTS)                                       // CAPSWORD
+COMBO(Caps_2836,                  &kp CAPSLOCK, 28 36, COLEMAK ACCENTS)                                       // CAPSWORD
+COMBO(CapsWord_2937,              &caps_word, 29 37, COLEMAK ACCENTS)                                       // CAPS
 COMBO(ToggleNPADLeft_3637,        &tog NPAD, 36 37, COLEMAK ACCENTS)                                            // ALT+SHIFT --> toggle NPAD
 COMBO(ToggleNPADRight_4041,       &tog NPAD, 40 41, COLEMAK ACCENTS)                                        // SPC+ALTG -->  toggle NPAD
 COMBO(ActivateFUNC_3738,          &mo FUNC, 37 38, COLEMAK ACCENTS)                                        // FUNC+RPT -->  mo FUNC
