@@ -109,7 +109,7 @@ td_shift_func_capslock: td_shift_func_capslock {     // test TAP-DANCE + two LAY
 //    bindings = <&mo>, <&mm_backspace_delete>;
 //};  
 ht_num_backspace_delete: ht_num_backspace_delete {             // RCTRL → TOGGLE LANGUAGE LAYER
-    compatible = "zmk,behavior-hold-tap"; label = "HT_NUM_BACKSPACE_DELET";
+    compatible = "zmk,behavior-hold-tap"; label = "HT_NUM_BACKSPACE_DELETE";
     #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
     bindings = <&mo>, <&mm_backspace_delete>;
 };  
