@@ -85,7 +85,7 @@ ht_nav_rep: ht_nav_rep {             //  NAV - REP
 //};
 ht_custom_mo_tap: ht_custom_mo_tap {             
     compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_MO_TAP";
-    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
+    #binding-cells = <2>; tapping-term-ms = <150>; quick-tap-ms = <150>; flavor = "tap-preferred";
     bindings = <&mo>, <&kp>;
 };   
 ht_custom_tog_tap: ht_custom_tog_tap {             
@@ -103,16 +103,16 @@ td_shift_func_capslock: td_shift_func_capslock {     // test TAP-DANCE + two LAY
     #binding-cells = <0>; tapping-term-ms = <250>;
     bindings = <&ht_custom_tap_sk LSHIFT LSHIFT>, <&kp CAPSLOCK>;
 };        
-//ht_extra_backspace_delete: ht_extra_backspace_delete {             // RCTRL → TOGGLE LANGUAGE LAYER
-//    compatible = "zmk,behavior-hold-tap"; label = "HT_EXTRA_BACKSPACE_DELETE";
-//    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
-//    bindings = <&mo>, <&mm_backspace_delete>;
-//};  
-ht_num_backspace_delete: ht_num_backspace_delete {             // RCTRL → TOGGLE LANGUAGE LAYER
-    compatible = "zmk,behavior-hold-tap"; label = "HT_NUM_BACKSPACE_DELETE";
+ht_extra_backspace_delete: ht_extra_backspace_delete {             // RCTRL → TOGGLE LANGUAGE LAYER
+    compatible = "zmk,behavior-hold-tap"; label = "HT_EXTRA_BACKSPACE_DELETE";
     #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
     bindings = <&mo>, <&mm_backspace_delete>;
 };  
+//ht_num_backspace_delete: ht_num_backspace_delete {             // RCTRL → TOGGLE LANGUAGE LAYER
+//    compatible = "zmk,behavior-hold-tap"; label = "HT_NUM_BACKSPACE_DELETE";
+//    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
+//    bindings = <&mo>, <&mm_backspace_delete>;
+//};  
 mm_equal_rightarrow: mm_equal_rightarrow {                                               //  = → →
     compatible = "zmk,behavior-mod-morph"; label = "MM_EQUAL_RIGHTARROW";
     #binding-cells = <0>; bindings = <&kp KC_EQUAL>, <&macro_right_arrow>;
