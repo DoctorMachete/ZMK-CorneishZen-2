@@ -229,7 +229,7 @@
 //#define _NUMSPC__    &td_num_spc_npad_togglenpad
 #define _NUMBSPC_    &ht_num_backspace_delete NUM 0        // removed tap-dance, same as with RPT/NAV
 #define _NPADKP0_    &ht_custom_tog_tap NPAD KP_NUMBER_0
-#define _SFTFUNC_    &td_shift_func_capslock  // *****
+#define _SFTCAPS_    &td_shift_func_capslock  // *****
 //#define XTRABKSPC    &ht_extra_backspace_delete EXTRA 0
 #define _XTRASPC_    &ht_custom_mo_tap EXTRA SPACE
 
