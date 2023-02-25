@@ -63,7 +63,7 @@ compatible = "zmk,behavior-hold-tap"; label = "HT_QUEST_EXCLAM";
 
 ht_custom_tap_tap: ht_custom_tap_tap {             // REUSABLE tap for both the hold and the tap actions, so two keys are expected as parameters
     compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_TAP_TAP";
-    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
+    #binding-cells = <2>; tapping-term-ms = <150>; quick-tap-ms = <150>; flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
 };
 ht_custom_tap_sk: ht_custom_tap_sk {             // REUSABLE tap for both the hold and the tap actions, so two keys are expected as parameters
