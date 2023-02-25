@@ -275,7 +275,7 @@
 #define _TDORDNF_    &td_ord_inf_power_fraction // º ² ³ ∞ ½ ¼  // º ² ³ ∞ ½ ¼
 
 
-#define __TEST1__    &ht_less_lessequal 0 KC_LESS
+#define __TEST1__    &ht_nav_rep NAV 0
 #define __TEST2__    &ht_greater_greaterequal 0 KC_GREAT
 #define __TEST3__    &ht_power3_fourth 0 0
 #define __TEST4__    &td_ord_inf_power_fraction   // º ² ³ ∞ ½ ¼

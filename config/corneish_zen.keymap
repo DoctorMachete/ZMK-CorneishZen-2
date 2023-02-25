@@ -63,7 +63,7 @@
                 default_layer { label = "COLEMAK"; bindings = <
      ___TAB___ ____Q____ ____W____ ____F____ ____P____ ____B____                         ____Y____ ____L____ ____U____ ____Y____ _QUSTCLM_ _________
      _SLSHCOM_ ____A____ ____R____ ____S____ ____T____ __WIN_G__                         __WIN_M__ ____N____ ____E____ ____I____ ____O____ _QUOTACC_
-     __LCTRL__ ____Z____ ____X____ ____C____ ____D____ ____V____                         ____K____ ____H____ _COMLESS_ _DOT_GRT_ MINUNEQAR _RCTLACC_
+     __LCTRL__ ____Z____ ____X____ __TEST1__ ____D____ ____V____                         ____K____ ____H____ _COMLESS_ _DOT_GRT_ MINUNEQAR _RCTLACC_
                                              ___LALT__ _SFTFUNC_ _NAVREP__     _NUMSPC__ XTRABKSPC _RALTENT_
                         >;};
 
