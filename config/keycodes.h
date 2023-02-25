@@ -224,9 +224,9 @@
 
 // LAYER TAPS
 //#define _NAVREP__    &td_nav_rep_npad_togglenpad      // NAV-REP + NPADoREP + TOGGLENPAD
-#define _NAVREP__    &ht_nav_rep NAV 0      // with tap-dance the delay makes RPT unusable
+#define _NAV_REP_    &ht_nav_rep NAV 0      // with tap-dance the delay makes RPT unusable
 //#define _NUMSPC__    &td_num_spc_npad_togglenpad
-#define _NUMSPC__    &ht_num_backspace_delete NUM 0        // removed tap-dance, same as with RPT/NAV
+#define _NUMBSPC_    &ht_num_backspace_delete NUM 0        // removed tap-dance, same as with RPT/NAV
 #define _NPADKP0_    &ht_custom_tog_tap NPAD KP_NUMBER_0
 #define _SFTFUNC_    &td_shift_func_capslock
 //#define XTRABKSPC    &ht_extra_backspace_delete EXTRA 0
