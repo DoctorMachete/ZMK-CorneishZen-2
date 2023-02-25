@@ -68,7 +68,7 @@ ht_custom_tap_tap: ht_custom_tap_tap {             // REUSABLE tap for both the 
 };
 ht_custom_tap_sk: ht_custom_tap_sk {             // REUSABLE tap for both the hold and the tap actions, so two keys are expected as parameters
     compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_TAP_SK";
-    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
+    #binding-cells = <2>; tapping-term-ms = <250>; quick-tap-ms = <0>; flavor = "tap-preferred";
     bindings = <&kp>, <&sk>;
 };
 ht_nav_rep: ht_nav_rep {             //  NAV - REP
