@@ -133,6 +133,7 @@
 #define __LWIN___    &kp LEFT_WIN
 #define __RWIN___    &kp RIGHT_WIN
 #define _OSSHIFT_     &ht_custom_tap_sk LSHIFT LSHIFT
+
 #define __OSALT__     &ht_custom_tap_sk LALT LALT
 #define __OSCTL__     &ht_custom_tap_sk LCTRL LCTRL
 

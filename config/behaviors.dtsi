@@ -101,7 +101,7 @@ ht_custom_mod_toggle: ht_custom_mod_toggle {             // RCTRL → TOGGLE LAN
 td_shift_func_capslock: td_shift_func_capslock {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD
     compatible = "zmk,behavior-tap-dance"; label = "TD_SHIFT_FUNC_CAPSLOCK";
     #binding-cells = <0>; tapping-term-ms = <250>;
-    bindings = <&ht_custom_tap_sk LSHIFT LSHIFT>, <&ht_custom_mo_tap FUNC CAPSLOCK>;
+    bindings = <&ht_custom_tap_sk LSHIFT LSHIFT>, <&kp CAPSLOCK>;
 };        
 //ht_extra_backspace_delete: ht_extra_backspace_delete {             // RCTRL → TOGGLE LANGUAGE LAYER
 //    compatible = "zmk,behavior-hold-tap"; label = "HT_EXTRA_BACKSPACE_DELETE";
