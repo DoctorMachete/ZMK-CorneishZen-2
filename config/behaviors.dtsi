@@ -20,9 +20,9 @@ mm_dquote_acute: mm_dquote_acute {        // " ^
     mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
-ht_quotes_accent: ht_quotes_accent {      //  ' ` ' ^/ 
+ht_quotes_accent: ht_quotes_accent {      //  ' ` " ^/ 
 compatible = "zmk,behavior-hold-tap"; label = "HT_QUOTES_ACCENT";
-    #binding-cells = <2>; tapping-term-ms = <300>; quick-tap-ms = <0>; flavor = "tap-preferred";
+    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
     bindings = <&mm_dquote_acute>, <&mm_quote_accent>;
 };
 
