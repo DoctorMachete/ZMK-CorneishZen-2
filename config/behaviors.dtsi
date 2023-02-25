@@ -71,11 +71,11 @@ ht_custom_tap_sk: ht_custom_tap_sk {             // REUSABLE tap for both the ho
     #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
     bindings = <&kp>, <&sk>;
 };
-ht_custom_tap_skqr: ht_custom_tap_skqr {             // ONLY FOR OSSHIFT in the base layer, so doesn't shift 2nd and 3rd following keys sometimes
-    compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_TAP_SKQR";
-    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
-    bindings = <&kp>, <&skqr>;
-};
+//ht_custom_tap_skqr: ht_custom_tap_skqr {             // ONLY FOR OSSHIFT in the base layer, so doesn't shift 2nd and 3rd following keys sometimes
+//    compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_TAP_SKQR";
+//    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
+//    bindings = <&kp>, <&skqr>;
+//};
 ht_nav_rep: ht_nav_rep {             //  NAV - REP
     compatible = "zmk,behavior-hold-tap"; label = "HT_NAV_REP";
     #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
