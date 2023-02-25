@@ -239,8 +239,8 @@
 #define _SFTBENT_    &mt LSHIFT KP_ENTER
 #define _LANLOCK_    &mt LALT KP_NUMLOCK
 #define _RALTENT_    &mt RALT ENTER
-#define __WIN_G__    &ht_custom_tap_tap LWIN G
-#define __WIN_M__    &ht_custom_tap_tap LWIN M
+#define __WIN_G__    &ht_custom_mod_tap LWIN G
+#define __WIN_M__    &ht_custom_mod_tap LWIN M
 
 // MOD MORPHS
 #define _BKSPCDL_    &mm_backspace_delete

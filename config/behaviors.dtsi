@@ -66,6 +66,11 @@ ht_custom_tap_tap: ht_custom_tap_tap {             // REUSABLE tap for both the 
     #binding-cells = <2>; tapping-term-ms = <150>; quick-tap-ms = <150>; flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
 };
+ht_custom_mod_tap: ht_custom_mod_tap {             // longer quick-tap for the G/V mod taps
+    compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_MOD_TAP";
+    #binding-cells = <2>; tapping-term-ms = <300>; quick-tap-ms = <300>; flavor = "tap-preferred";
+    bindings = <&kp>, <&kp>;
+};
 ht_custom_tap_sk: ht_custom_tap_sk {             // REUSABLE tap for both the hold and the tap actions, so two keys are expected as parameters
     compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_TAP_SK";
     #binding-cells = <2>; tapping-term-ms = <250>; quick-tap-ms = <0>; flavor = "tap-preferred";
