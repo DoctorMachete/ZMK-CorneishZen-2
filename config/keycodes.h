@@ -248,7 +248,7 @@
 #define __ALT_R__    &ht_custom_mod_tap LALT R
 #define __CTL_S__    &ht_custom_mod_tap LCTRL S
 #define __WIN_T__    &ht_custom_mod_tap LWIN T
-#define __WIN_N__    &ht_custom_mod_tap LWIN M
+#define __WIN_N__    &ht_custom_mod_tap LWIN N
 #define __CTL_E__    &ht_custom_mod_tap LCTRL E
 #define __ALT_I__    &ht_custom_mod_tap LALT I
 
