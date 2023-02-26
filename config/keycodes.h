@@ -143,6 +143,7 @@
 #define ___SPC___    &kp SPACE
 #define ___RPT___    &key_repeat
 #define _CAPSLCK_    &kp CAPSLOCK
+#define _CAPSWRD_    &caps_word
 
 #define KC_QUEST     LS(MINUS)             //  ?
 #define __QUEST__    &kp KC_QUEST          //  ?
