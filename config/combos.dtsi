@@ -58,7 +58,7 @@ COMBO(GamingLayer_091011,         &to GAMING, 9 10 11, COLEMAK ACCENTS)         
 COMBO(ToggleNPADLeft_3637,        &tog NPAD, 36 37, COLEMAK ACCENTS)                                            // ALT+SHIFT --> toggle NPAD
 COMBO(ToggleNPADRight_4041,       &tog NPAD, 40 41, COLEMAK ACCENTS)                                        // SPC+ALTG -->  toggle NPAD
 COMBO(ActivateFUNC_3738,          &mo FUNC, 37 38, COLEMAK ACCENTS)                                        // FUNC+RPT -->  mo FUNC
-COMBO(TAB_2937,                   &kp TAB, 29 37, COLEMAK ACCENTS)                                        // TAB
+COMBO(TAB_1729,                   &kp TAB, 17 29, COLEMAK ACCENTS)                                        // TAB
 COMBO(ENTER_1830,                 &kp ENTER, 18 30, COLEMAK ACCENTS)                                        // ENTER
 COMBO(ACCENTS_2234,               &tog ACCENTS, 22 34, COLEMAK ACCENTS)                                        // ACCENTS
 //COMBO(LessLessEqual_2133,         &ht_less_lessequal 0 KC_LESS, 21 33, COLEMAK)                 
