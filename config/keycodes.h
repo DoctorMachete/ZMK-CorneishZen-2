@@ -237,7 +237,7 @@
 
 // MOD TAPS
 #define __ALTAB__    &mt LALT TAB
-#define _RCTLACC_    &ht_custom_mod_toggle RCTRL ACCENTS     // RCTRL → TOGGLE LANGUAGE LAYER
+//#define _RCTLACC_    &ht_custom_mod_toggle RCTRL ACCENTS     // RCTRL → TOGGLE LANGUAGE LAYER
 #define _SFTBENT_    &mt LSHIFT KP_ENTER
 #define _LANLOCK_    &mt LALT KP_NUMLOCK
 //#define _RALTENT_    &mt RALT ENTER
