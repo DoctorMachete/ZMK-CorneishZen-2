@@ -125,7 +125,7 @@
 //  ║  REDO   │  UNDO   │   ALT   │  SHIFT  │  CTRL   │ SEARCH  ║                       ║         │  LEFT   │  DOWN   │   UP    │  RIGHT  │         ║
 //  ║         │         │         │         │         │  ENTER  ║                       ║         │         │         │         │         │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
-//  ║  RESET  │  ZOOM   │  ZOOM   │  LWIN   │         │   MENU  ║                       ║         │         │         │         │         │         ║
+//  ║  RESET  │  ZOOM   │  ZOOM   │  LWIN   │ ALT+TAB │   MENU  ║                       ║         │         │         │         │         │         ║
 //  ║  SOFT   │   IN    │OUT /CLOS│         │         │   ESC   ║                       ║         │         │         │         │         │         ║
 //  ╚═════════╧═════════╧═════════╧═════════╬─────────┼─────────╬═════════╗   ╔═════════╬─────────┼─────────╬═════════╧═════════╧═════════╧═════════╝
 //                                          ║  RESET  │         │XXXXXXXXX║   ║   SPC   │ BCKSPC  │  ENTER  ║
@@ -134,7 +134,7 @@
                 navigation_layer { label = "NAV"; bindings = <
      ___TAB___ _________ CLPHSTCUT _CPYSLAL_ _PASTEF2_ __BKSPC__                         ___DEL___ ___INI___ __PGDN___ __PGUP___ ___END___ __INSRT__
      __REDO___ __UNDO___ ___LALT__ __LSHFT__ __LCTRL__ _SRCHENT_                         _________ __LEFT___ __DOWN___ ___UP____ __RIGHT__ _________
-     __RESET__ _ZOOM_IN_ _ZMOUTCL_ __LWIN___ _________ _ESCMENU_                         _________ _________ _________ _________ _________ _________
+     __RESET__ _ZOOM_IN_ _ZMOUTCL_ __LWIN___ _ALT_TAB_ _ESCMENU_                         _________ _________ _________ _________ _________ _________
                                              __BOOTL__ X_______X X_______X     ___SPC___ __BKSPC__ __ENTER__
                         >;};
 
