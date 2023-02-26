@@ -240,9 +240,19 @@
 #define _RCTLACC_    &ht_custom_mod_toggle RCTRL ACCENTS     // RCTRL → TOGGLE LANGUAGE LAYER
 #define _SFTBENT_    &mt LSHIFT KP_ENTER
 #define _LANLOCK_    &mt LALT KP_NUMLOCK
-#define _RALTENT_    &mt RALT ENTER
-#define __WIN_G__    &ht_custom_mod_tap LWIN G
-#define __WIN_M__    &ht_custom_mod_tap LWIN M
+//#define _RALTENT_    &mt RALT ENTER
+//#define __WIN_G__    &ht_custom_mod_tap LWIN G
+//#define __WIN_M__    &ht_custom_mod_tap LWIN M
+
+#define __ALT_R__    &ht_custom_mod_tap LALT R
+#define __CTL_S__    &ht_custom_mod_tap LCTRL S
+#define __WIN_T__    &ht_custom_mod_tap LWIN T
+#define __WIN_N__    &ht_custom_mod_tap LWIN M
+#define __CTL_E__    &ht_custom_mod_tap LCTRL E
+#define __ALT_I__    &ht_custom_mod_tap LALT I
+
+
+
 
 // MOD MORPHS
 #define _BKSPCDL_    &mm_backspace_delete
