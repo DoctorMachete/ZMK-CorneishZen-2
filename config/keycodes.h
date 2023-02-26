@@ -219,8 +219,8 @@
 #define _ZOOMOUT_    &kp KC_ZOOMOU      // zoom out
 #define KC_ZOOMCL    LG(ESC)           // zoom close
 #define _ZMOUTCL_    &ht_custom_tap_tap KC_ZOOMCL KC_ZOOMOU           // zoom out on tap and close on hold
-#define KC_ALTTAB      LA(TAB)
-#define _ALT_TAB_    &KP ALT_TAB
+#define KC_ALTTAB    LA(TAB)
+#define _ALT_TAB_    &kp ALT_TAB
 
 
 
