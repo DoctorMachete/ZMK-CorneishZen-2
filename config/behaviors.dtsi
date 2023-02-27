@@ -218,7 +218,7 @@ mm_dier_u: mm_dier_u {              //  ü → Ü
 };
 ht_accent_u: ht_accent_u {             //  uU → úÚ
 compatible = "zmk,behavior-hold-tap"; label = "HT_ACCENT_U";
-    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
+    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
     bindings = <&mm_accent_u>, <&kp>;
 };  
 td_accent_dier_u: td_accent_dier_u {     // uU / úÚ → üÜ
