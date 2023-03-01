@@ -298,3 +298,8 @@
 #define __TEST4__    &td_ord_inf_power_fraction   // º ² ³ ∞ ½ ¼
 
 #define _TOGNPAD_    &kp A
+
+
+// MOUSE
+#define __TEST1__    &kp A
+#define _MS_LEFT_    &MOVht_nav_rep NAV 0
