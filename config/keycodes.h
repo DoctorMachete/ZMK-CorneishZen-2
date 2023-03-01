@@ -302,4 +302,4 @@
 
 // MOUSE
 #define __TEST1__    &kp A
-#define _MS_LEFT_    &MOVht_nav_rep NAV 0
+#define _MS_LEFT_    &kp A
