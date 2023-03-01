@@ -302,10 +302,10 @@
 
 // MOUSE
 #define __TEST1__    &kp A
-#define _M__LEFT_    &mmv MOVE_LEFT 
-#define _M__DOWN_    &mmv MOVE_DOWN 
-#define __M__UP__    &mmv MOVE_UP 
-#define _M_RIGHT_    &mmv MOVE_RIGHT 
+#define _M__LEFT_    &mmv MOVE_HOR(-600) 
+#define _M__DOWN_    &mmv MOVE_VERT(600) 
+#define __M__UP__    &mmv MOVE_VERT(-600) 
+#define _M_RIGHT_    &mmv MOVE_HOR(600) 
 
 #define _M_LCLCK_    &mkp LCLK 
 #define _M_RCLCK_    &mkp RCLK
@@ -316,9 +316,9 @@
 #define _M__BTN7_    &mkp MB7  
 #define _M__BTN8_    &mkp MB8
 
-#define _SCRL_UP_    &mwh SCROLL_UP 
-#define _SCRL_DN_    &mwh SCROLL_DOWN 
-#define _SCRL_LF_    &mwh SCROLL_LEFT 
-#define _SCRL_RT_    &mwh SCROLL_RIGHT 
+#define _SCRL_UP_    &mwh SCROLL_VERT(10) 
+#define _SCRL_DN_    &mwh SCROLL_VERT(-10) 
+#define _SCRL_LF_    &mwh SCROLL_HOR(-10) 
+#define _SCRL_RT_    &mwh SCROLL_HOR(10) 
 
 
