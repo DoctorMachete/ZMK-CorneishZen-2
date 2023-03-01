@@ -302,8 +302,16 @@
 
 // MOUSE
 #define __TEST1__    &kp A
-#define _M__LEFT_    &mmv MOVE_LEFT 
-#define _M__DOWN_    &mmv MOVE_DOWN 
-#define __M__UP__    &mmv MOVE_UP 
+#define _M_MLEFT_    &mmv MOVE_LEFT 
+#define _M_MDOWN_    &mmv MOVE_DOWN 
+#define __M_MUP__    &mmv MOVE_UP 
 #define _M_RIGHT_    &mmv MOVE_RIGHT 
+#define _M_LCLCK_    &mkp LCLK 
+#define _M_RCLCK_    &mkp RCLK
+#define _M_MCLCK_    &mkp MCLK  
+#define _M__BTN4_    &mkp MB4  
+#define _M__BTN5_    &mkp MB5  
+#define _M__BTN6_    &mkp MB6  
+#define _M__BTN7_    &mkp MB7  
+#define _M__BTN8_    &mkp MB8
 
