@@ -306,6 +306,7 @@
 #define _M_MDOWN_    &mmv MOVE_DOWN 
 #define __M_MUP__    &mmv MOVE_UP 
 #define _M_RIGHT_    &mmv MOVE_RIGHT 
+/*
 #define _M_LCLCK_    &mkp LCLK 
 #define _M_RCLCK_    &mkp RCLK
 #define _M_MCLCK_    &mkp MCLK  
@@ -314,4 +315,4 @@
 #define _M__BTN6_    &mkp MB6  
 #define _M__BTN7_    &mkp MB7  
 #define _M__BTN8_    &mkp MB8
-
+*/
