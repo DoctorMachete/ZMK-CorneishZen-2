@@ -229,6 +229,20 @@ td_accent_dier_u: td_accent_dier_u {     // uU / úÚ → üÜ
 // END LAYER ACCENTS ********************************************************************************************************************
 
 
+// LAYER NAV ****************************************************************************************************************************
+mm_zoom_in_out: mm_zoom_in_out {              //  
+    compatible = "zmk,behavior-mod-morph"; label = "MM_ZOOM_IN_OUT";
+    #binding-cells = <0>; bindings = <&kp KC_ZOOMIN>, <&kp KC_ZOOMOU>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+ht_zoom_inout_close: ht_zoom_inout_close {             //  
+    compatible = "zmk,behavior-hold-tap"; label = "HT_ZOOM_INOUT_CLOSE";
+    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
+    bindings = <&kp>, <&mm_zoom_in_out>;
+}; 
+// END LAYER NAV ************************************************************************************************************************
+
+
 // LAYER NUM ****************************************************************************************************************************
 ht_multiplication_division: ht_multiplication_division {             // -_ → =→
     compatible = "zmk,behavior-hold-tap"; label = "HT_MULTIPLICATION_DIVISION";
