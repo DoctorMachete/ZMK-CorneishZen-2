@@ -182,9 +182,9 @@
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
 //  
                 left_numpad_layer { label = "LNPAD"; bindings = <
-     ___TAB___ _NSLSASK_ ___KP7___ ___KP8___ ___KP9___ _NPLUSMN_                         _SCRL_UP_ _________ __M__UP__ _________ _________ _________
+     ___TAB___ _NSLSASK_ ___KP7___ ___KP8___ ___KP9___ _NPLUSMN_                         _SCRL_UP_ _M__DN_L_ __M__UP__ _M_UP_R__ _________ _________
      _UNDSEQU_ __KPDOT__ ___KP4___ ___KP5___ ___KP6___ _BKSPCDL_                         _SCRL_DN_ _M__LEFT_ _________ _M_RIGHT_ _SCRL_LF_ _SCRL_RT_
-     __LCTRL__ __COMMA__ ___KP1___ ___KP2___ ___KP3___ ___SPC___                         _________ _________ _M__DOWN_ _________ _________ _________
+     __LCTRL__ __COMMA__ ___KP1___ ___KP2___ ___KP3___ ___SPC___                         _________ _M__UP_L_ _M__DOWN_ _M__DN_R_ _________ _________
                                              _LANLOCK_ _SFTBENT_ _NPADKP0_     _M_LCLCK_ _M_RCLCK_ _M_MCLCK_
                         >;};
 
