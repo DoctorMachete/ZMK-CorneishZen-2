@@ -304,10 +304,10 @@
 
 // MOUSE
 #define __TEST1__    &kp A
-#define _M__LEFT_    &mmv MOVE_HOR(-2600) 
-#define _M__DOWN_    &mmv MOVE_VERT(2600) 
-#define __M__UP__    &mmv MOVE_VERT(-2600) 
-#define _M_RIGHT_    &mmv MOVE_HOR(2600) 
+#define _M__LEFT_    &mmv MOVE_HOR(-1600) 
+#define _M__DOWN_    &mmv MOVE_VERT(1600) 
+#define __M__UP__    &mmv MOVE_VERT(-1600) 
+#define _M_RIGHT_    &mmv MOVE_HOR(1600) 
 
 #define _M_LCLCK_    &mkp LCLK 
 #define _M_RCLCK_    &mkp RCLK

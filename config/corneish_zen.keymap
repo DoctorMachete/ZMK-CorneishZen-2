@@ -33,7 +33,7 @@
       release-after-ms = <1500>;
       quick-release;
 };  
-&mmv {    time-to-max-speed-ms = <2500>;};
+&mmv {    time-to-max-speed-ms = <1000>;};
 
 / {
 
