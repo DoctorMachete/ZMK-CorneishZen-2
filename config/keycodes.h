@@ -230,7 +230,8 @@
 // LAYERS
 #define _NAV_REP_    &ht_nav_rep NAV 0      // with tap-dance the delay makes RPT unusable
 #define _NUM_SPC_    &ht_custom_mo_tap NUM SPACE        // removed tap-dance, same as with RPT/NAV
-#define _NPADKP0_    &ht_custom_tog_tap LNPAD KP_NUMBER_0
+#define _LNPAD_0_    &ht_custom_tog_tap LNPAD KP_NUMBER_0
+#define _RNPAD_0_    &ht_custom_tog_tap RNPAD KP_NUMBER_0
 #define _SFTCAPS_    &td_shift_func_capslock  // *****
 #define XTRABKSPC    &ht_extra_backspace_delete EXTRA 0
 #define __MOUSE__    &mo MOUSE
