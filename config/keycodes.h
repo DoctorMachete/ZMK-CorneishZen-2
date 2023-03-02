@@ -219,7 +219,7 @@
 #define KC_ZOOMOU    LG(KC_MINUS)      // zoom out
 #define _ZOOMOUT_    &kp KC_ZOOMOU      // zoom out
 #define KC_ZOOMCL    LG(ESC)           // zoom close
-#define _ZMIO_CL_    &ht_custom_tap_tap KC_ZOOMCL KC_ZOOMOU           // zoom out on tap and close on hold
+//#define _ZMIO_CL_    &ht_custom_tap_tap KC_ZOOMCL KC_ZOOMOU           // zoom out on tap and close on hold
 #define _ZMOUTCL_    &ht_zoom_inout_close KC_ZOOMCL 0 // zoom-in by default, zoom-out shifted, and close on hold
 
 #define KC_ALTTAB    LA(TAB)
@@ -304,10 +304,10 @@
 
 // MOUSE
 #define __TEST1__    &kp A
-#define _M__LEFT_    &mmv MOVE_HOR(-600) 
-#define _M__DOWN_    &mmv MOVE_VERT(600) 
-#define __M__UP__    &mmv MOVE_VERT(-600) 
-#define _M_RIGHT_    &mmv MOVE_HOR(600) 
+#define _M__LEFT_    &mmv MOVE_HOR(-2600) 
+#define _M__DOWN_    &mmv MOVE_VERT(2600) 
+#define __M__UP__    &mmv MOVE_VERT(-2600) 
+#define _M_RIGHT_    &mmv MOVE_HOR(2600) 
 
 #define _M_LCLCK_    &mkp LCLK 
 #define _M_RCLCK_    &mkp RCLK
