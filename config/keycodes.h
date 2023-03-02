@@ -312,7 +312,7 @@
 #define _M__DOWN_    &mmv MOVE_VERT(MOUSESPEED) 
 #define _M__DN_L_    &mmv MOVE(-MOUSESPEED, MOUSESPEED)
 #define _M__LEFT_    &mmv MOVE_HOR(-MOUSESPEED)
-#define _M__UP_L_    &mmv MOVE(-MOUSESPEED, MOUSESPEED)
+#define _M__UP_L_    &mmv MOVE(-MOUSESPEED, -MOUSESPEED)
 
 
 

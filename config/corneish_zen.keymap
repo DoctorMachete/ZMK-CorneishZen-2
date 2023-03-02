@@ -183,9 +183,9 @@
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
 //  
                 mouse_layer { label = "MOUSE"; bindings = <
-     _________ _________ _________ _________ _________ _________                         _SCRL_UP_ _M__DN_L_ __M__UP__ _M_UP_R__ _________ _________
+     _________ _________ _________ _________ _________ _________                         _SCRL_UP_ _M__UP_L_ __M__UP__ _M_UP_R__ _________ _________
      _________ _________ X_______X __LSHFT__ __LCTRL__ _________                         _SCRL_DN_ _M__LEFT_ _________ _M_RIGHT_ _SCRL_LF_ _SCRL_RT_
-     _________ _________ _________ _________ _________ _________                         _________ _M__UP_L_ _M__DOWN_ _M__DN_R_ _________ _________
+     _________ _________ _________ _________ _________ _________                         _________ _M__DN_L_ _M__DOWN_ _M__DN_R_ _________ _________
                                              _________ _________ X_______X     _M_LCLCK_ _M_RCLCK_ _M_MCLCK_
                         >;};
 
@@ -210,7 +210,7 @@
                 left_numpad_layer { label = "LNPAD"; bindings = <
      ___TAB___ _NSLSASK_ ___KP7___ ___KP8___ ___KP9___ _NPLUSMN_                         _SCRL_UP_ _M__UP_L_ __M__UP__ _M_UP_R__ _________ _________
      _UNDSEQU_ __KPDOT__ ___KP4___ ___KP5___ ___KP6___ _BKSPCDL_                         _SCRL_DN_ _M__LEFT_ _________ _M_RIGHT_ _SCRL_LF_ _SCRL_RT_
-     __LCTRL__ __COMMA__ ___KP1___ ___KP2___ ___KP3___ ___SPC___                         _________ _M__UP_L_ _M__DOWN_ _M__DN_R_ _________ _________
+     __LCTRL__ __COMMA__ ___KP1___ ___KP2___ ___KP3___ ___SPC___                         _________ _M__DN_L_ _M__DOWN_ _M__DN_R_ _________ _________
                                              _LANLOCK_ _SFTBENT_ _NPADKP0_     _M_LCLCK_ _M_RCLCK_ _M_MCLCK_
                         >;};
 
@@ -234,7 +234,7 @@
                 right_numpad_layer { label = "RNPAD"; bindings = <
      _________ _________ _M__UP_L_ __M__UP__ _M_UP_R__ _SCRL_UP_                         _NPLUSMN_ ___KP7___ ___KP8___ ___KP9___ _NSLSASK_ ___TAB___
      _SCRL_LF_ _SCRL_RT_ _M__LEFT_ _________ _M_RIGHT_ _SCRL_DN_                         _BKSPCDL_ ___KP4___ ___KP5___ ___KP6___ __KPDOT__ _UNDSEQU_
-     _________ _________ _M__UP_L_ _M__DOWN_ _M__DN_R_ _________                         ___SPC___ ___KP1___ ___KP2___ ___KP3___ __COMMA__ __LCTRL__
+     _________ _________ _M__DN_L_ _M__DOWN_ _M__DN_R_ _________                         ___SPC___ ___KP1___ ___KP2___ ___KP3___ __COMMA__ __LCTRL__
                                              _M_LCLCK_ _M_RCLCK_ _M_MCLCK_     _NPADKP0_ _SFTBENT_ _LANLOCK_
                         >;};
 
