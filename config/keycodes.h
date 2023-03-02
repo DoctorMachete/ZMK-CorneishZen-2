@@ -233,7 +233,7 @@
 #define _NPADKP0_    &ht_custom_tog_tap LNPAD KP_NUMBER_0
 #define _SFTCAPS_    &td_shift_func_capslock  // *****
 #define XTRABKSPC    &ht_extra_backspace_delete EXTRA 0
-#define __MOUSE__    &mo LNPAD
+#define __MOUSE__    &mo MOUSE
 
 
 
