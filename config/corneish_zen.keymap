@@ -125,7 +125,7 @@
 //  ║         │ZOOM  CLS│CLIP HIST│SELECTALL│   F2    │ BACKSPC ║                       ║  DELETE │   INI   │  PREPAG │  AVPAG  │   END   │  INSERT ║
 //  ║         │ZOOM +/- │   CUT   │  COPY   │  PASTE  │         ║                       ║         │         │         │         │         │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢                       ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
-//  ║  REDO   │  UNDO   │  LNPAD  │  SHIFT  │  CTRL   │ SEARCH  ║                       ║   SPC   │  LEFT   │  DOWN   │   UP    │  RIGHT  │         ║
+//  ║  REDO   │  UNDO   │  MOUSE  │  SHIFT  │  CTRL   │ SEARCH  ║                       ║   SPC   │  LEFT   │  DOWN   │   UP    │  RIGHT  │         ║
 //  ║         │         │         │         │         │  ENTER  ║                       ║         │         │         │         │         │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
 //  ║  RESET  │         │         │  LWIN   │ ALT+TAB │   MENU  ║                       ║         │         │         │         │         │         ║
@@ -136,7 +136,7 @@
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
                 navigation_layer { label = "NAV"; bindings = <
      _________ _ZMOUTCL_ CLPHSTCUT _CPYSLAL_ _PASTEF2_ __BKSPC__                         ___DEL___ ___INI___ __PGDN___ __PGUP___ ___END___ __INSRT__
-     __REDO___ __UNDO___ __LNPAD__ __LSHFT__ __LCTRL__ _SRCHENT_                         ___SPC___ __LEFT___ __DOWN___ ___UP____ __RIGHT__ _________
+     __REDO___ __UNDO___ __MOUSE__ __LSHFT__ __LCTRL__ _SRCHENT_                         ___SPC___ __LEFT___ __DOWN___ ___UP____ __RIGHT__ _________
      __RESET__ _________ _________ __LWIN___ _ALT_TAB_ _ESCMENU_                         _________ _________ _________ _________ _________ _________
                                              __BOOTL__ X_______X X_______X     _________ _________ _________
                         >;};
@@ -192,24 +192,24 @@
 
 //  Base Layer: RNPAD
 //  ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗                       ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗
-//  ║         │         │         │         │         │         ║                       ║    -    │    7    │    8    │    9    │    *    │   TAB   ║
-//  ║         │         │         │         │         │         ║                       ║    +    │         │         │         │    /    │         ║
+//  ║         │         │   U-L   │    U    │   U-R   │ SCROLL  ║                       ║    -    │    7    │    8    │    9    │    *    │   TAB   ║
+//  ║         │         │         │         │         │   UP    ║                       ║    +    │         │         │         │    /    │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢                       ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
-//  ║         │         │         │         │         │         ║                       ║ DELETE  │    4    │    5    │    6    │    .    │  EQUAL  ║
-//  ║         │         │         │         │         │         ║                       ║ BCKSPC  │         │         │         │         │ UNDERSC ║
+//  ║ SCROLL  │ SCROLL  │    L    │         │    R    │ SCROLL  ║                       ║ DELETE  │    4    │    5    │    6    │    .    │  EQUAL  ║
+//  ║         │         │         │         │         │   DN    ║                       ║ BCKSPC  │         │         │         │         │ UNDERSC ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
-//  ║         │         │         │         │         │         ║                       ║   SPC   │    1    │    2    │    3    │    ,    │  RCTRL  ║
+//  ║         │         │   D-L   │   D-L   │   D-R   │   D-L   ║                       ║   SPC   │    1    │    2    │    3    │    ,    │  RCTRL  ║
 //  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │         ║
 //  ╚═════════╧═════════╧═════════╧═════════╬─────────┼─────────╬═════════╗   ╔═════════╬─────────┼─────────╬═════════╧═════════╧═════════╧═════════╝
-//                                          ║         │         │XXXXXXXXX║   ║XXXXXXXXX│ LSHIFT  │  LALT   ║
-//                                          ║         │         │XXXXXXXXX║   ║XXXXXXXXX│  ENTER  │  NLOCK  ║
+//                                          ║   MID   │  RIGHT  │  LEFT   ║   ║XXXXXXXXX│ LSHIFT  │  LALT   ║
+//                                          ║  CLICK  │  CLICK  │  CLICK  ║   ║XXXXXXXXX│  ENTER  │  NLOCK  ║
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
 //  
                 right_numpad_layer { label = "RNPAD"; bindings = <
-     _________ _________ _________ _________ _________ _________                         _NPLUSMN_ ___KP7___ ___KP8___ ___KP9___ _NSLSASK_ ___TAB___
-     _________ _________ _________ _________ _________ _________                         _BKSPCDL_ ___KP4___ ___KP5___ ___KP6___ __KPDOT__ _UNDSEQU_
-     _________ _________ _________ _________ _________ _________                         ___SPC___ ___KP1___ ___KP2___ ___KP3___ __COMMA__ __LCTRL__
-                                             _________ _________ _________     _NPADKP0_ _SFTBENT_ _LANLOCK_
+     _________ _________ _M__DN_L_ __M__UP__ _M_UP_R__ _SCRL_UP_                         _NPLUSMN_ ___KP7___ ___KP8___ ___KP9___ _NSLSASK_ ___TAB___
+     _SCRL_LF_ _SCRL_RT_ _M__LEFT_ _________ _M_RIGHT_ _SCRL_DN_                         _BKSPCDL_ ___KP4___ ___KP5___ ___KP6___ __KPDOT__ _UNDSEQU_
+     _________ _________ _M__UP_L_ _M__DOWN_ _M__DN_R_ _________                         ___SPC___ ___KP1___ ___KP2___ ___KP3___ __COMMA__ __LCTRL__
+                                             _M_LCLCK_ _M_RCLCK_ _M_MCLCK_     _NPADKP0_ _SFTBENT_ _LANLOCK_
                         >;};
 
 
