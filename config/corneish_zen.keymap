@@ -16,8 +16,9 @@
 #define NAV 3
 #define NUM 4
 #define LNPAD 5
-#define FUNC 6
-#define EXTRA 7
+#define RNPAD 6
+#define FUNC 7
+#define EXTRA 8
 
 #include "keycodes.h"
 #include <dt-bindings/zmk/mouse.h>
@@ -124,20 +125,20 @@
 //  ║         │ZOOM  CLS│CLIP HIST│SELECTALL│   F2    │ BACKSPC ║                       ║  DELETE │   INI   │  PREPAG │  AVPAG  │   END   │  INSERT ║
 //  ║         │ZOOM +/- │   CUT   │  COPY   │  PASTE  │         ║                       ║         │         │         │         │         │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢                       ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
-//  ║  REDO   │  UNDO   │   ALT   │  SHIFT  │  CTRL   │ SEARCH  ║                       ║         │  LEFT   │  DOWN   │   UP    │  RIGHT  │         ║
+//  ║  REDO   │  UNDO   │  LNPAD  │  SHIFT  │  CTRL   │ SEARCH  ║                       ║   SPC   │  LEFT   │  DOWN   │   UP    │  RIGHT  │         ║
 //  ║         │         │         │         │         │  ENTER  ║                       ║         │         │         │         │         │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
 //  ║  RESET  │         │         │  LWIN   │ ALT+TAB │   MENU  ║                       ║         │         │         │         │         │         ║
 //  ║  SOFT   │         │         │         │         │   ESC   ║                       ║         │         │         │         │         │         ║
 //  ╚═════════╧═════════╧═════════╧═════════╬─────────┼─────────╬═════════╗   ╔═════════╬─────────┼─────────╬═════════╧═════════╧═════════╧═════════╝
-//                                          ║  RESET  │         │XXXXXXXXX║   ║   SPC   │ BCKSPC  │  ENTER  ║
+//                                          ║  RESET  │         │XXXXXXXXX║   ║         │         │         ║
 //                                          ║  BOOTL  │         │XXXXXXXXX║   ║         │         │         ║
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
                 navigation_layer { label = "NAV"; bindings = <
      _________ _ZMOUTCL_ CLPHSTCUT _CPYSLAL_ _PASTEF2_ __BKSPC__                         ___DEL___ ___INI___ __PGDN___ __PGUP___ ___END___ __INSRT__
-     __REDO___ __UNDO___ ___LALT__ __LSHFT__ __LCTRL__ _SRCHENT_                         _SCRL_UP_ __LEFT___ __DOWN___ ___UP____ __RIGHT__ _SCRL_DN_
-     __RESET__ _________ _________ __LWIN___ _ALT_TAB_ _ESCMENU_                         _M_LCLCK_ _M__LEFT_ _M__DOWN_ __M__UP__ _M_RIGHT_ _M_RCLCK_
-                                             __BOOTL__ X_______X X_______X     ___SPC___ __BKSPC__ __ENTER__
+     __REDO___ __UNDO___ __LNPAD__ __LSHFT__ __LCTRL__ _SRCHENT_                         ___SPC___ __LEFT___ __DOWN___ ___UP____ __RIGHT__ _________
+     __RESET__ _________ _________ __LWIN___ _ALT_TAB_ _ESCMENU_                         _________ _________ _________ _________ _________ _________
+                                             __BOOTL__ X_______X X_______X     _________ _________ _________
                         >;};
 
 
@@ -167,25 +168,51 @@
 
 //  Base Layer: LNPAD
 //  ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗                       ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗
-//  ║   TAB   │    *    │    7    │    8    │    9    │    -    ║                       ║    -    │    7    │    8    │    9    │    *    │   TAB   ║
-//  ║         │    /    │         │         │         │    +    ║                       ║    +    │         │         │         │    /    │         ║
+//  ║   TAB   │    *    │    7    │    8    │    9    │    -    ║                       ║ SCROLL  │   U-L   │    U    │   U-R   │         │         ║
+//  ║         │    /    │         │         │         │    +    ║                       ║   UP    │         │         │         │         │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢                       ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
-//  ║  EQUAL  │    .    │    4    │    5    │    6    │ DELETE  ║                       ║ DELETE  │    4    │    5    │    6    │    .    │  EQUAL  ║
-//  ║ UNDERSC │         │         │         │         │ BCKSPC  ║                       ║ BCKSPC  │         │         │         │         │ UNDERSC ║
+//  ║  EQUAL  │    .    │    4    │    5    │    6    │ DELETE  ║                       ║ SCROLL  │    L    │         │    R    │ SCROLL  │ SCROLL  ║
+//  ║ UNDERSC │         │         │         │         │ BCKSPC  ║                       ║   DN    │         │         │         │  LEFT   │  RIGHT  ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
-//  ║  LCTRL  │    ,    │    1    │    2    │    3    │   SPC   ║                       ║   SPC   │    1    │    2    │    3    │    ,    │  RCTRL  ║
+//  ║  LCTRL  │    ,    │    1    │    2    │    3    │   SPC   ║                       ║         │   D-L   │    D    │   D-R   │         │         ║
 //  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │         ║
 //  ╚═════════╧═════════╧═════════╧═════════╬─────────┼─────────╬═════════╗   ╔═════════╬─────────┼─────────╬═════════╧═════════╧═════════╧═════════╝
-//                                          ║  LALT   │ LSHIFT  │XXXXXXXXX║   ║XXXXXXXXX│ LSHIFT  │  LALT   ║
-//                                          ║  NLOCK  │  ENTER  │XXXXXXXXX║   ║XXXXXXXXX│  ENTER  │  NLOCK  ║
+//                                          ║  LALT   │ LSHIFT  │XXXXXXXXX║   ║  LEFT   │  RIGHT  │   MID   ║
+//                                          ║  NLOCK  │  ENTER  │XXXXXXXXX║   ║  CLICK  │  CLICK  │  CLICK  ║
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
 //  
-                numpad_layer { label = "LNPAD"; bindings = <
-     ___TAB___ _NSLSASK_ ___KP7___ ___KP8___ ___KP9___ _NPLUSMN_                         _NPLUSMN_ ___KP7___ ___KP8___ ___KP9___ _NSLSASK_ ___TAB___
-     _UNDSEQU_ __KPDOT__ ___KP4___ ___KP5___ ___KP6___ _BKSPCDL_                         _BKSPCDL_ ___KP4___ ___KP5___ ___KP6___ __KPDOT__ _UNDSEQU_
-     __LCTRL__ __COMMA__ ___KP1___ ___KP2___ ___KP3___ ___SPC___                         ___SPC___ ___KP1___ ___KP2___ ___KP3___ __COMMA__ __LCTRL__
-                                             _LANLOCK_ _SFTBENT_ _NPADKP0_     _NPADKP0_ _SFTBENT_ _LANLOCK_
+                left_numpad_layer { label = "LNPAD"; bindings = <
+     ___TAB___ _NSLSASK_ ___KP7___ ___KP8___ ___KP9___ _NPLUSMN_                         _SCRL_UP_ _________ __M__UP__ _________ _________ _________
+     _UNDSEQU_ __KPDOT__ ___KP4___ ___KP5___ ___KP6___ _BKSPCDL_                         _SCRL_DN_ _M__LEFT_ _________ _M_RIGHT_ _SCRL_LF_ _SCRL_RT_
+     __LCTRL__ __COMMA__ ___KP1___ ___KP2___ ___KP3___ ___SPC___                         _________ _________ _M__DOWN_ _________ _________ _________
+                                             _LANLOCK_ _SFTBENT_ _NPADKP0_     _M_LCLCK_ _M_RCLCK_ _M_MCLCK_
                         >;};
+
+
+
+//  Base Layer: RNPAD
+//  ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗                       ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗
+//  ║         │         │         │         │         │         ║                       ║    -    │    7    │    8    │    9    │    *    │   TAB   ║
+//  ║         │         │         │         │         │         ║                       ║    +    │         │         │         │    /    │         ║
+//  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢                       ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
+//  ║         │         │         │         │         │         ║                       ║ DELETE  │    4    │    5    │    6    │    .    │  EQUAL  ║
+//  ║         │         │         │         │         │         ║                       ║ BCKSPC  │         │         │         │         │ UNDERSC ║
+//  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
+//  ║         │         │         │         │         │         ║                       ║   SPC   │    1    │    2    │    3    │    ,    │  RCTRL  ║
+//  ║         │         │         │         │         │         ║                       ║         │         │         │         │         │         ║
+//  ╚═════════╧═════════╧═════════╧═════════╬─────────┼─────────╬═════════╗   ╔═════════╬─────────┼─────────╬═════════╧═════════╧═════════╧═════════╝
+//                                          ║         │         │XXXXXXXXX║   ║XXXXXXXXX│ LSHIFT  │  LALT   ║
+//                                          ║         │         │XXXXXXXXX║   ║XXXXXXXXX│  ENTER  │  NLOCK  ║
+//                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
+//  
+                right_numpad_layer { label = "RNPAD"; bindings = <
+     _________ _________ _________ _________ _________ _________                         _NPLUSMN_ ___KP7___ ___KP8___ ___KP9___ _NSLSASK_ ___TAB___
+     _________ _________ _________ _________ _________ _________                         _BKSPCDL_ ___KP4___ ___KP5___ ___KP6___ __KPDOT__ _UNDSEQU_
+     _________ _________ _________ _________ _________ _________                         ___SPC___ ___KP1___ ___KP2___ ___KP3___ __COMMA__ __LCTRL__
+                                             _________ _________ _________     _NPADKP0_ _SFTBENT_ _LANLOCK_
+                        >;};
+
+
 
 
 //  Base Layer: FUNC
