@@ -15,7 +15,7 @@
 #define GAMING  2
 #define NAV 3
 #define NUM 4
-#define NPAD 5
+#define NPAD-L 5
 #define FUNC 6
 #define EXTRA 7
 
@@ -165,7 +165,7 @@
                         >;};
 
 
-//  Base Layer: NPAD
+//  Base Layer: NPAD-L
 //  ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗                       ╔═════════╤═════════╤═════════╤═════════╤═════════╤═════════╗
 //  ║   TAB   │    *    │    7    │    8    │    9    │    -    ║                       ║    -    │    7    │    8    │    9    │    *    │   TAB   ║
 //  ║         │    /    │         │         │         │    +    ║                       ║    +    │         │         │         │    /    │         ║
@@ -180,7 +180,7 @@
 //                                          ║  NLOCK  │  ENTER  │XXXXXXXXX║   ║XXXXXXXXX│  ENTER  │  NLOCK  ║
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
 //  
-                numpad_layer { label = "NPAD"; bindings = <
+                numpad_layer { label = "NPAD-L"; bindings = <
      ___TAB___ _NSLSASK_ ___KP7___ ___KP8___ ___KP9___ _NPLUSMN_                         _NPLUSMN_ ___KP7___ ___KP8___ ___KP9___ _NSLSASK_ ___TAB___
      _UNDSEQU_ __KPDOT__ ___KP4___ ___KP5___ ___KP6___ _BKSPCDL_                         _BKSPCDL_ ___KP4___ ___KP5___ ___KP6___ __KPDOT__ _UNDSEQU_
      __LCTRL__ __COMMA__ ___KP1___ ___KP2___ ___KP3___ ___SPC___                         ___SPC___ ___KP1___ ___KP2___ ___KP3___ __COMMA__ __LCTRL__
