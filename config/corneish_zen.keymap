@@ -126,20 +126,20 @@
 //  ║         │ZOOM  CLS│CLIP HIST│SELECTALL│   F2    │ BACKSPC ║                       ║  DELETE │   INI   │  PREPAG │  AVPAG  │   END   │  INSERT ║
 //  ║         │ZOOM +/- │   CUT   │  COPY   │  PASTE  │         ║                       ║         │         │         │         │         │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢                       ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
-//  ║  REDO   │  UNDO   │  MOUSE  │  SHIFT  │  CTRL   │ SEARCH  ║                       ║   SPC   │  LEFT   │  DOWN   │   UP    │  RIGHT  │         ║
+//  ║  REDO   │  UNDO   │  MOUSE  │  SHIFT  │  CTRL   │ SEARCH  ║                       ║         │  LEFT   │  DOWN   │   UP    │  RIGHT  │         ║
 //  ║         │         │         │         │         │  ENTER  ║                       ║         │         │         │         │         │         ║
 //  ╟─────────┼─────────┼─────────┼─────────┼─────────┼─────────║                       ║─────────┼─────────┼─────────┼─────────┼─────────┼─────────╢
 //  ║  RESET  │         │         │  LWIN   │ ALT+TAB │   MENU  ║                       ║         │         │         │         │         │         ║
 //  ║  SOFT   │         │         │         │         │   ESC   ║                       ║         │         │         │         │         │         ║
 //  ╚═════════╧═════════╧═════════╧═════════╬─────────┼─────────╬═════════╗   ╔═════════╬─────────┼─────────╬═════════╧═════════╧═════════╧═════════╝
-//                                          ║  RESET  │         │XXXXXXXXX║   ║         │         │         ║
-//                                          ║  BOOTL  │         │XXXXXXXXX║   ║         │         │         ║
+//                                          ║  RESET  │         │XXXXXXXXX║   ║   SPC   │   DEL   │  ENTER  ║
+//                                          ║  BOOTL  │         │XXXXXXXXX║   ║         │  BKSPC  │         ║
 //                                          ╚═════════╧═════════╧═════════╝   ╚═════════╧═════════╧═════════╝
                 navigation_layer { label = "NAV"; bindings = <
      _________ _ZMOUTCL_ CLPHSTCUT _CPYSLAL_ _PASTEF2_ __BKSPC__                         ___DEL___ ___INI___ __PGDN___ __PGUP___ ___END___ __INSRT__
-     __REDO___ __UNDO___ __MOUSE__ __LSHFT__ __LCTRL__ _SRCHENT_                         ___SPC___ __LEFT___ __DOWN___ ___UP____ __RIGHT__ _________
+     __REDO___ __UNDO___ __MOUSE__ __LSHFT__ __LCTRL__ _SRCHENT_                         _________ __LEFT___ __DOWN___ ___UP____ __RIGHT__ _________
      __RESET__ _________ _________ __LWIN___ _ALT_TAB_ _ESCMENU_                         _________ _________ _________ _________ _________ _________
-                                             __BOOTL__ X_______X X_______X     _________ _________ _________
+                                             __BOOTL__ X_______X X_______X     ___SPC___ _BKSPCDL_ __ENTER__
                         >;};
 
 
