@@ -111,15 +111,20 @@ ht_custom_mod_toggle: ht_custom_mod_toggle {             // RCTRL → TOGGLE LAN
     #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
     bindings = <&kp>, <&tog>;
 };  
-td_shift_func_capslock: td_shift_func_capslock {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD
-    compatible = "zmk,behavior-tap-dance"; label = "TD_SHIFT_FUNC_CAPSLOCK";
-    #binding-cells = <0>; tapping-term-ms = <250>;
-    bindings = <&ht_custom_tap_sk LSHIFT LSHIFT>, <&kp CAPSLOCK>;
-};        
+//td_shift_func_capslock: td_shift_func_capslock {     // test TAP-DANCE + two LAYER-TAPS      NAV-REP + NPADoREP + TOGGLENPAD
+//    compatible = "zmk,behavior-tap-dance"; label = "TD_SHIFT_FUNC_CAPSLOCK";
+//   #binding-cells = <0>; tapping-term-ms = <250>;
+//    bindings = <&ht_custom_tap_sk LSHIFT LSHIFT>, <&kp CAPSLOCK>;
+//};        
 ht_extra_backspace_delete: ht_extra_backspace_delete {             // RCTRL → TOGGLE LANGUAGE LAYER
     compatible = "zmk,behavior-hold-tap"; label = "HT_EXTRA_BACKSPACE_DELETE";
     #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
     bindings = <&mo>, <&mm_backspace_delete>;
+};  
+ht_capslock_capsword: ht_capslock_capsword {             // RCTRL → TOGGLE LANGUAGE LAYER
+    compatible = "zmk,behavior-hold-tap"; label = "HT_CAPSLOCK_CAPSWORD";
+    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
+    bindings = <&kp>, <&caps_word>;
 };  
 //ht_num_backspace_delete: ht_num_backspace_delete {             // RCTRL → TOGGLE LANGUAGE LAYER
 //    compatible = "zmk,behavior-hold-tap"; label = "HT_NUM_BACKSPACE_DELETE";

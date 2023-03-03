@@ -144,6 +144,7 @@
 #define ___RPT___    &key_repeat
 #define _CAPSLCK_    &kp CAPSLOCK
 #define _CAPSWRD_    &caps_word
+#define _CPWRDLK_    &ht_capslock_capsword CAPSLOCK 0       // CAPS WORD → LOCK
 
 #define KC_QUEST     LS(MINUS)             //  ?
 #define __QUEST__    &kp KC_QUEST          //  ?
@@ -232,7 +233,7 @@
 #define _NUM_SPC_    &ht_custom_mo_tap NUM SPACE        // removed tap-dance, same as with RPT/NAV
 #define _LNPAD_0_    &ht_custom_tog_tap LNPAD KP_NUMBER_0
 #define _RNPAD_0_    &ht_custom_tog_tap RNPAD KP_NUMBER_0
-#define _SFTCAPS_    &td_shift_func_capslock  // *****
+//#define _SFTCAPS_    &td_shift_func_capslock  // *****
 #define XTRABKSPC    &ht_extra_backspace_delete EXTRA 0
 #define __MOUSE__    &mo MOUSE
 
