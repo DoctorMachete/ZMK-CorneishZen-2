@@ -128,7 +128,7 @@ ht_extra_backspace_delete: ht_extra_backspace_delete {             // RCTRL → 
 //};  
 td_capslock_capsword: td_capslock_capsword {     // CAPSWORD → CAPSLOCK
     compatible = "zmk,behavior-tap-dance"; label = "TD_CAPSLOCK_CAPSWORD";
-    #binding-cells = <0>; tapping-term-ms = <200>;
+    #binding-cells = <0>; tapping-term-ms = <300>;
     bindings = <&caps_word>, <&kp CAPSLOCK>;
 };
 //ht_num_backspace_delete: ht_num_backspace_delete {             // RCTRL → TOGGLE LANGUAGE LAYER
