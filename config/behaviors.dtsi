@@ -126,10 +126,15 @@ ht_extra_backspace_delete: ht_extra_backspace_delete {             // RCTRL → 
 //    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
 //    bindings = <&kp>, <&caps_word>;
 //};  
-td_capslock_capsword: td_capslock_capsword {     // CAPSWORD → CAPSLOCK
-    compatible = "zmk,behavior-tap-dance"; label = "TD_CAPSLOCK_CAPSWORD";
-    #binding-cells = <0>; tapping-term-ms = <300>;
-    bindings = <&caps_word>, <&kp CAPSLOCK>;
+ht_func_capsword: ht_func_capsword {             // RCTRL → TOGGLE LANGUAGE LAYER
+    compatible = "zmk,behavior-hold-tap"; label = "HT_FUNC_CAPSWORD";
+    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
+    bindings = <&mo>, <&caps_word>;
+}; 
+td_funccapsword_capslock: td_funccapsword_capslock {     // CAPSWORD → CAPSLOCK
+    compatible = "zmk,behavior-tap-dance"; label = "TD_FUNCCAPSWORD_CAPSLOCK";
+    #binding-cells = <0>; tapping-term-ms = <225>;
+    bindings = <&ht_func_capsword FUNC 0>, <&kp CAPSLOCK>;
 };
 //ht_num_backspace_delete: ht_num_backspace_delete {             // RCTRL → TOGGLE LANGUAGE LAYER
 //    compatible = "zmk,behavior-hold-tap"; label = "HT_NUM_BACKSPACE_DELETE";
