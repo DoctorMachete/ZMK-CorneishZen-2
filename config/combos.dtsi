@@ -55,11 +55,11 @@ COMBO(RightParBrack_0820,         &ht_lcbracket_rightparrightbrack KC_RCBR 0, 8 
 COMBO(GamingLayer_091011,         &to GAMING, 9 10 11, COLEMAK ACCENTS)                                     // GAMING
 //COMBO(Caps_2836,                  &kp CAPSLOCK, 28 36, COLEMAK ACCENTS)                                       // CAPSLOCK
 //COMBO(CapsWord_2937,              &caps_word, 29 37, COLEMAK ACCENTS)                                       // CAPSWORD
-COMBO(ToggleNPADLeft_2938,        &tog LNPAD, 29 38, COLEMAK ACCENTS)                                            //  --> toggle NPAD
-COMBO(ToggleNPADRight_3039,       &tog RNPAD, 30 39, COLEMAK ACCENTS)                                            //  -->  toggle NPAD
+COMBO(ToggleNPADLeft_2938,        &tog LNPAD, 29 38, COLEMAK ACCENTS LNPAD)                                            //  --> toggle NPAD
+COMBO(ToggleNPADRight_3039,       &tog RNPAD, 30 39, COLEMAK ACCENTS RNPAD)                                            //  -->  toggle NPAD
 //COMBO(ActivateFUNC_3738,          &mo FUNC, 37 38, COLEMAK ACCENTS)                                             // FUNC+RPT -->  mo FUNC
 COMBO(TAB_1628,                   &kp TAB, 16 28, COLEMAK ACCENTS NAV NUM)                                      // TAB
-COMBO(ENTER_1931,                 &kp ENTER, 19 31, COLEMAK ACCENTS NAV NUM)                                    // ENTER
+//0COMBO(ENTER_1931,                 &kp ENTER, 19 31, COLEMAK ACCENTS NAV NUM)                                    // ENTER
 COMBO(ACCENTS_2234,               &tog ACCENTS, 22 34, COLEMAK ACCENTS)                                         // ACCENTS
 //COMBO(LessLessEqual_2133,         &ht_less_lessequal 0 KC_LESS, 21 33, COLEMAK)                 
 //COMBO(GreaterGreaterEqual_2234,   &ht_greater_greaterequal 0 KC_GREAT, 22 34, COLEMAK)
