@@ -59,7 +59,8 @@ COMBO(ToggleNPADLeft_2938,        &tog LNPAD, 29 38, COLEMAK ACCENTS LNPAD)     
 COMBO(ToggleNPADRight_3039,       &tog RNPAD, 30 39, COLEMAK ACCENTS RNPAD)                                            //  -->  toggle NPAD
 //COMBO(ActivateFUNC_3738,          &mo FUNC, 37 38, COLEMAK ACCENTS)                                             // FUNC+RPT -->  mo FUNC
 COMBO(TAB_1628,                   &kp TAB, 16 28, COLEMAK ACCENTS NAV NUM)                                      // TAB
-//0COMBO(ENTER_1931,                 &kp ENTER, 19 31, COLEMAK ACCENTS NAV NUM)                                    // ENTER
+//0COMBO(ENTER_1931,                 &kp ENTER, 19 31, COLEMAK ACCENTS NAV NUM)                                    // ENTie
+ER
 COMBO(ACCENTS_2234,               &tog ACCENTS, 22 34, COLEMAK ACCENTS)                                         // ACCENTS
 //COMBO(LessLessEqual_2133,         &ht_less_lessequal 0 KC_LESS, 21 33, COLEMAK)                 
 //COMBO(GreaterGreaterEqual_2234,   &ht_greater_greaterequal 0 KC_GREAT, 22 34, COLEMAK)

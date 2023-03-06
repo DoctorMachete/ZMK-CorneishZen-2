@@ -236,11 +236,16 @@ compatible = "zmk,behavior-hold-tap"; label = "HT_ACCENT_U";
     #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
     bindings = <&mm_accent_u>, <&kp>;
 };  
-td_accent_dier_u: td_accent_dier_u {     // uU / úÚ → üÜ
-    compatible = "zmk,behavior-tap-dance"; label = "TD_ACCENT_DIER_U";
-    #binding-cells = <0>; tapping-term-ms = <200>;
-    bindings = <&ht_accent_u 0 U>, <&mm_dier_u>;
-};
+//td_accent_dier_u: td_accent_dier_u {     // uU / úÚ → üÜ
+//    compatible = "zmk,behavior-tap-dance"; label = "TD_ACCENT_DIER_U";
+//    #binding-cells = <0>; tapping-term-ms = <200>;
+//    bindings = <&ht_accent_u 0 U>, <&mm_dier_u>;
+//};
+ht_dier_u: ht_dier_u {             //  uU → úÚ
+compatible = "zmk,behavior-hold-tap"; label = "HT_DIER_U";
+    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
+    bindings = <&mm_dier_u>, <&kp>;
+};  
 // END LAYER ACCENTS ********************************************************************************************************************
 
 

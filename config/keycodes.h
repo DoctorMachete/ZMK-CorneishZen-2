@@ -267,7 +267,8 @@
 #define __ACC_E__    &ht_accent_e 0 E
 #define __ACC_I__    &ht_accent_i 0 I
 #define __ACC_O__    &ht_accent_o 0 O
-#define __ACC_U__    &td_accent_dier_u
+#define __ACC_U__    &ht_accent_u 0 U
+#define __ACC_Y__    &ht_dier_u 0 Y
 #define KC_ENE       SEMICOLON
 #define _ACC_ENE_    &ht_custom_tap_tap KC_ENE N // &kp KC_ENE
 
