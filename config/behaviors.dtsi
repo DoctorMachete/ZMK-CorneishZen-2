@@ -40,7 +40,7 @@ mm_inicomment_endcomment: mm_inicomment_endcomment {
 
 ht_slash_comments: ht_slash_comments {      
 compatible = "zmk,behavior-hold-tap"; label = "HT_SLASH_COMMENTS";
-    #binding-cells = <2>; tapping-term-ms = <300>; quick-tap-ms = <200>;
+    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>;
     flavor = "tap-preferred";
     bindings = <&mm_inicomment_endcomment>, <&mm_slash_bslash>;
 };
