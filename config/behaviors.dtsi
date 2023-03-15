@@ -98,7 +98,7 @@ ht_nav_rep: ht_nav_rep {             //  NAV - REP
 //};
 ht_custom_mo_tap: ht_custom_mo_tap {             
     compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_MO_TAP";
-    #binding-cells = <2>; tapping-term-ms = <300>; quick-tap-ms = <300>; flavor = "tap-preferred";
+    #binding-cells = <2>; tapping-term-ms = <1500>; quick-tap-ms = <1500>; flavor = "tap-preferred"; global-quick-tap; retro-tap;
     bindings = <&mo>, <&kp>;
 };   
 ht_custom_tog_tap: ht_custom_tog_tap {             
