@@ -71,6 +71,16 @@ ht_custom_mod_tap: ht_custom_mod_tap {             // longer quick-tap for the G
     #binding-cells = <2>; tapping-term-ms = <300>; quick-tap-ms = <300>; flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
 };
+ht_hrm: ht_hrm {             // for home row mods with higher tapping-term to avoid misfires, as they aren't used that often so the added delay is not much of an issue
+    compatible = "zmk,behavior-hold-tap"; label = "HT_HRM";
+    #binding-cells = <2>; tapping-term-ms = <500>; quick-tap-ms = <500>; flavor = "tap-preferred";
+    bindings = <&kp>, <&kp>;
+};
+ht_media: ht_media {             // with massive tapping-term, as it is rarely used
+    compatible = "zmk,behavior-hold-tap"; label = "HT_MEDIA";
+    #binding-cells = <2>; tapping-term-ms = <500>; quick-tap-ms = <500>; flavor = "tap-preferred";
+    bindings = <&kp>, <&kp>;
+};
 ht_custom_tap_sk: ht_custom_tap_sk {             // REUSABLE tap for both the hold and the tap actions, so two keys are expected as parameters
     compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_TAP_SK";
     #binding-cells = <2>; tapping-term-ms = <250>; quick-tap-ms = <0>; flavor = "tap-preferred";
@@ -116,8 +126,8 @@ ht_custom_mod_toggle: ht_custom_mod_toggle {             // RCTRL → TOGGLE LAN
 //   #binding-cells = <0>; tapping-term-ms = <250>;
 //    bindings = <&ht_custom_tap_sk LSHIFT LSHIFT>, <&kp CAPSLOCK>;
 //};        
-ht_extra_backspace_delete: ht_extra_backspace_delete {             // RCTRL → TOGGLE LANGUAGE LAYER
-    compatible = "zmk,behavior-hold-tap"; label = "HT_EXTRA_BACKSPACE_DELETE";
+ht_media_backspace_delete: ht_media_backspace_delete {             // RCTRL → TOGGLE LANGUAGE LAYER
+    compatible = "zmk,behavior-hold-tap"; label = "HT_MEDIA_BACKSPACE_DELETE";
     #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <0>; flavor = "tap-preferred";
     bindings = <&mo>, <&mm_backspace_delete>;
 };  

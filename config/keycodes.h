@@ -234,7 +234,7 @@
 #define _LNPAD_0_    &ht_custom_tog_tap LNPAD KP_NUMBER_0
 #define _RNPAD_0_    &ht_custom_tog_tap RNPAD KP_NUMBER_0
 //#define _SFTCAPS_    &td_shift_func_capslock  // *****
-#define XTRABKSPC    &ht_extra_backspace_delete EXTRA 0
+#define XTRABKSPC    &ht_media_backspace_delete MEDIA 0
 #define __MOUSE__    &mo MOUSE
 
 
@@ -248,12 +248,12 @@
 //#define __WIN_G__    &ht_custom_mod_tap LWIN G
 //#define __WIN_M__    &ht_custom_mod_tap LWIN M
 
-#define __ALT_R__    &ht_custom_mod_tap LALT R
-#define __CTL_S__    &ht_custom_mod_tap LCTRL S
-#define __WIN_T__    &ht_custom_mod_tap LWIN T
-#define __WIN_N__    &ht_custom_mod_tap LWIN N
-#define __CTL_E__    &ht_custom_mod_tap LCTRL E
-#define __ALT_I__    &ht_custom_mod_tap LALT I
+#define __ALT_R__    &ht_hrm LALT R
+#define __CTL_S__    &ht_hrm LCTRL S
+#define __WIN_T__    &ht_hrm LWIN T
+#define __WIN_N__    &ht_hrm LWIN N
+#define __CTL_E__    &ht_hrm LCTRL E
+#define __ALT_I__    &ht_hrm LALT I
 
 
 
