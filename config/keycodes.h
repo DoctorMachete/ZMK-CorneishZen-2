@@ -305,7 +305,7 @@
 
 
 // MOUSE
-#define __TEST1__    &kp A
+//#define __TEST1__    &kp A
 
 #define MOUSESPEED 1200
 #define __M__UP__    &mmv MOVE_VERT(-MOUSESPEED) 
