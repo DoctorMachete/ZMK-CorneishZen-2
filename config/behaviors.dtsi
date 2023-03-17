@@ -50,7 +50,7 @@ mm_exclam_oexclam: mm_exclam_oexclam {        //   ! → ¡
 };
 ht_quest_exclam: ht_quest_exclam {             //  ? ¿ ! ¡
 compatible = "zmk,behavior-hold-tap"; label = "HT_QUEST_EXCLAM";
-    #binding-cells = <2>; tapping-term-ms = <300>; quick-tap-ms = <200>; flavor = "tap-preferred";
+    #binding-cells = <2>; tapping-term-ms = <200>; quick-tap-ms = <200>; flavor = "tap-preferred";
     bindings = <&mm_exclam_oexclam>, <&mm_quest_oquest>;
 };
 
