@@ -1,12 +1,5 @@
 #include "keycodes.h"
-skqr: sticky_key_quick_release {
-compatible = "zmk,behavior-sticky-key";
-label = "STICKY_KEY_QUICK_RELEASE";
-#binding-cells = <1>;
-bindings = <&kp>;
-release-after-ms = <1000>;
-quick-release;
-};
+
 
 // LAYER COLEMAK ************************************************************************************************************************
 mm_quote_accent: mm_quote_accent {        // ' `
