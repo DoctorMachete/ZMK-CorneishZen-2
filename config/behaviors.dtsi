@@ -71,7 +71,7 @@ ht_custom_mod_tap: ht_custom_mod_tap {             // longer quick-tap for the G
     #binding-cells = <2>; tapping-term-ms = <300>; quick-tap-ms = <300>; flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
 };
-ht_hrm: ht_custom_hrm {             // for home row mods with higher tapping-term to avoid misfires, as they aren't used that often so the added delay is not much of an issue
+ht_custom_hrm: ht_custom_hrm {             // for home row mods with higher tapping-term to avoid misfires, as they aren't used that often so the added delay is not much of an issue
     compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_HRM";
     #binding-cells = <2>; tapping-term-ms = <500>; quick-tap-ms = <500>; flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
