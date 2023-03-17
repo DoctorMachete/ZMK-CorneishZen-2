@@ -69,11 +69,11 @@ ht_custom_hrm: ht_custom_hrm {             // for home row mods with higher tapp
     #binding-cells = <2>; tapping-term-ms = <500>; quick-tap-ms = <500>; flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
 };
-ht_extra_backspace_delete: ht_extra_backspace_delete {             // with massive tapping-term, as it is rarely used
-    compatible = "zmk,behavior-hold-tap"; label = "HT_EXTRA_BACKSPACE_DELETE";
-    #binding-cells = <2>; tapping-term-ms = <500>; quick-tap-ms = <500>; flavor = "tap-preferred";
-    bindings = <&kp>, <&kp>;
-};
+//ht_extra_backspace_delete: ht_extra_backspace_delete {             // with massive tapping-term, as it is rarely used
+//    compatible = "zmk,behavior-hold-tap"; label = "HT_EXTRA_BACKSPACE_DELETE";
+//    #binding-cells = <2>; tapping-term-ms = <500>; quick-tap-ms = <500>; flavor = "tap-preferred";
+//    bindings = <&kp>, <&kp>;
+//};
 ht_custom_tap_sk: ht_custom_tap_sk {             // REUSABLE tap for both the hold and the tap actions, so two keys are expected as parameters
     compatible = "zmk,behavior-hold-tap"; label = "HT_CUSTOM_TAP_SK";
     #binding-cells = <2>; tapping-term-ms = <250>; quick-tap-ms = <0>; flavor = "tap-preferred";
