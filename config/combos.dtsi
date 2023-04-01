@@ -77,7 +77,8 @@ COMBO(ACCENTS_2234,               &tog ACCENTS, 22 34, COLEMAK ACCENTS)         
                   ╰────────────╯ ╰────────────╯
 */
 // LAYER gaming
-COMBO(Activate_Colemak_Layer, &to COLEMAK, 9 10 11, GAMING)
+COMBO(Activate_Colemak_Layer, &to COLEMAK, 9 10 11, GAMING DUALSTK)
+COMBO(Activate_DualStick_Layer, &to COLEMAK, 33 34 35, GAMING)
 
 COMBO(Number_1, &kp N1,    1 13, GAMING)
 COMBO(Number_2, &kp N2,    2 14, GAMING)
