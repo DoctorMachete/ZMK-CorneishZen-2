@@ -52,6 +52,7 @@ COMBO(Percen_0517,                &kp KC_PERCENT, 5 17, COLEMAK ACCENTS)        
 COMBO(Amp_0618,                   &kp KC_AMP, 6 18, COLEMAK ACCENTS)          //  &
 COMBO(LeftParBrack_0719,          &ht_lcbracket_leftparleftbrack KC_LCBR 0, 7 19, COLEMAK ACCENTS)          //  ([{, ( → normal, [ → shifted, { → hold
 COMBO(RightParBrack_0820,         &ht_lcbracket_rightparrightbrack KC_RCBR 0, 8 20, COLEMAK ACCENTS)        //  )]}, ) → normal, ] → shifted, } → hold
+
 COMBO(GamingLayer_091011,         &to GAMING, 9 10 11, COLEMAK ACCENTS)                                     // GAMING
 //COMBO(Caps_2836,                  &kp CAPSLOCK, 28 36, COLEMAK ACCENTS)                                       // CAPSLOCK
 //COMBO(CapsWord_2937,              &caps_word, 29 37, COLEMAK ACCENTS)                                       // CAPSWORD
@@ -78,7 +79,7 @@ COMBO(ACCENTS_2234,               &tog ACCENTS, 22 34, COLEMAK ACCENTS)         
 */
 // LAYER gaming
 COMBO(Activate_Colemak_Layer, &to COLEMAK, 9 10 11, GAMING DUALSTK)
-COMBO(Activate_DualStick_Layer, &to COLEMAK, 33 34 35, GAMING)
+COMBO(Activate_DualStick_Layer, &to DUALSTK, 33 34 35, GAMING)
 
 COMBO(Number_1, &kp N1,    1 13, GAMING)
 COMBO(Number_2, &kp N2,    2 14, GAMING)
