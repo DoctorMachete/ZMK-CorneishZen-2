@@ -54,7 +54,7 @@ COMBO(LeftParBrack_0719,          &ht_lcbracket_leftparleftbrack KC_LCBR 0, 7 19
 COMBO(RightParBrack_0820,         &ht_lcbracket_rightparrightbrack KC_RCBR 0, 8 20, COLEMAK ACCENTS)        //  )]}, ) → normal, ] → shifted, } → hold
 
 COMBO(GamingLayer_091011,         &to GAMING, 10 11, COLEMAK ACCENTS)                                     // GAMING
-COMBO(QOLEMAZ_Layer_0102,         &to QOLEMAZ, 1 2, COLEMAK ACCENTS)                                      // QOLEMAZ
+COMBO(QOLEMAZ_Layer_0001,         &to QOLEMAZ, 0 1, COLEMAK ACCENTS)                                      // QOLEMAZ
 //COMBO(Caps_2836,                  &kp CAPSLOCK, 28 36, COLEMAK ACCENTS)                                       // CAPSLOCK
 //COMBO(CapsWord_2937,              &caps_word, 29 37, COLEMAK ACCENTS)                                       // CAPSWORD
 COMBO(ToggleNPADLeft_2938,        &tog LNPAD, 29 38, COLEMAK ACCENTS LNPAD)                                            //  --> toggle NPAD
@@ -119,6 +119,6 @@ COMBO(F12,      &kp F12,  23 35, GAMING)
 // LAYER QOLEMAZ
 COMBO(Press_V_2728, &kp V, 27 28, QOLEMAZ)
 COMBO(Press_K_3132, &kp K, 31 32, QOLEMAZ)
-COMBO(COLEMAK_Layer_0102,         &to COLEMAK, 1 2, QOLEMAZ)                                             // COLEMAK
+COMBO(COLEMAK_Layer_0001,         &to COLEMAK, 0 1, QOLEMAZ)                                             // COLEMAK
 
 
