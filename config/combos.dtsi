@@ -53,7 +53,8 @@ COMBO(Amp_0618,                   &kp KC_AMP, 6 18, COLEMAK ACCENTS)          //
 COMBO(LeftParBrack_0719,          &ht_lcbracket_leftparleftbrack KC_LCBR 0, 7 19, COLEMAK ACCENTS)          //  ([{, ( → normal, [ → shifted, { → hold
 COMBO(RightParBrack_0820,         &ht_lcbracket_rightparrightbrack KC_RCBR 0, 8 20, COLEMAK ACCENTS)        //  )]}, ) → normal, ] → shifted, } → hold
 
-COMBO(GamingLayer_091011,         &to GAMING, 9 10 11, COLEMAK ACCENTS)                                     // GAMING
+COMBO(GamingLayer_091011,         &to GAMING, 10 11, COLEMAK ACCENTS)                                     // GAMING
+COMBO(QOLEMAZ_Layer_0102,         &to QOLEMAZ, 1 2, COLEMAK ACCENTS)                                      // QOLEMAZ
 //COMBO(Caps_2836,                  &kp CAPSLOCK, 28 36, COLEMAK ACCENTS)                                       // CAPSLOCK
 //COMBO(CapsWord_2937,              &caps_word, 29 37, COLEMAK ACCENTS)                                       // CAPSWORD
 COMBO(ToggleNPADLeft_2938,        &tog LNPAD, 29 38, COLEMAK ACCENTS LNPAD)                                            //  --> toggle NPAD
@@ -78,7 +79,7 @@ COMBO(ACCENTS_2234,               &tog ACCENTS, 22 34, COLEMAK ACCENTS)         
                   ╰────────────╯ ╰────────────╯
 */
 // LAYER gaming
-COMBO(Activate_Colemak_Layer, &to COLEMAK, 9 10 11, GAMING DUALSTK)
+COMBO(Activate_Colemak_Layer, &to COLEMAK, 10 11, GAMING DUALSTK)
 COMBO(Activate_DualStick_Layer, &to DUALSTK, 33 34 35, GAMING)
 
 COMBO(Number_1, &kp N1,    1 13, GAMING)
@@ -105,5 +106,19 @@ COMBO(F11,      &kp F11,  22 34, GAMING)
 COMBO(F12,      &kp F12,  23 35, GAMING)
 
 
+
+/*                KEY POSITIONS
+
+  ╭────────────────────────╮         ╭────────────────────────╮
+  │  0   1   2   3   4   5 │         │  6   7   8   9  10  11 │
+  │ 12  13  14  15  16  17 │         │ 18  19  20  21  22  23 │
+  │ 24  25  26  27  28  29 ╰───╮ ╭───╯ 30  31  32  33  34  35 │
+  ╰───────────────╮ 36  37  38 │ │ 39  40  41 ╭───────────────╯
+                  ╰────────────╯ ╰────────────╯
+*/
+// LAYER QOLEMAZ
+COMBO(Press_V_2728, &kp V, 27 28, QOLEMAZ)
+COMBO(Press_K_3132, &kp K, 31 32, QOLEMAZ)
+COMBO(COLEMAK_Layer_0102,         &to COLEMAK, 1 2, QOLEMAZ)                                             // COLEMAK
 
 
