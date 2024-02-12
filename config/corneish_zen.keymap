@@ -25,8 +25,8 @@
 #define EXTRA 12
 
 
-#define TEST123
-#define TEST1234
+
+
 
 #include "keycodes.h"
 #include <dt-bindings/zmk/mouse.h>
