@@ -23,9 +23,9 @@
 #define RNPAD 10
 #define FUNC 11
 #define EXTRA 12
-#define EXTRSRSTARSA 12
 
 
+#define TEST44
 
 
 #include "keycodes.h"
