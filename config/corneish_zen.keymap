@@ -25,7 +25,7 @@
 #define EXTRA 12
 
 
-#define TEST44
+#define TEST44s
 
 
 #include "keycodes.h"
